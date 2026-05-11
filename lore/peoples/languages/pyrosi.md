@@ -330,6 +330,8 @@ The West Pyrosi formal VSO is either a grammatical habit or a philosophical posi
 
 Pyrosi counts in base-twelve. The agricultural calendar of the Pyros region uses twelve-day cycles, and the number system reflects what that calendar made easy to compute — halves, thirds, quarters, sixths, and twelfths, all expressible as whole numbers within the base.
 
+The deeper origin of twelve is astronomical. The planet Ossian — the fifth and largest wandering star — completes one orbit of the sun in exactly 12 Corav years. One Ossian cycle = 4,320 days = 12 years of 360 days; and within that cycle there are exactly 360 twelve-day intervals. The Pyrosi call this 12-year period the *lossyr-velon* ("the Great Year"), and their entire counting system is organized around it: twelve at every scale, from the twelve-day sub-cycle to the twelve-month approximate year to the twelve-year orbit of Ossian. Azhoran astronomers have confirmed the 12:1 resonance is real — Ossian's period and Corav's year are in a near-exact ratio that is not a rounding. The Pyrosi appear to have embedded a genuine astronomical observation into their foundational mathematics.
+
 | Number | Pyrosi | Notes |
 |---|---|---|
 | 1 | *el* | Shared with Mittoli *el* |
@@ -345,7 +347,7 @@ Pyrosi counts in base-twelve. The agricultural calendar of the Pyros region uses
 | 11 | *velloss* | "the high-many"; Pyrosi innovation for the pre-completion number |
 | 12 | *lossyr* | "the completion count" — see note |
 
-*Lossyr* (twelve) shares its form with *lossyr* meaning "that which speaks; the speaking-count." The connection between twelve and speaking is old enough that the Pyrosi no longer explain it analytically — it is simply true in the way that old things are true. The Taler tradition holds that twelve is the number of sounds in the Fire Memory register's core vocabulary and that the number system was built around the register. The Academy finds this account linguistically suspect. Taler speakers find the Academy's opinion on this point unremarkable.
+*Lossyr* (twelve) shares its form with *lossyr* meaning "that which speaks; the speaking-count." The connection between twelve and speaking is old enough that the Pyrosi no longer explain it analytically — it is simply true in the way that old things are true. The Taler tradition holds that twelve is the number of sounds in the Fire Memory register's core vocabulary and that the number system was built around the register. Academy astronomers find the Ossian explanation more parsimonious; Taler speakers, when shown both, say that the Fire Memory and the sky are speaking the same number, which they consider more informative than either explanation.
 
 Numbers above twelve: *dě-lossyr* = twenty-four; *rell-lossyr* = seventy-two; *lossyr-el* = thirteen.
 

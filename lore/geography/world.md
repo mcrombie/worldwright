@@ -3,7 +3,7 @@ name: Corav
 category: geography
 tags: [world, planet, overview, cosmology, incomplete]
 status: draft
-related: [Azhora, Known Shores, The Outer Dark, Coravian Astronomy]
+related: [Azhora, Known Shores, The Outer Dark, Solar System of Corav, Astronomical Traditions of Azhora]
 ---
 
 # Corav
