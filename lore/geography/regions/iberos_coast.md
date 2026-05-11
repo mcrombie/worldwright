@@ -3,7 +3,7 @@ name: Iberos Coast
 category: region
 tags: [coast, mediterranean, islands, Iberos Sea, trade, seafaring, Azhora, eastern]
 status: draft
-related: [Azhora, Moroshé Desert, East Pyros, Iberos Sea, Pebbles, Zoth, Nyross, Suval, Canon]
+related: [Azhora, Moroshé Desert, East Pyros, Iberos Sea, Pebbles, Zoth, Nyross, Svaleen, Elodi, Canon]
 ---
 
 # Iberos Coast
@@ -22,7 +22,7 @@ The Iberos Sea contains hundreds of islands. Most are too small for permanent ha
 
 **Pebbles** — the cluster of small pale islands visible off the northeastern coast — is named for what they look like from a distance: stones scattered on the water. They are inhabited only seasonally, by fishermen who chase the migratory shoals that pass through the channel between them and the mainland. The fishing there is exceptional, the living conditions are not.
 
-**Suval** — further east, on the edge of where Azhoran maps become speculative — is large enough to have a substantial population and a long history of being independent, being conquered, being independent again, and being intensely irritated about the cycle. Its people speak an island language that shares roots with both the Iberos coastal dialect and something else that linguists have not been able to identify with confidence. The Suval themselves consider this question uninteresting.
+**Suval** — the mainland name for the Svaleen Peninsula, the largest southeastern extension of Azhora — appears as an island on maps made by cartographers who have never visited, because the neck of land connecting it to the main continent is narrow enough, and mountainous enough, that it is usually approached by sea. It is not an island. It is home to a loose confederation of city-states — Solis, Enebreum, Imlamdris — each with its own character and its own long history of doing business with everyone while taking direction from no one. The Elodi city of Elod is at the peninsula's southern tip. See the Svaleen entry for detail.
 
 Beyond Suval, the map becomes uncertain. What Azhoran sailors call the **Outer Islands** are known only from reports, and the reports are inconsistent enough to be unreliable. Whether Canon — the landmass sometimes reported on the far eastern horizon — is a large island or a continent is not established.
 
