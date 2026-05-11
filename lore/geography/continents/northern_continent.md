@@ -1,14 +1,18 @@
 ---
 name: The Northern Continent
 category: geography
-tags: [north, unknown, mysterious, ice, ancient, beyond-Azhora, Corav, unexplored]
+tags: [north, unknown, mysterious, ice, ancient, beyond-Azhora, Corav, unexplored, Old Kingdom, Elodi]
 status: draft
-related: [Corav, Ice Spear, Cold Stones, Northern Azhora, Bay of Lol, Smunders Bay]
+related: [Corav, Ice Spear, Cold Stones, Northern Azhora, Bay of Lol, Smunders Bay, Elodi, Iberos Coast]
 ---
 
 # The Northern Continent
 
 The northern continent has no agreed Azhoran name. Scholars refer to it as the Northern Continent, the Cold Land, or simply the North, all of which are admissions of ignorance dressed as geography. The Azhorans know it exists. They know its southernmost feature — Ice Spear — from a distance. Beyond that, almost nothing is confirmed.
+
+What Azhoran scholars have not yet established — though a careful reading of Elodi scripture may eventually force the question — is whether "the northern continent" describes a single landmass at all. The Elodi texts, which preserve detailed geographical memory of what lies east of Azhora, describe the world beyond as three distinct but connected continents: a northern arm, a southern arm, and an eastern body, joined at a central point the way Afroeurasia's three continents are joined on a planetary scale. By this account, what Azhorans call the northern continent is only the closest arm of something much larger — a supercontinent whose western edge is visible from Cold Stones, whose eastern extent no Azhoran navigator has reached, and at whose center, where all three arms converge, the Old Kingdom has stood since before any current civilization can remember.
+
+Azhoran scholars who engage with Elodi texts tend to note this geographical description and move past it quickly. The implication — that the landmass Azhora faces is not a remote Arctic territory but the near edge of the world's oldest and largest civilization — is one that would require a great deal of existing cartographic work to reconsider.
 
 What is known comes from three sources: the Cold Stones expeditions, which have never ventured beyond the archipelago in force; a small number of accounts from ships that claim to have reached Ice Spear's base and returned; and a body of oral tradition in the northern Azhoran coastal cultures, particularly around Smunders Bay, that treats the North as a source of legend rather than of navigable territory.
 

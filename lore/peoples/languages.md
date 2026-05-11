@@ -1,9 +1,9 @@
 ---
 name: Languages of Azhora
 category: peoples
-tags: [language, dialect, linguistics, culture, Mittoli, Pyrosi, desert, Bouéni, Grassic, Iberos]
+tags: [language, dialect, linguistics, culture, Mittoli, Pyrosi, desert, Bouéni, Grassic, Iberos, Elodi]
 status: draft
-related: [Azhora, Mittolo, Pyros, Moroshé Desert, Bouén, The Plains, Iberos Coast, Northern Azhora]
+related: [Azhora, Mittolo, Pyros, Moroshé Desert, Bouén, The Plains, Iberos Coast, Northern Azhora, Elodi]
 ---
 
 # Languages of Azhora
@@ -75,6 +75,16 @@ The Iberos word for "trade" and the Mittoli word for "crossing" (*gal*) appear i
 What the Iberos family looks like beyond its trade vocabulary, how many distinct languages or dialects it comprises, and whether it is related to any language anywhere beyond the Iberos Sea, are questions for Iberos linguists, if any exist, to answer. Azhoran scholarship on this point is a gap that several scholars have noted and none has filled, partly because filling it requires sustained presence on the other side of the sea and partly because the Iberos peoples have not, in Azhoran memory, invited outside linguistic study.
 
 The Caeras Valley Academy has a standing interest in this question. It has, as of current knowledge, no answer.
+
+## The Elodi Language
+
+Not, strictly speaking, an Azhoran language at all. The language spoken in Elod and among Elodi communities throughout the continent arrived here from somewhere east of the Iberos Sea, carried by a migrating population whose own texts describe their origin as a place called the Old Kingdom. It is unrelated to any of the five families above, which a competent ear recognizes immediately: the phonological profile is different, the grammar works on different principles, and the vocabulary shares almost nothing with surrounding Azhoran languages except borrowings accumulated during centuries of contact.
+
+The modern spoken form of Elodi is the one linguists can engage with — it is learned, describable, and available. Elodi speakers in trading cities will use it alongside standard Mittoli or East Pyrosi depending on context, and the accumulated vocabulary borrowing runs in both directions. What the language looked like before the crossing is a different question.
+
+The Elodi priesthood maintains a scriptural language called *Koleth* — the texts held in the Threshold in Elod are written in this older form. It differs from modern Elodi the way an ancient inscription differs from current speech. The few Azhoran linguists who have been permitted to study these texts have described them as representing what may be the oldest continuously preserved written language on Corav, which is a significant claim and one that the Threshold's scholars do not make quietly.
+
+Whether *Koleth* is related to any Iberos coastal language — whether the Far East and the Near East of the Iberos Sea share a common ancestor — is not established. The Iberos materials available for comparison are thin. The question is one that would require systematic study of Iberos languages from the other side of the sea to address.
 
 ---
 
