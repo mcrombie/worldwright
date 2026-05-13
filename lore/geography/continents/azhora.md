@@ -42,6 +42,7 @@ Azhora's major regions each have their own distinct geography, history, and cult
 - **Iberos Coast** — the eastern seaboard, the island chains, the Iberos Sea maritime world
 - **Ibenale** — the western corridor, coastal plain running SW to NE between forest and sea, terminating at the western mountains
 - **Alezhor** — the gold coast, coastal strip between the western sea and the great southwestern forest, independent city-states
+- **The Ibenwood** — the great southwestern forest, ancient and imperfectly mapped, home to the forest peoples; its edge gives the Ibenale and Alezhor their character
 - **Legemum** — the western peninsula, tin country, no king, the miners' and fishers' guilds
 - **Dinova** — the largest southern peninsula, the Meroshe desert interior, the Kingdom of Marosh, the commercial kingdom of Hama
 - **Bouén** — the cold southern peninsula, the Deep River current, the Azner Shores
