@@ -45,6 +45,7 @@ Azhora's major regions each have their own distinct geography, history, and cult
 - **Legemum** — the western peninsula, tin country, no king, the miners' and fishers' guilds
 - **Dinova** — the largest southern peninsula, the Meroshe desert interior, the Kingdom of Marosh, the commercial kingdom of Hama
 - **Bouén** — the cold southern peninsula, the Deep River current, the Azner Shores
+- **Oremindi Mountains** — the western spine, Himalayan scale, glaciated peaks, few inhabitants; the isolated city of Sevron and the Verath practice
 
 ## What Lies Beyond
 
