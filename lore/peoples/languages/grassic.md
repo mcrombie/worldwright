@@ -247,6 +247,54 @@ For events beyond a few cycles, Grassic uses **cycle-count references**: how man
 
 Historical chronology in Grassic is therefore literally organized around Memory Grass sites. The oral tradition does not say "this happened four hundred years ago"; it says "this happened at [site-description] cycles [count] before now." Converting Grassic historical references to absolute dates requires knowing which Memory Grass site is being cited, knowing the cycle-count tradition associated with that site, and trusting that the oral tradition's count is accurate. Two of these three requirements are tractable. The third is the subject of ongoing scholarly dispute.
 
+### Quantity and Enumeration
+
+Grassic has no numeral system in the sense any other Azhoran language has one. A language in which every root is a predicate has no grammatical category for abstract counting words to occupy. The number three, as a free-standing thing meaning three-ness, cannot exist in Grassic. There is no place to put it.
+
+What Grassic has instead are **quantity predicates** — roots that characterize the scale and nature of a group rather than assigning it a count:
+
+| Grassic | Meaning | Notes |
+|---|---|---|
+| *bel-* | single; the-not-yet-a-group; first-instance | Already vocabulary: "young/new/first-time." Singleness and newness are the same concept |
+| *dau-* | the complementary pair; naturally-two | For things that belong together: two seasonal directions, two competing land claims, a matched pair of witnesses |
+| *tel-* | several; crossable-count; a manageable group | From the root "to ford" — a quantity you can move across, as a small group crosses water |
+| *gol-* | herd-count; collective; more-than-manageable | Already vocabulary: "herd/group-grazing." Many and herd are the same word |
+| *vel-gol-* | beyond-counting; the-herd-that-moves | Compound: urgent-motion + herd. A quantity as uncountable as the migration itself |
+
+The underlying logic is consistent with the harmony system: *bel-* (single) is bright-class, associated with present experience and new growth; *gol-* (herd) is dark-class, associated with received tradition and the land's register. A single animal is immediate experience; a herd is landscape. Quantities large enough to be called *gol* or *vel-gol* belong to the land's domain rather than the individual's.
+
+For precise enumeration — legal records, cycle-counts, contested herd tallies — Grassic uses caull notation rather than spoken number words. Subsidiary cord configurations function as tallies; caull readers count knots. There are no spoken words for large precise quantities because precision at that scale is a caull matter, not a speech matter.
+
+Historical cycle-counts in oral tradition use **anchor compounds**: the Memory Grass site description plus a quantity predicate plus temporal suffixes. "Forty cycles" translates as something like "the-*tel*-to-*gol* count of cycles from [site-description]" — not a free-standing number but a distance between two named positions on the oral tradition's timeline.
+
+When Mittoli trade made abstract counting unavoidable, the Plains peoples absorbed Mittoli numerals as borrowed vocabulary. These are treated as dark-harmony, landscape-class predicates and carry the *-nol* (received) evidential when used in formal speech. A Plains merchant saying *o-trin-ko-nol* marks the number three as foreign: received from outside, belonging to someone else's register of the world. The *-nol* evidential on a Mittoli numeral is not pedantry. Those numbers genuinely came from outside.
+
+### Question Formation
+
+Grassic has no interrogative particles, no question inversion, and no distinct morphological class for questions. The question-formation system follows from the evidential system rather than supplementing it. A language that already marks every predicate for epistemic status does not need a separate grammar of uncertainty — it needs only a way to direct an incomplete evidential claim toward someone who can complete it.
+
+**Inference questions** — asking for information the speaker lacks — are formed by stating the most likely predicate in the *-ther/-thor* (inferred) evidential, addressed to someone with direct or witnessed knowledge:
+
+*vel-u-thraun-ko-thor.*
+
+[toward-water] [third-animate] [travel] [this-cycle] [inferred]
+
+Standard reading: "The group traveled toward the water this season — I infer this from evidence." Addressed to someone who would know directly, with a specific rising terminal, the inferred evidential becomes a question: the speaker presents a hypothesis and invites correction or confirmation of the evidential.
+
+The answer supplies it: *vel-u-thraun-ko-voth* — "direct experience" — confirms the hypothesis. If the inference was wrong in some element: *nell-u-thraun-no-voth* — "toward winter, not water; last cycle, not this one — direct experience." The correction specifies which element of the original predicate was inaccurate.
+
+**Confirmation questions** — seeking yes or no — are formed by stating the full predicate using the evidential the interlocutor would carry if it were true:
+
+*thel-i-thraun-ko-voth?*
+
+[along-route] [second-person] [travel] [this-cycle] [direct, rising terminal]
+
+Second-person subject plus direct evidential plus rising terminal: "You traveled the route — direct experience — yes?" A "yes" confirms the standing. A "no" corrects it: *thel-a-thraun-ko-voth* — "I, not you" — or *thel-i-thraun-no-voth* — "you, but last cycle."
+
+Every question in Grassic commits the asker to a hypothesis. There is no grammatical form for asking from pure ignorance. Mittoli scholars who have encountered this system note that it makes certain questions impossible: "What happened?" with no prior assumption has no Grassic form. The response from Grassic speakers is consistent: you always have some evidence. If you have no hypothesis, you have nothing to ask yet. Genuine ignorance calls for *sor* — sitting with the site, being present until evidence accumulates — not speech. A question without a hypothesis has no evidential basis, which makes it syntactically incomplete.
+
+In Grassic, asking a question reveals what the asker already believes. This is not a side effect of the grammar. It is the grammar.
+
 ---
 
 ## Core Vocabulary
@@ -300,6 +348,25 @@ Historical chronology in Grassic is therefore literally organized around Memory 
 | *aul-kor* | dark | Memory-Grass-backed claim; the highest land assertion | The act of going to the site to claim — direction and action in one |
 | *nel-auwel* | dark | oral tradition; the settled-speech | The register in which tradition is formally transmitted; the toward-winter speech |
 | *thraun-kor* | dark | route-claim; the assertion of passage-right | Compound predicate: route + claim |
+
+### Kinship and Community
+
+| Grassic | Meaning | Notes |
+|---|---|---|
+| *nel-sor* | the one who wintered before me; prior-knowledge | Parent (either); *nel-* (wintering direction) + *sor* (know-by-resting-at-a-site). "The one who prepared the winter-ground I would learn from" |
+| *vel-sor* | the one who moved toward water before me | Older sibling or first-guide; one who traveled the route ahead of you |
+| *bel-sor* | the one who first-knows through me | Younger sibling or student; one for whom you are the first route-guide |
+| *thel-auwel* | the one who speaks the route alongside me | Spouse or permanent travel partner; "the along-route speaker" |
+| *gol-thraun* | those who travel the route together | The community unit — the functional family; all whose seasonal route joins yours |
+| *thos-nel-sor* | the still-continuing one who wintered long before | Distant ancestor or founding figure of the oral tradition |
+
+*Nel-sor* (parent) combines the wintering-direction prefix with *sor*, the Memory Grass perception predicate. A parent is the one who knew the winter-ground before you did — who prepared the knowledge you would receive there. The word covers both parents and, by extension, any elder from whom you received route-knowledge directly. Biological parenthood is one version of this relationship, not a categorically different one.
+
+*Thel-auwel* (spouse or travel partner) encodes the social meaning of permanent partnership: two people traveling the same seasonal route, making the same claims, whose caull records are bound together. The formal declaration is *thel-auwel-ko-voth* — a direct-evidential claim in the present tense, describing what is currently true. When the shared route ends, the predicate ends too. *Thel-auwel-no-voth* — "we traveled alongside in the previous cycle — direct experience" — is simply the past-tense form. There is no special vocabulary for a former partner. The predicate completes.
+
+The boundary of *gol-thraun* (the traveling community) is behavioral rather than biological. One who travels the route is of the group; one who does not is not. Communities have absorbed outsiders — including individual Mittoli and Pyrosi people who have chosen Plains life — by traveling with them through a full seasonal cycle. After that cycle the person is *gol-thraun* by predicate, not by decision: *thel-u-gol-thraun-no-voth* — "they traveled alongside the community last cycle — direct experience." No other admission is possible or required.
+
+The Caeras Valley Academy has characterized Grassic kinship vocabulary as "lacking in biological specificity." Several scholars who have spent extended time on the Plains have subsequently revised their understanding of which vocabulary is deficient and in what direction.
 
 ---
 
@@ -394,6 +461,55 @@ The *-nel* (received) evidential in the teaching formula is essential: the elder
 
 The word *nel-auwel* (the settled-speech, the oral tradition) contains the spatial direction *nel-* (toward-winter) as its prefix. Tradition is received in the direction of settling, in the season of staying. Knowledge that travels with you is *vel-auwel* (route-speech, current practical knowledge). Knowledge that waits for you at the winter settlement is *nel-auwel* (settled-speech, the received tradition). The seasonal cycle is also an epistemological structure.
 
+### Northern Grassic: The compressed greeting and seasonal precision
+
+The standard route-crossing greeting in Central Grassic runs two words of five syllables each. Northern Grassic (*Nell-Auwel*) produces a structurally identical exchange that is harder to count syllables in:
+
+Central Grassic: *thel-a-thraun-ko-voth. vel-a-thraun-ko-voth.*
+
+Northern Grassic: *thl-a-thran-ko-voth. vl-a-thran-ko-voth.*
+
+*Thraun* → *thran* (the diphthong *-au-* compressed to *-a-*); *thel* → *thl* (vowel deleted between the consonants); *vel* → *vl* (same). The compression is systematic rather than irregular: back-vowel diphthongs shorten; vowels between two consonant frames delete when the surrounding consonants are sufficient to identify the morpheme. Outsiders who have learned Central Grassic describe Northern speech as the same music played faster. Northern speakers describe Central Grassic as spoken by people who are still deciding where to put their feet.
+
+The compression is not purely aesthetic. Northern Grassic subdivides the current cycle into four named phases where Central Grassic has only *-ko* (this cycle):
+
+| Northern suffix | Phase | Central equivalent |
+|---|---|---|
+| *-kevel* | early migration; before water-reach | *-ko* |
+| *-kegol* | grazing peak; at the summer water | *-ko* |
+| *-kenel* | settling phase; moving toward winter-ground | *-ko* |
+| *-kehom* | deep winter; fully settled | *-ko* |
+
+The saved syllable from root compression gets used for the phase marker. The word *thl-a-thran-kegol-voth* — "I am traveling the route in the grazing-peak phase — direct experience" — occupies roughly the same acoustic space as Central *thel-a-thraun-ko-voth* while carrying a piece of information that Central cannot encode. A Northern caull of a route claim specifies the seasonal phase; a Central caull records only the cycle. Northern legal practitioners argue that the finer temporal encoding is substantively significant. Central practitioners argue that both records indicate the same cycle and the distinction is decorative. The Academy's position is that the two temporal systems are variants of the same underlying grammar.
+
+Northern legal practitioners' position on the Academy's position has been recorded, in Northern Grassic, in the Academy's archive, where it awaits a translator willing to render the seasonal-phase distinctions with their full legal weight. This has not been prioritized.
+
+### Border Grassic: A desert-edge claim
+
+Border Grassic (*Gaul-Auwel*, "lateral-speech") has absorbed Moreshi directional terms as spatial prefixes, extending the standard Grassic five-prefix system with vocabulary from the desert's navigational tradition. The Moreshi loanwords:
+
+| Borrowed prefix | Source | Meaning in Border Grassic |
+|---|---|---|
+| *qarr-* | Moreshi *qar* | toward the desert interior |
+| *lakh-* | Moreshi *lakhr* | toward permanent water (distinct from *vel-*'s seasonal water) |
+| *ṯauv-* | Moreshi *ṯauvīn* | crossing a named sand-route |
+
+The distinction between *vel-* (toward seasonal water — where the route goes this year) and *lakh-* (toward permanent water — where the water is regardless of the year) matters considerably at the desert edge, where seasonal and permanent water sources are not the same locations and their legal significance differs. Border Grassic can make this distinction in a spatial prefix. Central Grassic cannot.
+
+The land-witness evidential (*-aul*) carries additional ceremonial weight in Border Grassic — spoken more slowly, preceded by a breath-pause absent in Central usage. The scholarly explanation is long contact with Moreshi ritual traditions, in which testimony about landscape is marked by formal speech-pauses. Border Grassic speakers describe it differently: the desert has more to say than the Plains, and it speaks slowly. You pause to let it finish.
+
+A joint route-claim spoken in a formal Border Grassic proceeding at the Moroshé edge:
+
+*aul-o-kaul-aul-aul. thel-u-thraun-aul-aul. lakh-o-wol-aul-aul.*
+
+Three predicate-words. The first two are identical to the standard Central Grassic formula. The third replaces *vel-* (toward seasonal water) with Moreshi-borrowed *lakh-* (toward permanent water):
+
+"The permanent water here has been the [group's] water from ancient time — land-witness confirms."
+
+This is not the same claim as the Central Grassic *vel-u-wol-tel-aul-aul* (the ford of the seasonal water, ancient time, land-witness). The desert-edge permanent water source has a different legal status from a seasonal ford — it cannot dry in a drought year, and claims on it are therefore of different duration and weight. Border Grassic encodes this distinction at the spatial prefix level. Central Grassic does not have the vocabulary to make the same claim with the same precision.
+
+Moreshi legal observers present at Border Grassic proceedings have noted that the Moreshi directional concept appears in the Grassic highest-authority claim structure — that Border Grassic has done something unusual, absorbing foreign spatial vocabulary not into ordinary speech but into the evidential framework at its most formal register. Border Grassic speakers, asked about this, have said: the desert has its own categories. We put them where they belong.
+
 ---
 
 ## Contact with Other Languages
@@ -412,10 +528,40 @@ The fundamental incompatibility of the two legal systems has been a recurring fe
 
 The Grassic family is the least-studied of the five Azhoran language families in proportion to its apparent significance. The reasons are not purely academic.
 
-The theory that the Plains peoples predate all other Azhoran populations — and that Grassic is therefore the oldest surviving language on the continent — is not officially controversial. It is supported by the complete absence of any traceable relationship between Grassic and any other documented language family, and by features of the evidential system and verb structure that appear structurally older than anything comparable in the western families. The implication is that Mittoli, the language of the dominant political and commercial culture of Azhora, is spoken by relative newcomers, on land whose oldest continuously-present inhabitants are still there, using a legal system that treats the newcomers' records as the weakest available form of evidence.
+### The three scholarly positions
 
-The Caeras Valley Academy has published three major comparative linguistics surveys in the past century. All three include the observation that Grassic appears unrelated to any other documented language family. None has discussed what this implies for the question of original Azhoran population. This is not the conclusion that the evidence demands; it is the conclusion that the Academy has found workable.
+Every comparative linguistics survey published in the past three centuries notes the complete absence of any traceable relationship between Grassic and any other documented language family. None has resolved it. The surveys tend to cluster around three interpretive positions:
 
-The Plains peoples do not discuss the original-population theory in terms that would help or hinder scholarly resolution. When asked whether they believe themselves to be the oldest inhabitants of the continent, the most common response is a variant of: "The Memory Grass at [site name] has been there since before the routes. What it holds is what it holds." This is, depending on who you ask, evidence of extraordinary patience, a diplomatic non-answer, or the most precise statement possible within the grammatical constraints of a language that does not permit claims without evidential standing. To say "we were here first" in Grassic, you would need an evidential suffix. The only evidential that would carry the weight of the claim is *-aul*. And that is, in fact, what the elders are pointing to.
+**The Remnant Hypothesis** holds that Grassic preserves the structure of the Proto-Azhoran ancestor from which all other families diverged. The other families are innovations on a Grassic-like base; Grassic simply changed less. The supporting evidence is phonological: Grassic's minimal consonant inventory — no pharyngeals, no uvulars, no ejectives, no unusual fricatives — is consistent with a pre-innovation language, before the consonant developments that distinguish the other families accumulated. The predicate-dominant structure, with no noun-verb distinction, may represent a grammatical starting point that other families moved away from. An ancestor that had neither nouns nor verbs as separate classes would produce daughter languages that developed them independently, and the daughters' various noun-verb systems are indeed mutually incompatible in ways that suggest independent development.
+
+The problem is decisive: if the other families descend from a Grassic-type ancestor, there should be recoverable cognates — vocabulary and morphological material that survived the changes. There are none. Zero documented cognates across any vocabulary domain or morphological position, in any survey, using any comparative method. The Remnant Hypothesis requires that change in all four other families was so complete that no trace survived. No documented language history shows this. The hypothesis is linguistically untenable, which is why it persists mainly in popular accounts of Azhoran prehistory rather than in academic linguistics.
+
+**The Prior Presence Hypothesis** holds that the Plains peoples were in Azhora before the peoples who now speak Mittoli, Pyrosi, Moreshi, and Bouéni. Those four families are related to each other and to language families spoken on neighboring landmasses — Proto-Western reconstructions connect Mittoli and Bouéni to continental languages, and at least one broader grouping has been proposed for Pyrosi and possibly Moreshi — which suggests their speakers arrived in Azhora from outside, within historical time, as part of population movements for which the continent to the north and northwest is the most likely origin. Grassic's isolation from all four is not the result of extreme internal change; it is the result of having never been related to any of them.
+
+This position fits the evidence. It has no compelling linguistic counter-argument. The reason it is not the Academy's stated position is the implication: if the Plains peoples were in Azhora before all currently dominant cultures, then Mittoli — the language of the dominant political and commercial civilization — is spoken by relative newcomers, on land whose oldest continuously-present inhabitants are still there, using a legal system that treats the newcomers' records as the weakest available form of evidence.
+
+**The Separate Origin Hypothesis** holds that Grassic represents a migration to Azhora from a source population unrelated to the other four families, arriving at any point — before, after, or concurrent with them — from a direction that left no other documented descendants. Neither population is "original" in any absolute sense; both arrived from somewhere. Grassic's lack of relatives simply reflects the disappearance or isolation of its source. This is the Academy's preferred position. It cannot be disproven, since the proposed source population is, by definition, undocumented. It also makes no claims about who was here first and therefore demands nothing of the political order.
+
+No new evidence has distinguished between the three positions in the past century. The evidence that would distinguish them — contact with the source population of whichever migration is in question — does not exist in any Azhoran archive.
+
+### The Koleth parallel
+
+The only other documented case of a linguistically isolated language in the Azhoran sphere is Koleth — the scriptural language of the Elodi people, which the Elodi tradition describes as the preserved speech of the Old Kingdom at the junction of the world's northern continents. Koleth is demonstrably unrelated to all five Azhoran families, including Grassic. This means there are at least two independent language lineages present on or adjacent to Azhora whose origins are unaccounted for.
+
+One scholar — an Elodi academic visiting the Caeras Valley Academy on exchange — noted in a paper that both Grassic and Koleth are isolated from all Azhoran families; that both grammaticalize a form of non-human or supra-human testimony at the highest authority level (the Koleth ceremonial form reserved for the Emperor's speech functions structurally analogously to Grassic *-aul*, in that both override individual testimony on the basis of an authority that is not merely human); and that both have oral traditions extending further back than any available written record. He proposed no conclusion from these observations. He noted only that the observations seemed worth recording.
+
+The paper was published. No Azhoran scholar has formally followed it up. The Elodi community's response was not documented in writing. Several Plains elders, told of the comparison, did not find it surprising. One said: the Memory Grass sites do not distinguish between whose land this was before whom. The land remembers what it remembers.
+
+Whether the structural parallel between *-aul* and the Koleth imperial evidential represents convergent development from similar premises about knowledge and authority, or something else, is a question that requires data from the Old Kingdom. The Old Kingdom, if it exists, has not responded to scholarly correspondence. The Elodi priests who might know more have developed a consistent practice of going quiet when asked.
+
+### What the elders say
+
+The Plains peoples do not discuss the original-population theory in terms that help scholarly resolution. When asked whether they believe themselves to be the oldest inhabitants of the continent, the most common response is a variant of: "The Memory Grass at [site name] has been there since before the routes. What it holds is what it holds." This is, depending on who you ask, evidence of extraordinary patience, a diplomatic non-answer, or the most precise statement possible within the grammatical constraints of a language that does not permit claims without evidential backing. To say "we were here first" in Grassic requires an evidential suffix. The only evidential that carries the weight of the claim is *-aul*. The elders indicate the Memory Grass sites and consider the question answered.
+
+One linguist pressed an elder directly: "Do you know of any people who were here before you?" The elder considered the question for some time. Then she said, in Mittoli: "The forest does not answer to us. We answer to the forest." Then, in Grassic: *aul-o-kaul-aul-aul* — the site retains, ancient time, land-witness. She walked to the nearest Memory Grass site and sat down.
+
+The linguist spent the rest of the afternoon at the site. Her field notes from that evening begin: "I don't know what I expected."
 
 The one point the Plains peoples have been consistently clear about: *Auwel* belongs to the land, not to them. The language was not invented; it was found. The land is old. The elders indicate the Memory Grass sites and consider the question answered.
+
+Whether that is the first answer, or the only answer available in a language that cannot make claims without evidential backing, is something scholars who have worked with the Grassic system long enough tend to stop treating as a separate question.
