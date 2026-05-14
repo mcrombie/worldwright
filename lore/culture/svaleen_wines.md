@@ -773,3 +773,475 @@ This catalogue uses the Caeras Academy's neutral classification system. Varietie
 **349. Imlathorolavar** (Red; Imlamdris Eastern Slopes) — Eastern slopes commercial red; the most widely exported Imlamdris red.
 
 **350. Imlamomethanol** (White; Imlamdris Central Zone) — Central zone fresh white; the cooperative's entry-level white, made in volume for everyday consumption.
+
+**351. Imlamomethilor** (White; Imlamdris Central Zone) — More floral than the standard commercial white; from a specific central zone site with unusual mineral composition. The lake country considers this their answer to the Solis aromatic tradition. The Solis guild has not been asked for its opinion and has not offered one.
+
+**352. Vornavel-Dry** (White; Imlamdris Lakeside Zone) — The dry expression of the naturally effervescent lakeside white; full fermentation halts the sweetness while preserving the effervescence. Not an obvious combination, and yet it works.
+
+**353. Dulannolimarveth** (White; Imlamdris Southern Zone) — Late-picked southern Dulannol with concentrated stone fruit and honey; partially fermented for balance between sweetness and acid. The desert-route merchants specify this variety by name.
+
+**354. Imlathoraneth** (White; Imlamdris Eastern Slopes) — The eastern slopes' mineral-precise white; citrus-forward, high acid, made for the fish markets of the eastern Iberos ports. Not the deepest wine but deeply appropriate.
+
+**355. Imlamombethanol** (White; Imlamdris Central Zone) — Standard commercial white from the central zone's most productive vineyards. Clean, consistent, widely available. The producers are at peace with what it is.
+
+**356. Imrathel-OldVine** (White; Imlamdris Northern Zone) — Old-vine Imrathel from the northern zone's original plantings; deeper cold-snap concentration, higher acid than the commercial expression; the lake country's argument for patience.
+
+**357. Dulvethil-Sparkling** (Sparkling; Imlamdris Central Zone) — Naturally sparkling expression of the precociously sweet variety; the sweetness and effervescence combine into something the Enebreum guild describes as confection. Imlamdris considers this accurate and not a criticism.
+
+**358. Vornolimarveth** (White; Imlamdris Lakeside Zone) — The lakeside zone's second-tier aromatic white; fuller than the standard but lacking the distinctive mineral of the old-vine expressions.
+
+**359. Imlathoranel** (White; Imlamdris Eastern Slopes) — Late-harvest eastern slopes white; concentrated citrus and stone fruit; made in years of long warm autumns, which the eastern slopes receive more reliably than any other lake country zone.
+
+**360. Imlamomethsori** (Rosé; Imlamdris Central Zone) — Central zone commercial rosé; the cooperative's summer production wine. Made in volume; consumed at the lake country's midsummer festivals.
+
+**361. Imrathelsori** (Rosé; Imlamdris Northern Zone) — Cold-snap influenced rosé; higher acid than typical rosés; the northern zone's contribution to the lake country's summer wines.
+
+**362. Imlathorolsori** (Rosé; Imlamdris Eastern Slopes) — Fresh eastern slopes rosé; citrus-mineral; the commercial version of the eastern slopes' rosé tradition.
+
+**363. Vornolsori** (Rosé; Imlamdris Lakeside Zone) — The prestige lakeside rosé; pale, mineral, lightly effervescent; the lake country's answer to the Solis Sorthimvel.
+
+**364. Dulimeth-Fortified** (White; Imlamdris Central Zone) — Fortified naturally sweet Dulimeth; the lake country's heavyweight dessert wine; age-worthy. The desert-route merchants prefer Dulannol; the local lake country tradition prefers this.
+
+**365. Imlaveleth-Fortified** (White; Imlamdris Lakeside Zone) — Fortified grand-variety lakeside white; rare; the lake country's prestige fortified wine; available only through the producers' association's direct allocation.
+
+**366. Imlaboreth-OldVine** (Red; Imlamdris Northern Zone) — Old-vine northern zone red from the oldest lake country red plantings; the northern zone's cellar wine. Available in tiny allocation; the lake country's serious red is undervalued by outside buyers who expect Imlamdris to produce primarily whites.
+
+**367. Imlathorvethanol** (Red; Imlamdris Eastern Slopes) — Old-vine eastern slopes red; the most structured Imlamdris red; minimum eight years. The eastern slopes community makes very few reds and makes them seriously.
+
+**368. Imlamometholveth-Reserve** (Red; Imlamdris Central Zone) — Reserve old-vine red blend; the lake country's prestige red; from the oldest central zone vines combined with old northern zone material. The blend has been made the same way for longer than the current producers' association's records.
+
+**369. Imlamombeth-Sparkling** (Sparkling; Imlamdris Central Zone) — The lake country's red sparkling wine; full secondary fermentation on the central zone red variety. The Enebreum guild considers this an inappropriate use of a red grape. The lake country considers this the Enebreum guild's opinion about Imlamdris wine, which Imlamdris does not need.
+
+**370. Imlaveleth-Straw** (White; Imlamdris Lakeside Zone) — Straw-dried lakeside grand variety; the lake country's adaptation of the eastern Iberos mat-drying technique. The combination of concentrated Imlaveleth mineral with dried-fruit sweetness is unusual and specific.
+
+**371. Imlamometh-Amber** (White; Imlamdris Central Zone) — Extended skin-contact central zone white; made in the Enebreum skin-contact tradition adapted to Imlamdris conditions. The lake country producers who make this are aware of the parallel and have not commented on it.
+
+**372. Imlaboretholeth** (Red; Imlamdris Northern Zone) — Northern zone second red variety; lighter, earlier-drinking; the everyday red for the lake country's northern communities.
+
+**373. Imlathorolveth** (Red; Imlamdris Eastern Slopes) — Eastern slopes everyday red; made in volume for the eastern community's domestic consumption.
+
+**374. Imlamomethiveth** (Red; Imlamdris Central Zone) — Fresh central zone table red; consumed young, made for the lake country's warm-season domestic market.
+
+**375. Imlaborelsori** (Rosé; Imlamdris Northern Zone) — Late-harvest northern zone rosé; the acid and cold character of the post-cold-snap harvest applied to rosé production. Unusual style; locally appreciated.
+
+**376. Dulannol-Straw** (White; Imlamdris Southern Zone) — Mat-dried Dulannol; the concentrated sweet version that supplies the desert-route trade alongside the standard late-harvest. Drying concentrates differently than cold-harvesting; the two styles are distinct and the merchants who know both request both.
+
+**377. Vornavel-OldVine** (White; Imlamdris Lakeside Zone) — Old-vine naturally effervescent lakeside white; from the oldest effervescent-variety plantings. The effervescence is more persistent and the mineral more pronounced. The lake country keeps most of this for itself.
+
+**378. Threvimarveth-Reserve** (White; Imlamdris Central Zone) — The lake country's flagship white wine; old-vine, reserve-designated central zone Threvimar. In exceptional years, the producers' association releases fewer bottles and does not explain why.
+
+**379. Imlathorolimeth** (White; Imlamdris Eastern Slopes) — Eastern slopes' commercial white blend; the volume wine that represents Imlamdris in the eastern port markets.
+
+**380. Imlamomolvethanol** (White; Imlamdris Central Zone) — Old-vine commercial white; the lake country's second-tier flagship for the broad market.
+
+**381. Imrathel-Reserve** (White; Imlamdris Northern Zone) — Reserve-grade cold-snap northern zone Imrathel; from the most favorable northern sites in the coldest autumns; the most concentrated version made.
+
+**382. Dulvethil-Reserve** (White; Imlamdris Central Zone) — Old-vine reserve precocious sweet white; the lake country's most complex sweet wine short of the fortified expressions.
+
+**383. Imlathorel-Dry** (White; Imlamdris Eastern Slopes) — Dry eastern slopes white from the mineral-richest sites; the eastern slopes' attempt at a serious dry white alongside their dessert tradition. Succeeds on its own terms.
+
+**384. Vornolethanol** (White; Imlamdris Lakeside Zone) — Commercial lakeside fresh white; made in volume from the lakeside zone's productive young-vine plantings.
+
+**385. Imlaboreth-Fresh** (Red; Imlamdris Northern Zone) — Early-drinking northern zone red; harvested before the cold snap for freshness and low tannin. The lake country makes this specifically for the summer festivals.
+
+**386. Imlamometh-Reserve** (Red; Imlamdris Central Zone) — Reserve central zone red; from the best central zone sites in the best years; the producers' association's flagship red.
+
+**387. Imlathorimeth-OldVine** (Red; Imlamdris Eastern Slopes) — Old-vine iron-mineral eastern slopes red; the geological intersection of Enebreum plateau soil and Imlamdris lake-influenced climate. Very small production. Very specific character.
+
+**388. Imlamorbeth-Reserve** (White; Imlamdris Northern Zone) — Reserve northern zone white; the lake country's most age-worthy dry white. In exceptional years the producers' association considers it among the finest whites on the peninsula.
+
+**389. Dulimeth-Reserve** (White; Imlamdris Central Zone) — Reserve-grade naturally sweet Dulimeth; old vines, best sites; the deepest expression of the central zone's sweetness.
+
+**390. Imlavelavar-Reserve** (White; Imlamdris Hillside Zone) — Hillside reserve; the hillside zone's most serious expression of the grand variety. The lakeside communities find it adequate. The hillside communities find this framing ungenerous.
+
+**391. Vornavel-Late** (White; Imlamdris Lakeside Zone) — Late-harvest naturally effervescent white; harvested after the first cold, then wild-fermented to produce effervescence naturally. The result is the most unusual wine in the lake country.
+
+**392. Imlathoraneth-OldVine** (White; Imlamdris Eastern Slopes) — Old-vine eastern slopes mineral white; from the oldest plantings on the morning-sun sites.
+
+**393. Imlameth-Amber** (White; Imlamdris Central Zone) — The lake country's amber-style wine; extended maceration on the primary cooperative variety; a practice older than the current producers' association form. The Enebreum guild is aware this predates their own skin-contact tradition. The Enebreum guild has not acknowledged this.
+
+**394. Imlaborethanel** (Red; Imlamdris Northern Zone) — The northern zone's premium red blend; from the best northern zone sites combined; the lake country's prestige red designation.
+
+**395. Imlathorel-Reserve** (White; Imlamdris Eastern Slopes) — Reserve eastern slopes mineral white; the eastern slopes' most concentrated dry white expression.
+
+**396. Threvimar-Sparkling** (Sparkling; Imlamdris Central Zone) — Sparkling full-bodied white; the lake country's most unusual sparkling wine. The texture of the Threvimar and the effervescence do not cancel each other, which surprised the winemaker who first tried this.
+
+**397. Imlamombeth-Late** (Red; Imlamdris Central Zone) — Late-harvest central zone red; in years of extended growing season; the deepest fruit expression the central zone red achieves.
+
+**398. Imlaboreth-Fortified** (Red; Imlamdris Northern Zone) — The lake country's fortified red; the only fortified red on the peninsula. Made for the desert-route trade on the calculation that the curiosity value of a fortified red is sufficient commercial justification.
+
+**399. Imlaveleth-Noble** (White; Imlamdris Lakeside Zone) — Noble-rot late-harvest lakeside grand variety; produced only in years when botrytis develops on the lakeside vines; the most concentrated naturally sweet wine on the peninsula and possibly the continent. No consistent production schedule exists.
+
+**400. Imlaveleth-Harvest-Festival** (White; Imlamdris Lakeside Zone) — The producers' association's harvest festival wine; the grand variety lakeside expression made specifically for the annual festival; consumed on the day of pressing; not bottled; not for external sale. Buyers who arrive at the festival have sometimes been permitted to observe. This is not the same as being offered a glass.
+
+---
+
+## The Hill Interior
+
+*The hill interior is the oldest viticulture on the peninsula. No external authority has successfully dated the oldest vines; the Academy's dendrochronological teams have made attempts. The hill interior communities have not interfered with these attempts, which produced dates the Academy's own publications describe as "anomalous." The Academy notes that "anomalous" should not be read as a statement about the accuracy of the dating method; it is a statement about the dates obtained. The vine families who maintain the interior's oldest plantings did not commission the dating and have not commented on the results.*
+
+*Varieties in this section are organized by the community groups that maintain them. The groupings are the Academy's and do not correspond to the interior communities' own territorial understanding, which divides along lines the Academy has not been able to consistently map. Objections from the interior communities to this organization have been received. The seventh edition has noted them.*
+
+### Northern Hill Communities
+
+**401. Morveneleth** (Red; Northern Hill Interior) — Dark, tannic, mountain-cold-influenced; the northern hill communities' primary red. Not as old as the southern interior varieties but old enough that the northern families treat the distinction as irrelevant.
+
+**402. Tharomibar** (Red; Northern Hill Interior) — Named in the old form for Thareth; this variety is used specifically in the northern hill communities' First Press ceremony. Its relationship to the wine god is not theological in the way the Solis tradition means theology; it is more practical than that. The northern hill communities do not elaborate.
+
+**403. Vethimath** (Red; Northern Hill Interior) — Full, dark, iron-edged; from the northern hill sites where iron-bearing rock intrudes into the limestone. The mineral character is different from any Solis ridge wine; not better or worse, but not the same thing.
+
+**404. Threnomvar** (Red; Northern Hill Interior) — The shadowed northern variety; grown on north-facing sites that receive minimal direct sun; pale garnet despite the cool exposure; long-finishing. The northern communities consider this their most elegant red.
+
+**405. Morvelimbar** (Red; Northern Hill Interior) — Morveleth cutting transplanted to the northern interior two generations ago and having acquired a distinct character. The families who grow it consider it a separate variety. The Academy classifies it as Morveleth. Both designations appear in this catalogue.
+
+**406. Skarethivel** (Red; Northern Hill Interior) — Found on the steepest northern sites; difficult to cultivate, very low yield; the wine is dense and sharp and requires minimum ten years. The community that maintains it is small and intends to remain so.
+
+**407. Tharimolveth** (Red; Northern Hill Interior) — The northern ceremonial blend component; from old-vine plantings on the most sacred northern hill sites. Not released in any external channel. Outside buyers have asked repeatedly. The answer has been consistent.
+
+**408. Vethomarbeth** (White; Northern Hill Interior) — The northern hill communities' primary white; aromatic in the old Svaleen manner, not the Solis manner; closer to what scholars of early Svaleen culture hypothesize the original vine aromatics were. Not commercially available.
+
+**409. Morvelanel** (Red; Northern Hill Interior) — Standard northern hill commercial red; the variety the northern communities sell to the Solis market. Reliable, without distinction, and this is deliberate; the communities do not release their serious wines commercially.
+
+**410. Tharethimol** (Red; Northern Hill Interior) — The oldest documented variety in the northern hill region. Documented, in this case, means the community has records; what the records say has not been shared with outside institutions. The Academy has seen the records exist. That is all.
+
+### Central Hill Communities
+
+**411. Netholveth-Ancient** (Red; Central Hill Interior) — The hill interior's version of the peninsula's great red, grown from cuttings so old the families consider them a different variety. The Solis guild's position is that it is Netholveth. The central hill communities' position is that the Solis guild is comparing the river to the source.
+
+**412. Morveleth-OldVine** (Red; Central Hill Interior) — The oldest Morveleth planting on the peninsula; the vines that supply the most complex examples referenced in the Grand Varieties section. Available in allocation to families who have maintained a relationship with the growers for a minimum of three generations. The growers have confirmed this requirement when asked. They have not confirmed there are exceptions.
+
+**413. Tharetholveth** (Red; Central Hill Interior) — The sacred red; grown only on the hilltop sites where the Thareth tradition holds the god first wept on the limestone. The wine is made once a year, fermented in the old manner, and used entirely in the annual First Press ceremony. A surplus has never been reported.
+
+**414. Vethonath-Pre-Graft** (Red; Central Hill Interior) — The pre-grafting stock of the grand variety Vethonath; maintained on the original root stock from before the grafting technique arrived on the peninsula. The character is different. Different how is a question the community is willing to explore with serious interlocutors who arrive without commercial intent. Several Academy researchers have made progress in this direction. Very slowly.
+
+**415. Svarnethavel** (Red; Central Hill Interior) — Dark, pigment-rich; the central hill communities' primary blending grape, used in small quantity in the peninsula-wide blending market. The commercial version of a variety the community itself uses primarily for the annual dyeing festivals in which the dark grape skins have a secondary use.
+
+**416. Krevethanol-Hill** (White; Central Hill Interior) — The hill interior's version of Kreveth-acid whites; the same sharpness expressed in a different mineral substrate. The Kreveth valley community considers this their variety transplanted. The central hill communities consider this an independent convergence. The Academy has not resolved this.
+
+**417. Threnolveth** (Red; Central Hill Interior) — Shadow-valley dark red; from the deepest-valley sites in the central interior; very little light, long seasons, unusual depth of color for the position. The outside wine community has not developed vocabulary for what this wine tastes like. The community that makes it finds the vocabulary adequate.
+
+**418. Morethimbar** (Red; Central Hill Interior) — The blending dark of the central hill; added in small quantity to everything the community sells commercially. The commercial wines taste better for it. The community does not sell this variety alone.
+
+**419. Tharomiath** (Red; Central Hill Interior) — Ceremonial red; used in the central hill communities' version of the Tharathven; made with strict adherence to the old fermentation calendar, which ties the fermentation start to astronomical events rather than temperature or sugar readings. Outside winemakers who have observed the timing describe it as imprecise. The wine disagrees.
+
+**420. Vethimoleth** (Red; Central Hill Interior) — Full-bodied central hill red for the commercial market; the community's concession to external demand. Made carefully and released without the pride reserved for the varieties kept back.
+
+**421. Nethoveth** (Red; Central Hill Interior) — Ancient vine material; the central hill communities describe this as the vine before the vine — the variety from which they believe the peninsula's cultivated tradition was selected. The Academy has taken samples. The comparative analysis produced dates the Academy's viticulture committee reviewed three times before publishing. The published date range is given as "uncertain."
+
+**422. Tharethimolavar** (Red; Central Hill Interior) — The community's commercial Thareth-named variety; made from young vine material on the less sacred sites; sold to supply the demand for the name without deploying the old-vine fruit commercially. This is not explained to buyers.
+
+**423. Morvelveth** (Red; Central Hill Interior) — Old-vine Morveleth from the community's ceremonial terraces; not the same as the Grand Variety designation. The community considers the Grand Variety the variety as known externally, and this the variety as it actually is.
+
+**424. Svarnetholeth** (Red; Central Hill Interior) — Blue-black skin, extreme pigment, made in concentrated old-vine form exclusively. The community does not blend this into commercial wine. The commercial market for single-variety old-vine Svarneth has grown steadily for a generation; the community's production has not.
+
+### Southern Hill Communities
+
+**425. Thareveth-OldVine** (Red; Southern Hill Interior) — The oldest Thareveth planting; the variety named for the god in his oldest form; grown in the southern interior on the sites the Thareth tradition identifies as sacred. This wine is not available through any commercial channel. Offers have been made. The southern communities' response to commercial overtures has been consistent for as long as the communities have been in contact with commercial networks, which is long.
+
+**426. Morveleth-South** (Red; Southern Hill Interior) — The southern expression of the great dark variety; fuller, warmer, more accessible than the central interior version; the southern hill communities sell this one.
+
+**427. Vethanel-OldVine** (White; Southern Hill Interior) — The old-vine source of the grand variety's most complex expressions; the families who control these vines do not sell cuttings. This has been confirmed so many times it has become part of the standard introduction to Svaleen viticulture at the Academy.
+
+**428. Threneleth-South** (Red; Southern Hill Interior) — The southern expression of the shadowed variety; minimum fifteen years; the southern communities' most serious commercial red. Complex, slow, and not for people who need a wine immediately.
+
+**429. Nethomarveth-Reserve** (Red; Southern Hill Interior) — Reserve-designation of the grand variety; from the valley the Solis guild's private assessment considers the finest producer on the peninsula; from the best years only. Production exists; access requires a relationship with the valley that most commercial buyers have not established.
+
+**430. Sornethal-OldVine** (Rosé; Southern Hill Interior) — The old-vine expression of the food rosé; deeper, more structured, more age-worthy than the standard; made from vines that predate the current vine families' ability to document. The wine tastes accordingly.
+
+**431. Tharetholveth-South** (Red; Southern Hill Interior) — The southern communities' ceremonial red parallel to the central interior practice; different variety, different ceremony, same principle. Not available outside the community's festivals.
+
+**432. Vethonath-South** (Red; Southern Hill Interior) — Southern hill Vethonath; on younger vines than the grand variety designation but old enough to produce the variety's characteristic disturbing complexity. Minimum century old vine material here means century, not approximately century.
+
+**433. Morvanimbar** (Red; Southern Hill Interior) — Dense, dark, used throughout the southern communities as a blending component that adds what other varieties cannot. Released commercially as a single variety in exceptional years only, which the southern communities define exceptionally strictly.
+
+**434. Thareth-Pressed** (Red; Southern Hill Interior) — Made by whole-cluster foot pressing in the ancient manner, without destemming; the stem tannin is intentional and specifically what the southern communities' traditional recipe requires. Outside winemakers who have sampled the unfinished wine describe the stem character as excessive. The finished wine after ten years proves them wrong, which the community notes without gloating.
+
+**435. Skarveth** (Red; Southern Hill Interior) — Low-yield dark variety on the southern interior's steepest sites; harvested by hand because no other method works at the angles involved. Made in tiny quantity. Distributed within the southern community's ceremonial calendar and not beyond it.
+
+**436. Vethanel-Ceremonial** (White; Southern Hill Interior) — The old-vine white used specifically in the southern communities' Thareth Vigil; not the same bottles sold externally. The community maintains a separation between the ceremonial expression and the commercial expression that they consider self-evident and that the Academy considers one of the most significant distinctions in Svaleen viticulture.
+
+**437. Netholvimbar** (Red; Southern Hill Interior) — The commercial southern hill red; the variety grown on the easiest southern sites for external sale. Good wine. Not what the community considers wine.
+
+**438. Tharethimolbar** (Red; Southern Hill Interior) — Blending component used in the southern communities' commercial wines to add character without adding the ceremonial varieties. What it adds is real but indefinable in standard wine vocabulary. Academy researchers have described it as "completeness." The southern communities accept this description as approximately adequate.
+
+### High Valley Communities
+
+*The highest-altitude valleys of the hill interior are the least-documented viticultural sites on the peninsula. The Academy has sent survey teams twice; the first returned with records that were subsequently lost; the second returned with records the committee has not yet finished reviewing, as the varieties documented exceed the committee's current processing capacity. The following entries represent the confirmed varieties from the second survey. The survey team noted that the valley communities they visited did not appear to consider this survey particularly significant, which the committee found more unsettling than the anomalous vine dating.*
+
+**439. Tharomimath** (Red; High Valley, Northern) — The high valley's primary red; cold, precise, iron-tight when young; the cool altitude producing a wine that does not resemble anything made at lower elevations on the same varieties.
+
+**440. Vethimmath** (Red; High Valley, Northern) — Old vine high valley red; from the highest-altitude plantings successfully documented by the survey team. The age of the vines was not established. The survey team's records describe the community's response to vine-age questions as "a silence that seemed to us to answer the question, although we could not say what the answer was."
+
+**441. Morvetholmath** (Red; High Valley, Central) — Central high valley dark; grown at altitudes that should by any conventional assessment produce unripe fruit. The fruit is ripe. The survey team noted this without explanation.
+
+**442. Tharethimath** (Red; High Valley, Central) — The central high valley ceremonial variety; the survey team was shown the vines from a distance. The records describe "old growth, very old; the vine trunk diameter inconsistent with any growth rate we were given to understand as standard."
+
+**443. Skarethmath** (White; High Valley, Eastern) — High valley white; sparse production from rocky terraces that the survey team had difficulty accessing. The wine, tasted from a vessel the community offered, is described in the survey as "white wine and also something else we did not have vocabulary for." The committee reviewing the survey has asked the team to clarify. The team's clarification reads: "We have clarified as much as we can."
+
+**444. Vethonath-High** (Red; High Valley, Southern) — The high valley expression of the great disturbing grand variety; grown at altitude on the original-root plantings the southern valley communities maintained before any lowland documentation. The comparison to the lowland expression has not been made by anyone who has tasted both.
+
+**445. Nethoveth-High** (Red; High Valley, Multiple Valleys) — The high valley version of the ancient central hill variety; the survey team found it in four separate communities without being told where to look; each community appeared to consider it unremarkable to find it in the other valleys as well.
+
+**446. Morvethimath** (Red; High Valley, Southern) — The oldest documented variety in the high valley region, by the standard of documentation that the survey team was able to apply. This standard has a large margin of error.
+
+**447. Tharethomimath** (Red; High Valley, Multiple Valleys) — Found in seven high valley communities during the second survey; the name is consistent across communities that have no other shared vocabulary; the variety is consistent across geological settings that the survey team's geologist described as "not consistent with a single origin." The committee has not released an interpretation.
+
+**448. Skaromimath** (White; High Valley, Northern) — The high valley's primary white; thin, cold, intensely mineral; grown at elevations the northern section of the western ridge would consider unsuitable for vine cultivation. The vine is indifferent to this assessment.
+
+### Ancient Vine Designations
+
+*The hill interior communities use a designation system that does not correspond to the Academy's classification. What the Academy has named "ancient vine" is the community's own term, which translates approximately. The communities consider the term a description of fact rather than a designation of distinction: the vine is ancient. This requires no designation because it requires no argument.*
+
+**449. Thareveth-Remnant** (Red; Hill Interior, Sacred Sites) — The variety grown on the sites identified in the oldest Thareth traditions as the original weeping-stone locations; grown without interruption from those original plantings by any account the communities have provided. The account is consistent. The Academy has reviewed it. The Academy has not published a conclusion.
+
+**450. Vethanel-Root** (White; Hill Interior, Original Terraces) — The root stock from which the Grand Variety's commercial expressions descend; maintained on the original terraces by the families who have maintained it continuously. The character is not the same as the grafted commercial expression. It is not better or worse, in the community's framing. It is what the vine is when it is entirely itself.
+
+**451. Morveleth-Remnant** (Red; Hill Interior, Sacred Sites) — The oldest Morveleth material; grown on the hilltop sites where the variety was first cultivated. Used exclusively in the First Press ceremony of the communities that maintain these sites. Availability to outside interest: none. Consistency of this position over the documented history of external contact: complete.
+
+**452. Svarneth-Root** (Red; Hill Interior, Original Terraces) — Original root stock dark variety; the pigment is darker and the tannin more pronounced than any grafted expression. Made in very small quantity in the oldest pressing vessels. The Academy was permitted to observe one pressing. The Academy's account is the most-cited single document in the sub-field of Svaleen hill interior viticulture, which is a sub-field defined primarily by what it has not been able to access.
+
+**453. Tharethivel-Ancient** (Red; Hill Interior, Sacred Sites) — A variety whose name appeared in pre-Confederation texts as a wine offered to Thareth directly rather than poured as a libation; the difference, in the theological text, seems to matter significantly. The variety was assumed by early researchers to be extinct. It was found, during the first survey, growing on a hilltop site. The survey team's records do not describe the community's reaction to being found by the survey.
+
+**454. Nethoveth-Root** (Red; Hill Interior, Original Terraces) — The deepest-root material of the variety the central hill communities consider the ancestor of the peninsula's cultivated tradition; grown without grafting, without intervention, without varieties selected for yield or commercial character. Very low yield. The wine has been described by the three outside tasters who have sampled it as "not a wine in the ordinary sense." The community considers this a reasonable description.
+
+**455. Vethimath-Ancient** (White; Hill Interior, Sacred Sites) — Old white variety on the sacred sites; possibly the same as the variety the Thareth texts describe as the first white wine. Possibly not. The Academy's cautious language reflects genuine uncertainty. The community does not find the distinction important; what matters to them is the vine, and the vine is here.
+
+**456. Morveleth-Summit** (Red; Hill Interior, Highest Sacred Sites) — Grown on the highest viticultural site on the peninsula; the summit planting is not large, not productive, and in many years produces fruit that does not reach technical ripeness by any standard measure. In the years when the summit planting reaches its own standard, the wine is reserved for purposes that the community has described only as appropriate.
+
+---
+
+## Eastern Iberos-Facing Slopes
+
+*The eastern slopes of the Svaleen Peninsula face the Iberos Sea and receive its drying wind. The climate is drier, warmer in summer, and cooler in winter than the western ridge; the soil is thinner and stonier; the vine must work harder. The wines are different in character from the western ridge wines — higher acid, less body, more mineral in the seaside sense rather than the limestone sense — and the eastern communities have been commercially successful by understanding their market rather than arguing about prestige.*
+
+*The Iberos coast trade is the eastern slopes' primary customer. What the coast cities want, the eastern slopes know how to provide; what the coast cities have no use for, the eastern slopes do not make in commercial quantity. This orientation has been criticized by the Solis guild as commercial rather than viticultural. The eastern communities have heard this criticism and continued making what the coast cities buy.*
+
+**457. Krevethil-Coastal** (White; Eastern Slopes, Northern Section) — The northern coast expression of the grand variety; maximum acid from the cool northern exposure; designed for the preserved-fish pairings of the northern port cities. Not a wine for anyone who is not pairing it with something.
+
+**458. Spethomaravel** (Red; Eastern Slopes, Northern Section) — Northern coastal red; the pepper-spice character less pronounced than the southern expression; fruit-forward, accessible, commercially reliable. Made in large volume for the northern port trade.
+
+**459. Krevimoleth-Coastal** (White; Eastern Slopes, Central Section) — Commercial white for the central coast trade; the standard eastern slopes white that defines Iberos coast "dry white" in most markets. Made in the largest volume of any eastern slopes variety.
+
+**460. Amalveth-Dry** (Red; Eastern Slopes, Central Section) — The bitter-edged central slopes red in its fully dry expression; pairs with salt-preserved meat in the way the eastern coast's preserved-meat diet requires. High acid, high tannin, made for food. A wine that disapproves of being drunk without a meal.
+
+**461. Ornavel-Coastal** (White; Eastern Slopes, Central Section) — The standard aromatic coastal white; made fresh and consumed within two years; the most-poured white in the eastern port cities. Not complex. Exactly what it needs to be.
+
+**462. Krevaneth-Sparkling** (White; Eastern Slopes, Northern Section) — Natural sparkling version of the northern coastal white; the effervescence is secondary-fermentation induced rather than natural; the result is the eastern slopes' most celebrated wine in outside markets. The Imlamdris community has opinions about eastern slopes sparkling. They are not asked.
+
+**463. Dulannol-Coastal** (White; Eastern Slopes, Southern Section) — The eastern slopes' late-harvest dessert wine; made from Dulannol grown in the warmest southern exposures; the primary dessert wine export through the Iberos trade network. Decades of age do not diminish it.
+
+**464. Krevethil-OldVine** (White; Eastern Slopes, Northern Section) — Old-vine northern coastal white; the acid structure preserved with depth that the young-vine commercial expression lacks. Made in limited quantity; not the face the eastern slopes show to the broad market.
+
+**465. Amalveth-Straw** (Red; Eastern Slopes, Central Section) — Mat-dried version of the bitter coastal red; concentrated, intense, made for the desert-route trade where concentrated reds travel better than fresh ones. One of the few Svaleen reds with consistent market presence beyond the Iberos Sea.
+
+**466. Spethomar-Straw** (Red; Eastern Slopes, Southern Section) — Mat-dried southern red; the dried-grape style of the pepper-spice variety. The drying concentrates the spice character into something specific and reliable; this is the variety the desert-route merchants mean when they specify dried Svaleen red.
+
+**467. Kreimoleth-Reserve** (White; Eastern Slopes, Central Section) — Reserve-grade commercial white; the eastern slopes' attempt at a wine that is both commercially oriented and worth taking seriously. Succeeds in good years.
+
+**468. Ornavel-Straw** (White; Eastern Slopes, Central Section) — Mat-dried aromatic white; the concentrated sweet version of the eastern slopes' standard aromatic. Unusual. The dessert-route merchants who discovered it have been specifying it ever since.
+
+**469. Krevathil** (White; Eastern Slopes, Northern Section) — High-acid northern section white; the easternmost expression of the Kreveth-root acid character; more saline than the western ridge expressions from the sea wind. The eastern community considers the salt an asset. The western ridge considers it coastal imprecision.
+
+**470. Spethomaranel** (Red; Eastern Slopes, Southern Section) — Southern slopes fresh red; the non-dried version of the great export variety; made for local consumption rather than the trade routes. The southern communities drink fresh red; they sell dried red.
+
+**471. Amalveth-OldVine** (Red; Eastern Slopes, Central Section) — Old-vine coastal red; the bitter-edged character in concentrated old-vine form; minimum fifteen years; not commercial in the eastern slopes sense. The community that maintains these vines is the only commercial community on the eastern slopes with a serious aging program.
+
+**472. Krevaneth-OldVine** (White; Eastern Slopes, Northern Section) — Old-vine northern coastal grand variety white; the depth that the young-vine commercial expression hints at made explicit. Not widely available; the northern coastal community's prestige wine.
+
+**473. Dulannol-Fortified** (White; Eastern Slopes, Southern Section) — Fortified late-harvest dessert wine; the eastern slopes' adaptation of the Imlamdris fortified tradition for the desert routes. The Imlamdris community was not consulted. The wine is good. The Imlamdris community has noted it is good.
+
+**474. Krevimoleth-OldVine** (White; Eastern Slopes, Central Section) — Old-vine central slopes commercial white; from the oldest reliable plantings. The character is deeper than the standard commercial; the price is proportionally higher; the eastern communities release this selectively rather than in volume.
+
+**475. Spethomarveth** (Red; Eastern Slopes, Multiple Sections) — The pan-eastern slopes red; grown across all three sections; the most adaptable variety on the eastern side of the peninsula. Each section produces a slightly different expression; the central is considered the most complete.
+
+**476. Kreimoleth-Coastal-Sparkling** (Sparkling; Eastern Slopes, Central Section) — Sparkling version of the standard commercial white; made for the feast market on the coast cities. The secondary fermentation is induced with less precision than the Solis sparkling tradition approves of. The eastern community points out that the coast cities buy it anyway.
+
+**477. Amalveth-Fresh** (Red; Eastern Slopes, Central Section) — The fresh, young version of the bitter coastal red; made specifically for immediate consumption at the seasonal fish markets. Lower tannin, higher fruit; designed to accompany fresh fish rather than preserved.
+
+**478. Ornavel-OldVine** (White; Eastern Slopes, Central Section) — Old-vine aromatic white; the deeper expression of the standard coastal aromatic. Made in limited quantity; the eastern slopes' answer to outside buyers who say the eastern slopes cannot do old-vine character.
+
+**479. Krevathil-Straw** (White; Eastern Slopes, Northern Section) — Mat-dried high-acid white; concentrated saline mineral and citrus; the dessert expression of the most demanding coastal white. Unusual style; specific following.
+
+**480. Dulannol-OldVine** (White; Eastern Slopes, Southern Section) — Old-vine late-harvest dessert white; from the oldest southern plantings; more concentrated acid alongside the sweetness; the most complex dessert wine the eastern slopes produce. Ages very long; the oldest bottles in the eastern archives have not been opened.
+
+**481. Spethomar-Reserve** (Red; Eastern Slopes, Southern Section) — Reserve-grade fresh southern red; from the best-positioned southern sites in the best years; the eastern slopes' prestige red. Not a commercial wine in the ordinary sense; made in small quantity; the eastern communities drink most of it themselves.
+
+**482. Kreimoleth-Amber** (White; Eastern Slopes, Central Section) — Skin-contact commercial white; made in the eastern slopes' local variant of the amber tradition. The technique arrived through trade contact with the Imlamdris lake country; the character is distinct because the grape and the sea wind are distinct.
+
+**483. Ornavel-Late** (White; Eastern Slopes, Central Section) — Late-harvest aromatic white; not as sweet as Dulannol but rounder and more floral; made in years of extended autumn warmth. The eastern communities consider this their most elegant wine.
+
+**484. Amalveth-Reserve** (Red; Eastern Slopes, Central Section) — Reserve designation bitter-coastal red; from the central section's oldest vine material; minimum twenty years before it fully resolves. The outside wine community has largely not encountered this wine. The eastern slopes have not invested in changing this.
+
+**485. Krevaneth-Straw** (White; Eastern Slopes, Northern Section) — Mat-dried northern coastal white; the concentrated citrus-mineral dessert expression; one of the most distinctive dessert wines on the peninsula for buyers who do not instinctively expect the eastern slopes to produce dessert wine.
+
+**486. Spethomaroleth** (Red; Eastern Slopes, Southern Section) — Southern slopes commercial blend base; the volume wine from the most productive southern sites. Made in large quantity for the coast cities' everyday market.
+
+**487. Krevethil-Sparkling** (Sparkling; Eastern Slopes, Northern Section) — Sparkling version of the grand variety coastal white; the acid structure of Krevethil in sparkling form; the most serious eastern slopes sparkling wine. The Solis guild considers this the only eastern slopes sparkling worth acknowledging. The eastern slopes consider the Solis guild's acknowledgment welcome but not the relevant criterion.
+
+**488. Dulannol-Amber** (White; Eastern Slopes, Southern Section) — Extended-maceration late-harvest dessert white; the amber technique applied to the sweet variety; amber and sweet simultaneously producing a wine that has no precedent in the standard classification categories. The Solis guild has placed it in three categories and noted the inadequacy of all three.
+
+**489. Amalveth-Coastal-Blend** (Red; Eastern Slopes, Multiple Sections) — The commercial blend produced from Amalveth fruit across all three sections; the everyday eastern slopes red. Consistent, approachable, affordable. The eastern communities are not embarrassed about this wine.
+
+**490. Krevimoleth-Festival** (White; Eastern Slopes, Central Section) — The central section's festival wine; made from the best-selected central section fruit for the coast cities' annual sea festivals. Not reserved exclusively for the festival but strongly associated with it.
+
+**491. Ornavel-Sparkling** (Sparkling; Eastern Slopes, Central Section) — Sparkling aromatic white; the most commercially successful eastern slopes sparkling wine. The aromatic character in sparkling form has proved broadly appealing in outside markets; the eastern slopes produce it in the largest sparkling volume.
+
+**492. Spethomarmeth** (Red; Eastern Slopes, Southern Section) — Medium-extraction southern red; between the fresh and the dried-grape styles; made for buyers who want the pepper-spice character without committing to the concentrated dried version. A compromise the southern community makes available without making a strong argument for it.
+
+**493. Kreimoleth-Festival** (White; Eastern Slopes, Central Section) — The high-volume festival white; made from the cooperative's total central section production in years of surplus. Consistent; widely distributed along the Iberos coast; the wine most people have drunk when they describe having had eastern Svaleen wine.
+
+**494. Amalveth-Late** (Red; Eastern Slopes, Central Section) — Late-harvest red; the eastern slopes' concentrated style applied to the bitter coastal variety; bitter and sweet in the way the eastern diet's preserved and fermented food pairings require.
+
+**495. Krevathil-OldVine** (White; Eastern Slopes, Northern Section) — Old-vine northern coastal white; the saline mineral character concentrated; the most complete expression of the variety's specific coastal terroir. Not widely known. Worth knowing.
+
+**496. Dulannol-Peninsula-Wide** (White; Eastern Slopes, Central Section) — The commercial Dulannol grown for the peninsula-wide sweet wine market; made to the standard that the Iberos trade network expects from the Svaleen dessert category. The southern communities consider this adequate. The eastern communities produce it in large volume and are comfortable with adequacy at scale.
+
+**497. Kreimoleth-OldVine-Straw** (White; Eastern Slopes, Central Section) — Old-vine mat-dried commercial white; the concentrated version of the standard export variety from old-vine material. The eastern slopes' most age-worthy export white.
+
+**498. Spethomar-OldVine** (Red; Eastern Slopes, Southern Section) — Old-vine fresh southern red; from the community's oldest un-dried production vines; the variety's underlying character without the dried-grape style's concentration. The community considers this the more honest expression. They sell the dried style.
+
+**499. Ornavel-Fortified** (White; Eastern Slopes, Central Section) — Fortified aromatic white; the eastern slopes' variant of the fortified tradition; made for the dessert-route trade. The aromatic character survives fortification better than most varieties. This discovery was made commercially and understood after the fact.
+
+**500. Krevethil-Archive** (White; Eastern Slopes, Northern Section) — Archive-designation grand variety white from the eastern slopes' reference cellar; from exceptional vintages held back for long-term study; available in fractional allocation through the eastern cooperative's allocation program once the wine is deemed mature, which the cooperative defines as when the wine tells them it is ready, a criterion the Academy has documented without endorsing.
+
+---
+
+## Cross-Territorial Varieties
+
+*The varieties in this section are grown in at least two distinct territories under documented cultivation, and their origin — which territory first cultivated them, and in what direction the migration ran — is either actively contested or genuinely unknown. The Academy uses "cross-territorial" as a neutral classification that satisfies no one fully, which is the intended property of a neutral classification.*
+
+*This section does not include varieties that appear in multiple territories under different names and are suspected to be the same variety; those appear in the main sections with cross-references. This section is specifically for varieties where the same name (or a confirmed synonym) appears in multiple territories and the cultivation history is documented in at least two of them.*
+
+**501. Ornethavel-East** (White; Solis Ridge and Eastern Slopes) — The great aromatic white of the western ridge, grown on the eastern slopes in plantings that predate the Confederation. The eastern expression is drier, more citrus; the ridge expression more floral. The Solis guild considers the eastern expression a secondary style of their variety. The eastern communities consider the eastern expression what the variety is when the sea is involved.
+
+**502. Enbraleth-Coast** (Red; Enebreum and Eastern Slopes) — Plateau red variety grown in coastal conditions on the eastern slopes; the iron-mineral character altered by the sea wind into something the Enebreum guild considers a dilution and the eastern coastal communities consider an improvement. Both communities produce it. Both communities consider their version correct.
+
+**503. Dulannol-Highland** (White; Eastern Slopes and Hill Interior) — The great dessert variety found in old-vine plantings in the hill interior; the interior version produces a dessert wine with more mineral and less stone fruit than the coastal expression. Whether it arrived from the coast or the coast expression arrived from the interior is a question neither community has agreed to let the Academy settle.
+
+**504. Svarneth-Coastal** (Red; Hill Interior and Eastern Slopes) — The dark blending grape found in both territories; the coastal expression is less pigmented, the character different; the Academy considers them the same variety. Neither community disagrees strongly enough to have submitted formal objections.
+
+**505. Krevaneth-Interior** (White; Eastern Slopes and Hill Interior) — The northern coastal white found in isolated hill interior valley plantings; the interior expression is less saline and more mineral; the coastal expression retains the sea character. The hill interior communities grow it without labeling it a coastal variety; the Academy's documentation of its coastal counterpart has not been shared with the hill interior communities, as the survey team's access to those communities was limited.
+
+**506. Thareveth-Commercial** (Red; Hill Interior and Solis Ridge) — The ancient ceremonial variety as cultivated on the western ridge for commercial production; the ridge plantings are younger, grafted, not from the sacred sites. The hill interior communities are aware of the ridge commercial production. They consider it unrelated to their variety. The Academy's botanical analysis suggests otherwise. The Academy has not pressed this point with the hill interior communities.
+
+**507. Imlaveleth-Ridge** (White; Imlamdris and Solis Western Ridge) — The lake country grand white found in western ridge plantings; arrived through border-zone contact between the eastern edge of the ridge and the western edge of the lake country. The ridge expression lacks the effervescence; the Imlamdris producers' association considers the ridge expression an incomplete vine. The Solis guild considers the effervescence a defect they have been glad to leave behind.
+
+**508. Golvethol-East** (Red; Enebreum and Eastern Slopes) — The long-aging plateau cellar red found on the eastern slopes; the coastal expression is ready sooner but retains the iron-mineral character. The Enebreum guild does not classify the eastern slopes expression as Golvethol. The eastern communities classify it as whatever sells, which is Golvethol.
+
+**509. Vethanel-Plateau** (White; Hill Interior and Enebreum) — The extraordinary old-vine white found in plateau plantings; the plateau expression does not achieve the hill interior's old-vine complexity but produces a white of a depth unusual for the Enebreum territory. The Enebreum guild classifies it separately. The Academy considers it the same variety; the plateau expression simply lacks the centuries the hill interior sites provide.
+
+**510. Morveleth-Ridge** (Red; Hill Interior and Solis Western Ridge) — The great ancient dark variety as cultivated on the western ridge; transplanted from the interior, the ridge expression is less complex, more commercial, and reliable in a way the interior original is not. The commercial market is supplied by the ridge. The interior continues without concern for the commercial market.
+
+**511. Dulvethil-Coastal** (White; Imlamdris and Eastern Slopes) — The precociously sweet lake country variety found on the eastern slopes; the coastal expression is less sweet naturally, higher acid from the sea conditions; the effervescence of the lakeside Imlamdris expressions is absent. The Imlamdris producers' association classifies this as a different variety. The eastern communities classify it as the lake country variety adapted to coast. The Academy agrees with the eastern communities.
+
+**512. Threveleth-Coast** (White; Enebreum and Eastern Slopes) — The full-bodied plateau white found in eastern slopes plantings; the skin-contact tradition arrived through trade contact; the coastal expression is lighter and the skin contact shorter because the eastern communities' buyers are not the plateau's buyers.
+
+**513. Krevethanith-Interior** (Red; Solis Ridge and Hill Interior) — The acid-driven Val Kreveth red found in central hill interior plantings; arrived through vine cutting trade in a period before the current classification systems. The interior expression has more mineral and less fruit than the valley expression; the valley has noticed this and has not commented.
+
+**514. Ornethavel-Interior** (White; Solis Ridge and Hill Interior) — The great aromatic white found in hill interior plantings; the interior expression is different enough that the hill interior communities use a different name, which the Academy's cross-reference table acknowledges. The Academy considers them the same variety; the interior communities consider the ridge expression derived from theirs, which the ridge expression's age record does not support but which the Academy has not argued with the interior communities directly.
+
+**515. Imrathel-Ridge** (White; Imlamdris and Solis Western Ridge) — The cold-snap northern lake country white found on the eastern edge of the western ridge; the ridge expression is made dry in all cases because the cold-snap conditions that produce the natural sweetness do not reliably occur on the ridge. The Imlamdris producers' association considers this evidence that the variety does not belong on the ridge.
+
+**516. Spethomar-Interior** (Red; Eastern Slopes and Hill Interior) — The pepper-spice coastal red found in southern hill interior plantings; the interior expression is darker and more tannic; the pepper character is there but accompanied by the hill interior's characteristic mineral depth. Not a commercial variety in the interior; grown by one family who make it for their own use.
+
+**517. Enbraleth-Ridge** (Red; Enebreum and Solis Ridge) — The great plateau red found on the western ridge's eastern edge; the contested zone between the two guilds includes plantings that both guilds claim. The families that grow this in the border zone classify their wine themselves, under a system the Academy describes as "practically functional."
+
+**518. Thareveth-Plateau** (Red; Hill Interior and Enebreum) — The ancient ceremonial variety found in plateau plantings; the Enebreum guild classifies it as a local variety with a similar name. The Academy's analysis suggests common origin. The hill interior communities are not aware of the plateau planting.
+
+**519. Kreimoleth-Interior** (White; Eastern Slopes and Hill Interior) — The standard eastern commercial white found in hill interior plantings; arrived through trade contact; grown by one interior community as a commercial concession. The interior community does not otherwise make commercial wines. This one pays for things.
+
+**520. Vornathel-East** (White; Enebreum and Eastern Slopes) — The long-aging plateau white found on the eastern slopes; the coastal expression ages faster and differently; the plateau character without the plateau's full aging potential. The Enebreum guild acknowledges the coastal version with the mild disapproval reserved for things that are real but insufficiently serious.
+
+**521. Morveleth-Coastal** (Red; Hill Interior and Eastern Slopes) — The ancient dark variety found in eastern slopes plantings; the coastal expression is lighter and more commercial than the interior original; used for blending into the coastal commercial reds. The interior communities are aware of the coastal cultivation and consider it acceptable.
+
+**522. Solimeth-Interior** (White; Solis Ridge and Hill Interior) — The widely exported Solis white found in hill interior plantings; arrived through normal vine cutting channels; grown by two interior communities. Not ceremonial. Just the variety everyone wanted cuttings of when it became commercially important.
+
+**523. Galneth-Coastal** (Red; Solis Ridge and Eastern Slopes) — The variable-year Galneth red on the eastern slopes; the coastal exposure reduces the variance somewhat; the eastern slopes expression is more consistent than the valley original. Val Galneth is aware of this and finds it irrelevant. Consistency was never what the valley was for.
+
+**524. Kethimath-Coast** (Red; Enebreum and Eastern Slopes) — The warrior-character plateau variety on the eastern slopes; the keth quality is present in the coastal expression but different — the coast gives it a sharpness that the plateau expression has as depth. Both communities consider their expression the defining one.
+
+**525. Imlaveleth-South** (White; Imlamdris and Eastern Slopes, Southern Section) — The lake country grand white found in the southern eastern slopes; the warm southern exposure produces a Imlaveleth expression without effervescence but with more body than any other non-lakeside expression. The Imlamdris producers' association has reviewed this expression once and said that it is interesting.
+
+**526. Dulannol-Highland-Aged** (White; Eastern Slopes and Hill Interior) — The cross-territorial Dulannol in its long-aged expression; the hill interior families who grow it age it in the old vessels rather than the modern ones; the result has been described by the three outside tasters who have tried it as "not a dessert wine in any category we have." The hill interior family that makes it serves it at the end of feasts. This seems appropriate.
+
+**527. Threneleth-Coastal** (Red; Hill Interior and Eastern Slopes) — The slow, shadowed hill interior variety found on the eastern slopes; the coastal version is faster-developing and loses some of the interior's depth in exchange. The one community that grows it on the coast considers it the most serious wine they make. The hill interior communities have not tasted the coastal version. This is probably for the best.
+
+**528. Velathnil-East** (Red; Solis Ridge and Eastern Slopes) — The Val Velath exclusive variety found in a single eastern slopes planting; the origin of the cuttings is documented; they were given as a diplomatic gift three hundred years ago. Val Velath is aware the cuttings survived. Val Velath has not requested them back. This is considered, by observers, to be Val Velath's version of generosity.
+
+**529. Vethonath-Coastal** (Red; Hill Interior and Eastern Slopes) — The disturbing grand variety found in eastern slopes plantings; the coastal expression does not produce the profound-disturbing-impossible-to-finish-equally-impossible-to-put-down character of the hill interior old-vine expression. It produces a wine that is merely very good, which is more commercially useful and fewer people have complicated feelings about.
+
+**530. Ornethavel-Plateau** (White; Solis Ridge and Enebreum) — The great aromatic white found on the plateau; the Enebreum guild classifies it separately; the Academy considers it the same variety. The plateau expression is more structured; the ridge expression more delicate. This dispute has been ongoing for forty-five years. It is expected to continue.
+
+**531. Imlamorbeth-Plateau** (White; Imlamdris and Enebreum) — The northern zone lake country white found in plateau plantings; the plateau expression is fuller and lacks the lake mineral; the Imlamdris community considers this proof that the variety requires the lake. The Enebreum guild considers this a challenge they are addressing.
+
+**532. Krevethil-Interior** (White; Eastern Slopes and Hill Interior) — The grand coastal white found in hill interior plantings; grown in high-altitude, cool-exposure sites that replicate the coastal acidity through elevation rather than sea wind. The coastal community was told of this planting. They were silent for a period the Academy's field researcher described as meaningful.
+
+**533. Flevethil-East** (White; Enebreum and Eastern Slopes) — The plateau floral white found on the eastern slopes; the coastal expression has more citrus and less violet; the Enebreum guild uses this as an example of what happens when the variety is removed from its proper conditions. The eastern communities use it as an example of what the variety becomes when given different conditions.
+
+**534. Golvethol-Hill** (Red; Enebreum and Hill Interior) — The long-aging plateau cellar red found in hill interior plantings; the interior expression has the hill interior's mineral substrate and the aging potential extends further than the plateau expression. The Enebreum guild has reviewed this once, in private, and has not released a public position.
+
+**535. Svarneth-Plateau** (Red; Hill Interior and Enebreum) — The dark blending grape found on the plateau; the plateau expression is used for the same purpose as the hill interior version — color and concentration in commercial blends — but the interior character does not transfer fully. The plateau winemakers who use it consider it adequate. The hill interior communities consider "adequate" a reasonable description of what you get when you grow the vine far from its origin.
+
+**536. Threvimar-Ridge** (White; Imlamdris and Solis Western Ridge) — The lake country full-bodied white found on the western ridge's eastern exposure; the ridge expression is lighter and more aromatic; the natural texture of the Imlamdris original is present in reduced form. The ridge winemakers who produce it consider it their most interesting white experiment. The lake country considers experiments in their variety's range their own business.
+
+**537. Morveleth-Plateau** (Red; Hill Interior and Enebreum) — The ancient dark variety on the plateau; among the cross-territorial varieties with the longest documented planting history outside the hill interior. The plateau expression has been present long enough that the Enebreum guild classifies it as a distinct plateau variety. The Academy considers it Morveleth. Both positions have been argued at length. Neither has prevailed.
+
+**538. Vethanel-Commercial** (White; Hill Interior and Solis Ridge) — The extraordinary old-vine white as cultivated commercially on the western ridge; the ridge expression from young and middle-aged vines; not the hundred-year-plus complexity of the hill interior original, but the variety's underlying character expressed through the ridge's mineral substrate. Good wine. The hill interior families sell cuttings for this purpose through one specific channel that they have maintained quietly for two generations.
+
+**539. Dulimeth-Ridge** (White; Imlamdris and Solis Western Ridge) — The naturally sweet lake country white found on the western ridge; the ridge expression ferments drier naturally and requires active intervention to preserve sweetness; the Imlamdris explanation for this is that the sweetness belongs to the lake and the vine produces it there without being asked. The ridge winemakers have not found this explanation useful.
+
+**540. Kreimoleth-Plateau** (White; Eastern Slopes and Enebreum) — The standard eastern commercial white found on the plateau's south-facing edge; arrived through the commercial contact between the two territories. The Enebreum guild classifies it as eastern slopes; they grow it for the commercial volume without claiming it as plateau wine.
+
+---
+
+## Special Classifications and Appendix
+
+*The following entries do not fit neatly within the standard territorial classification. They include historically significant varieties that have been lost and partially recovered, varieties of disputed or unknown origin, the formal Thareth-designated ceremonial varieties as recognized by the three classification guilds (separately, and differently), and the varieties the Academy has documented but whose territorial designation remains formally unresolved at the time of this edition's publication.*
+
+*The committee responsible for this appendix notes that the varieties listed here are not afterthoughts but cases. Each one illuminates something about the Svaleen Peninsula's viticultural tradition that the main catalogue cannot fully capture: the depth of the tradition, the persistence of old vine material beyond what outside institutions consider possible, the relationship between wine and the sacred that the Thareth tradition encodes in specific varieties, and the ongoing fact that the catalogue is not complete and will not be.*
+
+### Thareth-Designated Ceremonial Varieties
+
+*The following varieties are recognized by at least one of the three classification guilds as having primary theological significance in the Thareth tradition. The designations are the guilds', not the Academy's. The Academy notes them without endorsing the theological claims.*
+
+**541. Thareveth-First-Press** (Red; Solis Designation) — The Solis guild's official First Press ceremonial variety; used in the annual ceremony; not available commercially in the year of ceremonial use; the surplus, when any exists, is released the following year and is the most sought-after single allocation in the Solis wine trade.
+
+**542. Flevethil-Tharathven** (White; Enebreum Designation) — The Enebreum guild's official Tharathven ceremonial variety; used specifically at the festival's opening ceremony. Made in limited quantity; not released commercially before the festival. The amount remaining after the festival is variable and the guild does not pre-announce it.
+
+**543. Dulvethil-Vigil** (White; Imlamdris Designation) — The lake country's Thareth Vigil ceremonial variety; the precociously sweet white used in the midwinter festival. The theology holds that sweetness in the dark of winter is evidence of what the vine knows that people do not. The Imlamdris producers' association endorses this theological framing without requiring its members to hold it personally.
+
+**544. Vethanel-First-Press-Hill** (White; Hill Interior, Multiple Communities) — The hill interior's First Press ceremonial variety; the old-vine white used in the ceremony that predates the Confederation's classification systems and the guilds' designations. Not designated by any guild because the hill interior communities do not participate in the guild designation process.
+
+**545. Tharomibar-Vigil** (Red; Northern Hill Interior) — The northern hill communities' midwinter ceremonial variety; used in the vigil ceremony specific to the northern interior. Not related to the Solis or Imlamdris vigil traditions. Whether the three vigil traditions share a common origin is a question the Academy has posed in print and that no one has answered.
+
+**546. Morveleth-Harvest** (Red; Hill Interior, Ceremonial Designation) — The interior harvest ceremonial designation; the First Press of this variety in the hill interior communities is the oldest continuously documented wine ceremony on the peninsula. "Continuously documented" is the Academy's phrase; the communities consider the word "documented" unnecessary. The ceremony has been continuous. Documentation is a later addition to what is already known.
+
+### Historically Significant and Partially Recovered Varieties
+
+*The following varieties were at some point documented as present on the peninsula, subsequently lost from the catalogue record, and partially or fully recovered from surviving vine material found during the second survey, through the discovery of old-vine material in isolated communities, or through botanical analysis of surviving root stock.*
+
+**547. Netholveth-Pre-Graft** (Red; Solis Western Ridge, Recovered) — The Solis guild's documentation describes Netholveth cuttings before the peninsula-wide adoption of grafting; a pre-graft planting was identified in Val Soleth in the fifth edition's period and has been maintained since. The character is different enough that the guild has classified it separately. The valley considers this the same vine.
+
+**548. Thareth-Ancient-White** (White; Hill Interior, Recovered) — Described in texts predating the current Confederation as the white wine offered directly to Thareth; presumed extinct after the second Confederation period; found growing on a specific hilltop site during the second survey. The community that maintains it was not surprised to be found. They did not indicate when they expected to be found.
+
+**549. Morveleth-Root-Ancient** (Red; Hill Interior, Recovered) — Ancient root stock Morveleth material recovered during the second survey; the DNA analysis produced dates the Academy's review committee described with the same word the vine dating produced: anomalous. The committee is consistent.
+
+**550. Imlaveleth-Origin** (White; Imlamdris, Partially Recovered) — The origin planting from which the grand variety is believed to descend; found in the lake country's oldest documented site; the effervescence is different in form and more persistent than the current commercial expression; the character is identifiably Imlaveleth and identifiably not. The producers' association was informed of the discovery. The association's president was silent for a period the Academy researcher described, by this point in the survey tradition, as expected.
+
+**551. Krevaneth-Origin** (White; Eastern Slopes, Partially Recovered) — The origin planting from which the eastern slopes grand variety descends; found in a northern section site with documentation the cooperative did not know existed. The recovery of the documentation was more significant than the recovery of the vine; the texts describe cultivation practices for the variety that the current community had abandoned and is now reconsidering.
+
+**552. Svarneth-Ancient** (Red; Hill Interior, Recovered) — Ancient Svarneth material recovered from the second survey; the pigment is extreme beyond the current commercial expression's range; the tannin structure different in a way the Academy's wine chemist described as "structurally older, as if the variety evolved before the tannin compounds we currently associate with vine tannin." This description has been reviewed by other Academy chemists. It has not been retracted.
+
+**553. Thareveth-Origin** (Red; Hill Interior, Origin Site) — The variety on the site the Thareth tradition identifies as the first; the site was documented in the second survey; the vine material matches the current Thareveth with the same kind of difference that pre-graft material shows from post-graft — recognizably the same, differently expressed. The community at the site was asked when the vines were planted. The community's spokesperson was quiet for a long time and then said that "planted" was not quite the right word.
+
+### Varieties of Undetermined Classification
+
+*The following varieties were documented during the second survey and have not yet been classified into the standard territorial system. They are recorded here as a formal notice that the catalogue is ongoing, that the second survey has materially expanded the known record, and that the committee's work continues.*
+
+**554-600.** *(Forty-seven varieties documented by the second survey team, pending classification review. Variety names, types, and provisional territories are recorded in the survey appendix. The committee expects to complete classification review within five years. The previous committee gave the same estimate.)*
+
+---
+
+*This catalogue represents the state of knowledge as of the seventh edition's compilation. The Academy's Division of Natural History and Regional Culture notes that the Svaleen Peninsula's viticultural record is not complete, has never been complete, and the standard for completeness is itself contested among the communities whose knowledge would complete it. We document what we are given access to. The peninsula contains more than we have been given access to. This is not a failure of the catalogue. It is a property of the subject.*
+
+*The committee responsible for the seventh edition has agreed, in writing, not to restart from the beginning when a new valley community is discovered. This agreement was made before the second survey's results were fully tabulated. The committee is reviewing whether the agreement's conditions have been met.*
