@@ -1,7 +1,7 @@
 ---
 name: Pyrosi Language Family
 category: language
-tags: [language, conlang, Pyros, West Pyrosi, East Pyrosi, Taler, registers, volcanic, fire-memory, Ossic script, abugida, Proto-Western, grammar]
+tags: [language, conlang, Pyros, West Pyrosi, East Pyrosi, Taler, registers, volcanic, fire-memory, Ossic script, abugida, Proto-Western, grammar, Tallyss, oral-tradition, pitch-accent, proverbs, written-genres, idiom]
 status: draft
 related: [Pyros, Languages of Azhora, Standard Mittoli, Talermolis, Gala, Zoth, Nyross, Iberos Coast]
 ---
@@ -620,6 +620,13 @@ A West Pyrosi adult with some formal education can follow Tallyss at walking pac
 | *orrsel* | for the dead | those who have passed into the fixed memory |
 | *velkhoss* | for fire itself | the fire that sleeps in full knowledge it will wake |
 | *azhkěl* | at year's end | the water that carries the year away; temporal flow as river |
+| *talorr* | at the opening of the planting season | the fire's given permission; the volcanic ground's consent that this season may proceed — distinguished from *llethvan* (the soil's readiness) by being the active declaration rather than the latent condition. *Llethvan* is asked; *talorr* is received |
+| *pyrant* | in soil blessing before planting; Class II | the living productive soil layer, distinct from *llos* (the deep ash layer below) and *lleth* (the volcanic-warm deep ground). *Pyrant* is the middle layer, the one that receives seed. The full planting rite addresses the three layers separately: *llos* is the land's memory; *pyrant* is its willingness expressed as capacity; *lleth* is the heat below that makes growth possible. A shortened field rite addresses only *pyrant*; the full ceremonial form addresses all three in descending sequence |
+| *ossvelr* | at funerary rites | the permanent resonance-mark left by a person — what their *llyr* becomes after death, fixed in the world's memory the way volcanic events become fixed in volcanic soil. What a person *ossvelrs* is the trace their embodied knowledge leaves in those who learned from them. The word appears in funerary speech but not in the *orrsel-oss* inscription tradition; it belongs to oral address, not carved record |
+| *kělvorr* | spoken at the end of the flood season | the flood's departure; water that has given what it carried and returned to its channel — not loss but the completion of a gift. Said when the last floodwater recedes from the *pyrant* layer. The corresponding term for fire completing its purpose is *tossvorr* |
+| *tossvorr* | after a controlled or purposeful fire | fire that has completed what it was for; used at the end of the burn-clearing season and, metaphorically, for any effort that ended rightly, having done what it set out to do. Paired with *kělvorr* in certain seasonal closing rites: the fire that cleared, the water that fed, both departed on time |
+| *llyrnn* | spoken by a *velran* before a craft-teaching | the doubled-community memory; what the entire history of a practice knows through all its practitioners. The doubled *-nn* marks communal rather than personal depth. When a *velran* speaks *llyrnn* before teaching, they are not invoking their own *llyr* but the *llyr* of every practitioner who came before them — and every practitioner who trained those practitioners. The word acknowledges that the student is receiving something larger than the teacher |
+| *kholvorr* | at the year's end gap, the *kholv-vel* | the potential before direction; the intake-before-breath at the interval between the last act of the year and the first act of the new one. More specific than *kholv* (the gap in general) — *kholvorr* is the quality of the gap in the moment before anything has moved. Not emptiness; fullness that has not yet resolved. Practitioners describe *kholvorr* as the Fire Memory's way of saying that every beginning has a *velkhoss* quality: the fire that sleeps knowing it will wake |
 
 *Llethvan* (the soil's willingness) is the Tallyss word most commonly heard outside formal ritual. West Pyros farmers ask the soil's *llethvan* before planting — not as a formality but as a genuine inquiry, conducted briefly before the ordinary work begins. The word has moved from register into habit without losing its weight.
 
@@ -640,3 +647,182 @@ The register system does not translate outward. A Mittoli speaker addressing a P
 **With Moreshi**: The Pyrosi-Moreshi language boundary is one of the most complete on Azhora. The families share nothing structural; trade is conducted through East Pyrosi as common medium, since its simplified grammar and large vocabulary is more accessible to speakers of unrelated languages than either West Pyrosi or standard Moreshi.
 
 The Moreshi word for West Pyrosi speakers translates as "the people of the warm threshold" — people who stand at the edge of the hospitable and perform welcome with unusual formality. Accurate. The West Pyrosi word for Moreshi speakers is *kělvanoss* — "water-fixed-people" — describing a people who have made their relationship to water something permanent and architectural. Also accurate. Neither description is unkind. They are what each side has noticed about the other from a distance, which is the most honest kind of observation.
+
+---
+
+## Taler: A Closer Account
+
+The Taler dialect of Talermolis is, for most practical purposes, a different language from West Pyrosi — mutually intelligible only to those who have studied the correspondence between the two. Taler speakers typically acquire West Pyrosi as a second language for dealings outside the upland. West Pyrosi speakers encounter Taler as a scholarly text or as unexpected speech and find they understand less than they expect.
+
+### Pitch Accent in Practice
+
+Taler's pitch accent distinguishes living states from completed ones. The same consonant-vowel skeleton carries two different meanings depending on accent assignment — not just lexically (one word, two values, two meanings) but grammatically, because the accent encodes distinctions that West Pyrosi marks with prefixes.
+
+Minimal pairs — same word, different pitch:
+
+| Taler | Accent | Meaning | Notes |
+|---|---|---|---|
+| *tál* | vel (high) | active fire; a fire burning now | The fire is happening |
+| *tàl* | ass (low) | the fire that characterized this place; volcanic nature embedded in the land | The fire is a property, not an event |
+| *vél* | vel | rising; returning now | Something in motion upward or homeward |
+| *vèl* | ass | the return quality; what something that comes back carries with it | An attribute of completed cycles |
+| *kéll* | vel | an edge being cut; the act of cutting | Active process |
+| *kèll* | ass | an ancient cut; a geological formation; a channel worn into stone | The result fixed in matter |
+| *óssor* | vel | witnessing; the act of marking | Present act |
+| *òssor* | ass | the witness-mark; what was carved | The permanent record |
+
+In narrative, Taler speakers pitch every verb. A sentence about a past fire that no longer burns uses ass-pitch throughout its fire-related vocabulary; a sentence about a fire burning now uses vel-pitch. The past is not merely past; it is ash-pitched. Taler oral historians shift pitch accent in recitation the way conductors shift tempo — the accent carries epistemic and emotional weight that no other Azhoran language encodes in this form.
+
+### Taler-Specific Vocabulary
+
+Words found in Taler but absent from or unrecognized in West Pyrosi:
+
+| Taler | West Pyrosi equivalent | Meaning | Notes |
+|---|---|---|---|
+| *velrr-eth* | no equivalent | the resonance of the land speaking specifically to this place | *Velrr* (voiceless-trill resonance) + *-eth* (Class I locative): the resonance that belongs to *here* rather than to the land in general. West Pyrosi approximates with *velr-eth* but loses the felt distinction between the general and the local. A place that has *velrr-eth* speaks in a voice that belongs to it alone |
+| *azhkell* | *khoth-ellyr* (approximately) | the voice-shape of a ridge; what a volcanic formation says by its form | The cut + the speaking: a formation as language, not metaphorically. Taler speakers treat this literally — formations speak; the question is whether you can hear. The word appears in the fumarole inscription series above |
+| *torran* | no equivalent | one who has been pitched by the land; a person who received a communication from the volcanic ground | *-rran* suffix (rare, Taler-only): one acted upon by the ground itself. *Torran* are not priests; they received something and carry it. The role is passive and involuntary. Most communities with a *torran* in their history are unsure whether to describe them as fortunate |
+| *llyrr* | *llyr* | the deepest embodied memory; knowledge so embedded it preceded the learning of it | The geminate marks communal depth rather than personal depth. *Llyr* in West Pyrosi is embodied memory; *llyrr* in Taler is memory that does not know it is memory — knowledge that runs before consciousness. Applied to how rivers find valleys and how hands know old crafts when the mind has forgotten the teacher |
+| *khovath* | no equivalent | the quality of a mountain pass that has been used long enough to remember its crossings | *Khoth* (volcanic ridge) + *-vath* (Taler intensive suffix). Not just a pass; a pass shaped by generations of use into something that has absorbed what traveled through it. Taler speakers describe recognizing *khovath* passes by a quality they call "the ground remembering the feet" |
+| *orr-neth* | *neth* (closest) | the portable home circle; the intimate register that travels with you | Taler's comitative case makes a concept West Pyrosi expresses differently. *Orr-neth* is the home circle carried rather than waited-at. Taler speakers who leave the upland for extended periods maintain *orr-neth* explicitly — those you carry with you in the *neth-* register, distinguished from those who wait at home |
+
+### A Taler Text: Fumarole Inscription
+
+From the northern Talermolis upland, one of a series carved at a major fumarole site. Dated by West Pyrosi scholars to approximately eight generations before the Caeras Compact; Taler speakers consider the dating secondary to the content.
+
+*Kàel-llethoss vélrr-eth-oss. Tàl-yan llossan-in vel-òssyr. Kéll-tossyr àzhkěl-in vél-neth-orr.*
+
+Pitch rendering:
+- *kàel-llethoss*: ass-pitched — the elevated address has always been made here; this is not the first address, it belongs to the ground
+- *vélrr-eth-oss*: vel-pitched with voiceless trill — the resonance specific to this place is active; it is speaking now, in the moment of carving
+- *tàl-yan*: ass-pitched comitative — the fire-with; the fire that was here, still present in formation
+- *vel-òssyr*: split pitch — *vel* vel-pitched (the return is active and present), *ossyr* ass-pitched (what is being recorded is already permanent before the chisel touches the stone)
+
+Translation: "The elevated presence settles here — it has always settled here. The resonance speaks this place. The fire-together-with the ash-people: the crossing has marked permanently into the temporal flow of the returning home circle."
+
+A West Pyrosi reader working through the correspondence tables reaches something like: "Address is received at this site. The ground resonance speaks specifically here. The fire with the people of the volcanic ground has made a permanent mark — what returns carries the home circle with it."
+
+A Taler speaker says both versions are approximately correct about the events and do not carry what the pitch says. The ass-pitched *kàel* means the address is being made where it has always been made, not for the first time. The vel-pitched *vélrr* means the resonance is active now, in this carving moment. West Pyrosi has no grammatical mechanism for this distinction; translation explains rather than performs.
+
+---
+
+## Oral Tradition
+
+Pyrosi oral tradition is older than its writing system and continues alongside it. The Ossic script fixes what must be permanent — legal claims, boundary statements, sacred inscriptions. Oral forms carry what must be transmitted between living people and must change as the practice of transmission changes them. The two are not in competition; they address different kinds of permanence.
+
+### The *Llyr-Ell* Tradition
+
+*Llyr-ell* — "body-speech" — is the oral genre in which knowledge is encoded for transmission between practitioners. It is not recitation from memory. A person who holds *llyr-ell* does not recall and repeat it; they produce it from the body, the way a skilled hand produces the same motion in different conditions. The test of proper transmission is whether the receiver can produce the *llyr-ell* the same way — not identical words, the same production.
+
+This makes a form that changes slowly and in ways that are legible. Where a text changes through scribal error, *llyr-ell* changes through the body's teaching of the body. What drifts between generations is what the teacher's practice emphasized; the changes are meaningful rather than random.
+
+*Llyr-ell* is used for:
+
+**Agricultural seasonal knowledge** (*talyr-llell*, "fire-year body-speech"): the timing of soil preparation, the reading of fumarole activity before planting decisions, the interpretation of ash color in spring. This knowledge is held in farming households alongside whatever the household has written down, and the two are not always identical. Where they differ, household heads in West Pyros tend to follow the *llyr-ell*.
+
+**Craft initiation**: the metalworkers of Gala maintain *llyr-ell* traditions about the volcanic iron deposits that supplement and occasionally contradict the written metallurgical records. Asked about the contradictions, senior craftspeople have said consistently, across several generations of Academy inquiry, that the written records describe what the process looks like; the *llyr-ell* describes what it is. They find the distinction self-explanatory.
+
+**Tallyss ritual sequences**: these are not written down in their working form. The written versions circulated in Academy libraries are acknowledged approximations suitable for scholarly analysis but not for practice. Practitioners who have been asked why say something similar to the metalworkers: the text describes; the *llyr-ell* enacts. You can study the text. You cannot perform the ritual from the text.
+
+### The *Tallos-Ell*
+
+*Tallos-ell* — "the burning speech" — is narrative oral literature: stories of people and events, passed through practiced tellers. *Tallos* combines *tal* (fire) with *-oss* (fixed record): a fire that has been recorded, turned to ash and preserved rather than extinguished.
+
+*Tallos-ell* is performed in the Social register for public audiences and shifts to Familiar register as the performance continues and the relationship between teller and listeners establishes itself. A skilled teller manages the register shift deliberately. A performance that never moves out of *vaer-* keeps the audience permanently at the welcome-threshold, never bringing them inside. The shift to *sol-* is the moment the audience becomes the household for the duration of the story.
+
+Topics of *tallos-ell* include:
+- Major volcanic events rendered as narrative, personified with specific character — the eruption as an elder whose speaking was overdue; the fumarole that opened in the wrong season as a household member who could not wait
+- Historical occupations and their endings: told from inside the occupation, never glorifying the external power, ending precisely at the point self-governance resumed
+- The establishment of fumarole sites as sacred places, usually involving a *torran* — one who received a communication from the ground — and a community deciding what to do with what was received
+
+### The *Kěl-Ell*
+
+*Kěl-ell* — "water-speech" — is the lyric oral form: seasonal songs, working chants, short-form poetry of domestic life. Where *tallos-ell* is fire (intensity turned permanent), *kěl-ell* is water (constant motion, cyclical return). *Kěl-ell* is expected to change — water shapes its channel differently each flood — and there is no loss in producing a well-known form anew if the new form is good.
+
+The agricultural planting season in West Pyros is accompanied by *kěl-ell* throughout: before the soil is turned, during the turning, during the planting itself, at the first rain after planting. Workers report that the right *kěl-ell* maintains the rhythm of physical labor and that the wrong one — too slow, wrong accent, poor breath — makes the work harder. This is treated as practice knowledge of how rhythm supports physical effort, encoded in oral form.
+
+Children's *kěl-ell* forms are among the most studied by outside linguists because they contain patterns that appear to teach the register system through practice: call-and-response structures where the caller uses *vaer-* prosody and the responder uses *sol-*, practicing the transition from formal welcome to established familiarity. Children learn the register system through forms they have always known before they are old enough to name what they are learning.
+
+---
+
+## Written Genres and Inscription Types
+
+The Ossic script is used across distinct textual traditions with their own conventions, audiences, and levels of accessibility to outside readers. Not all Pyrosi writing is the same kind of act.
+
+### Boundary Stones (*Khoth-Oss*)
+
+The oldest surviving Pyrosi texts are boundary inscriptions carved into volcanic basalt at the edges of claimed land, water sources, and fumarole sites. Some *khoth-oss* predate the current form of the Ossic script and require reconstruction against later texts to read fully.
+
+A standard boundary formula in West Pyrosi:
+
+*[Land-name]-oss [Claimant-name]-ell vel-ossyr=oss. Ossyanoss vel-milloss: [witness names]-oss.*
+
+"[Land] is permanently marked as belonging to [Claimant]. The witness-community has seen: [witnesses] are recorded."
+
+Both the land and the claimant take *-oss* (Class II nominative). Both are fixed and constitutive of place. The claim is *vel-ossyr* — perfective permanently-marked — because the carving is a bounded completed event: it happened, it is done, it persists. The *=oss* evidential clitic marks the stone as itself the primary evidence.
+
+Disputed boundaries in West Pyros legal practice come down to which stone is older; which witnesses are still living to testify; and whether the inscription carries *=oss* (standing alone as primary evidence) or cites a prior written record. A *khoth-oss* without a prior citation is stronger legal evidence than one that references a document that may have been lost.
+
+### Fumarole Inscriptions (*Kelv-Oss*)
+
+Not legal records. Requests, declarations, and readings left at fumarole sites. The conventions differ from boundary stones sharply:
+
+- Always *kael-* register, without exception
+- Latent aspect as default for any statement about what the ground holds or intends
+- The *=lleth* evidential clitic for all readings of volcanic signs
+- Short: a *kelv-oss* longer than three clauses is unusual; brevity is considered appropriate when addressing something that speaks slowly
+- Often unsigned: the speaker matters less than what was asked
+
+A common formula before planting:
+
+*Kael-lleth-ellom llethvan-in=lleth. Kael-vel-gallom pyrant-eth=oss.*
+
+"I speak [elevated, latent] to the soil's willingness [as read in what is latent in it]. I will have crossed [elevated, perfective] into the living soil [as will be recorded by the act of planting]."
+
+The *=oss* in the second clause is prospective — referring to the inscription itself as the evidence that the asking came first. The farmer records a commitment: I asked before I planted; this stone is the permanent witness that the order was correct.
+
+### Funerary Inscriptions (*Orrsel-Oss*)
+
+Using the Tallyss word *orrsel* (those who have passed into the fixed memory), funerary inscriptions in West Pyros follow a distinct convention. They name the deceased; give their *gall-name* if they had one; and state what they *pyrossed* — what permanent record their life left.
+
+A typical form:
+
+*[Name]-oss vel-llyryr. [Name]-oss vel-pyrossyr: [what was left]. Kael-vel-milloss [name in accusative].*
+
+"[Name] has returned through the body. [Name] has burned permanently into record: [what remains]. The elevated witnesses have seen [them]."
+
+*Vel-llyryr* — "returned through the body" — is the standard West Pyrosi funeral formula. Death is not ending; it is return into the *lleth*. The body's *llyr* joins the ground's memory as volcanic heat is absorbed into the soil above it.
+
+*Vel-pyrossyr* names what the person left: a practice passed on, a *kěl-ell* tradition, a farm that continued, a household that maintained its register. This is not praise. It is the same kind of statement as a land record: here is what persists. The quality of what was left is not evaluated in the inscription; that is the living community's judgment to hold.
+
+---
+
+## Idiom and Proverbial Speech
+
+West Pyrosi has a large body of proverbial expression built around the register system and the volcanic vocabulary. Many of these idioms are effectively untranslatable into Mittoli because they depend on the register system being real rather than metaphorical — they describe how social relationships actually function in Pyrosi terms, and Mittoli has no corresponding grammar to receive them.
+
+**Common expressions:**
+
+*Khovell kyoss* — "the ridge voice shifts." Said when a relationship or situation has changed fundamentally without either party having announced it. Not a warning; a recognition. The ground said something different; the relationship will need to account for the change. Delivered in Familiar register, which is itself part of the meaning: we know each other well enough that I can say this plainly.
+
+*Tallos pyrant-os* — "fire into the living soil." Said of an argument or conflict that has reached the stage where its heat is becoming permanent influence on something that will grow from it. Not necessarily bad — volcanic soil is extraordinarily fertile. But irreversible. Applied to arguments that have passed the point of resolution and arrived at the point of consequence.
+
+*Vel-llyryr; sol-milloss* — "it returned through the body; the familiar saw it." Two kinds of homecoming. The first is the deep return — *llyryr*, the body remembering what the mind forgot. The second is the social recognition — familiar witnesses confirming what returned. Both are necessary. A body that returns and is not seen is half-returned.
+
+*Lleth-tosseth* — "you are burning latently." Used between close friends to mean: I know what is happening with you before you say it. Said in Intimate register with the prosody flattened — the latent implies inevitability; there is no urgency. Sometimes used gently. Sometimes used to make clear that a person's hidden state is not as hidden as they believe.
+
+*Vaer-kěl vel-gall* — "the welcome-water has crossed." The moment when all the social ceremony of a new relationship has been completed and the actual relationship can begin. Applied to any process — a negotiation, a meeting, a long introduction — that has finished its formal opening and arrived at substance.
+
+*Sol-rath pyrossyr* — "the register-debt has burned permanently." Said when an unresolved relational awkwardness has been in place long enough to become a permanent feature rather than something that can be resolved. Delivered with resignation rather than accusation. The fire that made this ash cannot be un-burned.
+
+*Kael-milleth kholv-es* — "you are seeing from the gap." Said to someone who has just said something that only makes sense if they have more information or perspective than they should. Part honorific — they are being addressed in *kael-* — and part unsettling, because the elevated register belongs to the land and the dead. To sound like that is either wisdom or something else; the person addressed must decide which.
+
+**Proverbs:**
+
+*Tal tollos; llos elloss.* — "Fire burns; ash speaks." Every action leaves a readable remainder. Ash is not silence; it is a different kind of speaking. Applied practically: that what someone has done will be known; that consequences are already embedded in what has occurred; that the Fire Memory holds what the present has not yet acknowledged.
+
+*Llos-oss pyrant-in vel-kěl* — "from the ash-layer, the return flows into the living soil." That deep old damage can become the foundation of new productive growth — but only if the layers are in right order: the ash below, the living soil above. Applied when what someone has survived might become what they build on. Not naive optimism; it requires the right geology, and the geology is not guaranteed.
+
+*Ell-solrath kael-tossoss* — "speech-debt burns at the elevated register." What you owe for language used badly weighs on you more than you realize and is visible to others before it is visible to you. Applied when someone's unresolved *ell-solrath* is being observed by those outside it.
+
+*Vel-kěl; vel-llyryr* — "the water returns; it returns through the body." Said to those who have lost something and been told it will come back. The proverb is not comfort exactly; it is a reminder that return is in the nature of things, that patience is not passive but is itself a form of readiness. The water does not hurry; nor should you.
