@@ -1,7 +1,7 @@
 ---
 name: Grassic Language Family
 category: language
-tags: [language, conlang, Grassic, Plains, evidentiality, polysynthetic, oral-law, Memory-Grass, caull, cord-notation, Auwel, primordial]
+tags: [language, conlang, Grassic, Plains, evidentiality, polysynthetic, oral-law, Memory-Grass, caull, cord-notation, Auwel, primordial, sor-practice, oral-tradition, tallhorn, seasonal-calendar, idiom, proverbs]
 status: draft
 related: [The Plains, Languages of Azhora, Standard Mittoli, Moreshi Language Family, Pyrosi Language Family, Bouéni Language]
 ---
@@ -362,6 +362,23 @@ In Grassic, asking a question reveals what the asker already believes. This is n
 
 *Nel-sor* (parent) combines the wintering-direction prefix with *sor*, the Memory Grass perception predicate. A parent is the one who knew the winter-ground before you did — who prepared the knowledge you would receive there. The word covers both parents and, by extension, any elder from whom you received route-knowledge directly. Biological parenthood is one version of this relationship, not a categorically different one.
 
+### Tallhorn and Herd Vocabulary
+
+The tallhorn is the central wealth animal of the Plains — a large, long-horned bovid whose seasonal routes predate any human claim to the routes they follow. In Grassic legal logic, human route-right is partly derived from herd route-right: demonstrating that a *thraun-gol* (route-herd) has traveled a particular passage across many cycles is evidence that its community has traveled it too. The herd's history and the community's history are the same caull record.
+
+| Grassic | Harmony | Meaning | Notes |
+|---|---|---|---|
+| *thos-gol* | dark | the continuing herd; one established across many cycles | Primary basis for route-right; the *thos-gol*'s caull record is the oldest and most authoritative |
+| *thraun-gol* | dark | route-herd; the specific herd whose movement constitutes a community's claim | Named individually in caull records; the herd you travel with, not merely own |
+| *bel-gol* | bright | young herd; newly forming group; first-cycle animals | Used for the annual tally of young animals and for newly separated sub-herds |
+| *tel-gol* | bright | a herd-ford; the crossing of seasonal water by the main herd | The event predicate for *tel-thraun* (the ford ceremony); legally significant |
+| *kor-gol* | dark | claimed-herd; a herd whose route-right is the subject of a formal claim | Used in caull records when herd-based route-right is disputed |
+| *gaur-gol* | dark | a herd at a Memory Grass site in behavioral response — circling, unsettled | Requires *u-kaul* assessment before the ford can proceed |
+| *wol-gol* | dark | the herd at seasonal water; the grazing-peak gathering | Multiple herds may share a water source; the legal framework for this is a major domain of *thraun-nel* |
+| *gol-nel-sor* | dark | the route-elder of the herd; the lead animal who knows the winter-ground | *Gol* + *nel* + *sor*: the animal who has completed the most cycles and knows the route by body rather than by instruction |
+
+The *gol-nel-sor* — the lead animal — holds a specific legal status. A route-right claim can be backed by *u-gol-nel-sor-thraun-aul-ther*: "the herd-elder has traveled this passage since ancient time — I infer from its behavior." A *gol-nel-sor* who fords without hesitation while young animals hesitate is read as evidence the elder has done this before. The inference requires a *u-kaul* to confirm, but the animal's *sor* — the same predicate used for human Memory Grass reading — is formally present in the legal claim. From a Grassic perspective this is not metaphor. *Sor* means knowing-by-being-at-a-place. The *gol-nel-sor* has been at the ford more times than any living person. The predicate applies.
+
 *Thel-auwel* (spouse or travel partner) encodes the social meaning of permanent partnership: two people traveling the same seasonal route, making the same claims, whose caull records are bound together. The formal declaration is *thel-auwel-ko-voth* — a direct-evidential claim in the present tense, describing what is currently true. When the shared route ends, the predicate ends too. *Thel-auwel-no-voth* — "we traveled alongside in the previous cycle — direct experience" — is simply the past-tense form. There is no special vocabulary for a former partner. The predicate completes.
 
 The boundary of *gol-thraun* (the traveling community) is behavioral rather than biological. One who travels the route is of the group; one who does not is not. Communities have absorbed outsiders — including individual Mittoli and Pyrosi people who have chosen Plains life — by traveling with them through a full seasonal cycle. After that cycle the person is *gol-thraun* by predicate, not by decision: *thel-u-gol-thraun-no-voth* — "they traveled alongside the community last cycle — direct experience." No other admission is possible or required.
@@ -388,6 +405,38 @@ A caull is made from three twisted grass fibers as the core cord, with subsidiar
 A simple route-right claim runs perhaps twenty centimeters. A multi-generational land claim with Memory Grass citation, boundary descriptions, and witness acknowledgments runs two meters or more, requiring a trained reader and sometimes multiple readings. Caull readers train for years; the oldest and most complex records are only fully legible to the most experienced.
 
 When a caull is presented in legal proceedings, it is read aloud by the elder holding it, translating each knot-sequence into the predicate it encodes. The physical object and the oral reading are both part of the testimony. A caull without a reader is a cord with knots. A reader without a caull is making an unanchored oral claim. Together they constitute the *-gaul* (witnessed) form of physical legal evidence — the knots are what was observed, and the reading is the testimony of having observed them.
+
+---
+
+## The Sor Practice
+
+*Sor* (to know-by-sleeping-there; to read-a-place-through-rest) is the primary perceptual method for Memory Grass reception. The word names a specific practice: sustained, attentive presence at a Memory Grass site, through sleep or deep rest, until the site's retained quality can be described in the evidential framework. It is not meditation, not prayer, and not trance. It is closer to the careful attention a tracker gives to ground — except the ground speaks in chemical and perceptual rather than physical signs, and only trained receivers can decode it.
+
+A *u-kaul* (Memory Grass reader) is not identified at birth. The identifying sign is an unusually strong *gaur* response: a child who circles without settling at sites where older community members feel only mild unease, who wakes agitated from sleep at Memory Grass sites and describes specific things rather than vague disturbance, who shows the pattern consistently across different sites and seasons. The community notes this and says nothing. Others begin watching.
+
+### The Training Sequence
+
+**First: *thel-sor*** — "along-route knowing." Before a potential reader approaches any Memory Grass site, they learn to read ordinary terrain: soil temperature, root-smell differences, the chemical profile of living versus dormant grass, herd behavioral patterns at different route positions. The premise is that *sor* is an extension of ordinary observation, not a departure from it. A student who cannot read living terrain cannot read what Memory Grass retains from the dead.
+
+**Second: *bel-aul*** — "first-approach." The student accompanies the elder *u-kaul* to a minor site — recent, low-intensity event, within living oral memory, confirmed by *-voth* (direct) testimony still alive in the community. The student sits. The elder sits nearby, not adjacent, and offers no instruction during the sitting. Afterward, the student describes what they experienced. The elder does not confirm or correct immediately. They ask what evidential suffix the student would attach to each thing described. A student who says *-voth* (direct experience) for something they merely felt is corrected: *-ther* (inferred). A student who says *-ther* for something the site made unmistakable is asked what evidence they are still waiting for. The first phase is complete when the student can accurately sort their own perceptions by evidential class before being asked.
+
+**Third: *gol-sor*** — "collective knowing." The student attends a major site during *hom-nel* (deep winter), the *aul-sor* season, when the full community sits together. At a major site the collective perceptual field is richer than any individual's; what multiple readers receive at the same session can be compared. The student's account is measured against the elder's reading and against the oral tradition's record of the site. Discrepancies are instructive in both directions: the student may be misinterpreting the signal, or the site may have changed, or the tradition may have drifted. Distinguishing which requires time.
+
+**Fourth: *aul-veth*** — "land-witness, direct experience." At some point in training the student encounters something the site holds that the oral tradition does not record. Something the received account has no entry for. This is not a training failure. It is the arrival point: the student has reached the primary material rather than the transmitted account of it. What to do with this — whether to bring it into the tradition, hold it privately, or wait for corroboration from another reader — is itself a teaching. For the first time, the elder does not decide. The student does.
+
+### What Is Perceived
+
+*Sor* perception is consistently described across the oral tradition in terms of direction, urgency, approximate number, and outcome. Not visions, not voices, not heard words. Felt sense: something moved this way; something massed here; the event ended or did not; the moving was sudden or prolonged. Trained readers distinguish the felt signature of mass animal death from mass human death, a running departure from a stopped confrontation; they distinguish fresh sites (compounds still concentrated, intense response) from ancient ones (attenuated, requiring longer sitting and higher sensitivity).
+
+The vocabulary reflects the predicate structure throughout. A reader does not say "I saw a battle." They say *vel-u-gol-sor-aul-ther* — "a large group moved toward the water in ancient time — I infer from my *sor* at this site." The evidential is *-ther* (inferred), not *-voth* (direct): the reader experienced the *sor* response directly, but the claim about what the group did is an inference from that response. The two steps are never grammatically collapsed.
+
+A reader making a site-claim in formal proceedings uses three evidentials in sequence:
+
+*aul-o-kaul-aul-aul.* — the site retains, ancient time, land-witness confirms.
+*aul-a-sor-ko-voth.* — I know-by-sitting here, this cycle, direct experience.
+*vel-u-gol-aul-ther.* — a group moved toward the water, ancient time, I infer.
+
+Land-witness authority for the site's testimony. Direct experience for the reader's own *sor*. Inferred standing for the content of the reading. Three different evidentials in three consecutive predicate-words; all three are required.
 
 ---
 
@@ -484,6 +533,40 @@ The saved syllable from root compression gets used for the phase marker. The wor
 
 Northern legal practitioners' position on the Academy's position has been recorded, in Northern Grassic, in the Academy's archive, where it awaits a translator willing to render the seasonal-phase distinctions with their full legal weight. This has not been prioritized.
 
+### A ford dispute at *tel-thraun*
+
+The seasonal water-ford is the highest-stakes legal moment of the year. When two communities arrive at the ford simultaneously with overlapping route-right claims, the dispute is resolved on the spot, at the site, using the highest available evidentials. The exchange below is compressed from a form that can run considerably longer.
+
+First elder:
+
+*tel-a-thraun-ko-voth. aul-o-kaul-aul-aul.*
+
+[ford] [first-person] [route-passage] [this-cycle] [direct] — [toward-Memory-Grass] [landscape] [retains] [ancient-time] [land-witness]
+
+= "I ford this passage this season — direct experience. The Memory Grass site here retains [our claim] from ancient time — land-witness confirms."
+
+Second elder, if they hold a competing *-aul* claim:
+
+*tel-a-thraun-ko-voth. aul-o-kaul-aul-aul.*
+
+Identical predicate-words. Both are stating the highest evidential available to each. The standoff is resolved by one of three methods: producing the older caull record (a physical *-gaul* claim — the older cord takes precedence); calling for a *u-kaul* reading of the site to determine which community's claim the site's retention reflects; or deferring to a *gol-nel-sor* behavioral test — whose lead herd fords without hesitation. The last method is considered authoritative enough that many ford disputes are resolved before any speech occurs, when the elders observe which herd moves first.
+
+If no resolution is immediate, the ford waits. Neither community crosses until the claim is settled. The herd is patient or it is not; either way, the legal process completes before the ford.
+
+### An elder opening *thos-nel*
+
+*Thos-nel* (ancestor-memory) transmissions follow a fixed opening formula during the *hom-nel* (wintering) season. The elder's opening marks themselves as a channel for received tradition and establishes the evidential frame for everything that follows.
+
+*nel-a-nel-auwel-no-nel. thos-o-auwel-aul-aul.*
+
+[toward-winter] [first-person] [receive-and-pass] [settled-speech] [previous-cycles] [received] — [old/continuing] [landscape] [land-speech] [ancient-time] [land-witness]
+
+= "I pass down the settled-speech as it was received in previous cycles — received evidential. The old land-speech has been here since ancient time — land-witness confirms."
+
+The two predicate-words establish the dual authority structure of all *thos-nel*: the elder is a *-nel* (received) speaker — they transmit what they were given, and the origin of the account is not in them. The second predicate moves the authority from the elder to the language itself, grounded in land-witness. *Auwel* — the language — is addressed here as an *o-* (landscape) entity with *-aul* backing. The teaching that follows is not presented as the elder's knowledge. It is the land's knowledge, transmitted through the elder, who received it from another elder before them.
+
+A student who later transmits the same account uses the same opening and the same *-nel* evidential. The chain of transmission is structurally marked at every link.
+
 ### Border Grassic: A desert-edge claim
 
 Border Grassic (*Gaul-Auwel*, "lateral-speech") has absorbed Moreshi directional terms as spatial prefixes, extending the standard Grassic five-prefix system with vocabulary from the desert's navigational tradition. The Moreshi loanwords:
@@ -509,6 +592,95 @@ Three predicate-words. The first two are identical to the standard Central Grass
 This is not the same claim as the Central Grassic *vel-u-wol-tel-aul-aul* (the ford of the seasonal water, ancient time, land-witness). The desert-edge permanent water source has a different legal status from a seasonal ford — it cannot dry in a drought year, and claims on it are therefore of different duration and weight. Border Grassic encodes this distinction at the spatial prefix level. Central Grassic does not have the vocabulary to make the same claim with the same precision.
 
 Moreshi legal observers present at Border Grassic proceedings have noted that the Moreshi directional concept appears in the Grassic highest-authority claim structure — that Border Grassic has done something unusual, absorbing foreign spatial vocabulary not into ordinary speech but into the evidential framework at its most formal register. Border Grassic speakers, asked about this, have said: the desert has its own categories. We put them where they belong.
+
+---
+
+## Oral Tradition Genres
+
+*Nel-auwel* — "settled-speech" — is not a single form but a family of genres, each with its own structure, audience, and transmission requirements. The *-nel* prefix names both the direction of settling and the season in which formal transmission takes place. The genres are distinguished primarily by their content and by the evidential standing they require.
+
+### *Thraun-nel* — Route Memory
+
+The most practically critical genre: the oral record of specific routes, their water sources, boundary descriptions, and associated Memory Grass site citations. *Thraun-nel* is recited in the *-nel* (received) evidential throughout, marking the speaker as a channel rather than an originating witness. Each route description follows a fixed formula: spatial prefix, route identifier, boundary description, Memory Grass citations in *-aul*, witness acknowledgments in *-gaul*.
+
+A senior elder's complete *thraun-nel* for their community's routes can run several hours. Young community members learn it in sections over years, beginning with the segments they personally travel and expanding outward. The person who can recite the full *thraun-nel* has demonstrated the knowledge expected of a community leader. When routes shift — a water source has dried, a Memory Grass site is newly identified, a boundary agreement is reached — the change is incorporated at the next *hom-nel* transmission with a *-gaul* (witnessed) testimony from whoever observed the change. Subsequent transmissions recite it with *-nel*.
+
+### *Kaul-nel* — Site Memory
+
+The oral tradition attached to specific Memory Grass sites. Where *thraun-nel* records that a site exists and where it is, *kaul-nel* records what event is retained there and why it is legally significant. This is the most carefully maintained and least frequently altered genre: the sites themselves can be read by a *u-kaul*, and a *kaul-nel* that describes the wrong event at a site is testable and falsifiable.
+
+The most ancient *kaul-nel* traditions describe events with no other historical corroboration. The oral tradition's account is the only record of what happened, and the only independent check on it is the *sor* reading of the site itself. Academy historians who encounter this material tend to divide between those who treat ancient oral traditions as inherently unreliable and those who note that the sites' continued readability is a form of corroboration unavailable from any other ancient source. Neither position has resolved the other.
+
+### *Gol-nel* — Herd Memory
+
+The transmitted accounts of specific tallhorn herds over time: their routes, growth and reduction, landmark events (a herd split, a mass death, a recovery after drought), and associated land-right claims. A herd that has traveled the same route for many cycles builds a *gol-nel* that constitutes evidence in route-right proceedings, because herd-memory is partly independent of human memory — the *gol-nel-sor* (lead animal) holds behavioral knowledge of the route that does not depend on the oral tradition's accuracy.
+
+*Gol-nel* is transmitted within the community but particularly within the families whose route-claim is anchored to the herd in question. Disputes over herd ownership therefore involve disputes over *gol-nel* transmission: who holds the tradition, who authorized them, and whether their account is consistent with the *kaul-nel* of the sites the herd has passed. For communities whose identity is closely bound to a specific ancestral herd, *gol-nel* may be denser than *thraun-nel*. The herd's history and the community's history are the same record.
+
+### *Thos-nel* — Ancestor Memory
+
+The founding accounts: stories of exceptional individuals or events from beyond living memory, transmitted as something between history and organizing precedent. *Thos-nel* is not entertainment; it is the record of what kinds of actions have been taken before, what kinds of claims have been made and honored, what kinds of relationships between communities have been formed and broken. It is precedent in the full legal sense.
+
+*Thos-nel* is always transmitted with *-nel* (received) evidential, marked at opening and closing. A speaker who used *-voth* (direct) for *thos-nel* content would be claiming to have been present at events from many cycles past, which is either impossible or dishonest. The *-nel* evidential is not a disclaimer; it is a structural feature locating the speaker within a chain of transmission rather than at its source.
+
+Ancient *thos-nel* content is cross-referenced against *kaul-nel* wherever possible. Events from the oral tradition that have an associated Memory Grass site carry double authority — received account plus land-witness. Events with no site association are held more lightly: received-only, with no independent check. The evidential distinction is grammatically invisible (*-nel* for both) but known to every practitioner.
+
+---
+
+## Seasonal Calendar and Named Events
+
+The Grassic temporal system is organized around the seasonal route rather than fixed calendar positions. Different communities' routes follow different seasonal rhythms; what is universal is the *structure* of the cycle — the same events occur in the same sequence, defined by what happens rather than when. The calendar is a series of predicates, not a series of dates.
+
+Named cycle events, in sequence:
+
+| Grassic | Literal meaning | When | Notes |
+|---|---|---|---|
+| *bel-vel* | first-urgent-motion | when the first animals move ahead of the main herd | The legal announcement that a new cycle has begun; the elder's *-voth* is required — an unobserved announcement carries less weight |
+| *vel-caull* | toward-water cord-check | before the migration departs | Caull records are formally reviewed; disputes must be voiced now or wait a full cycle |
+| *gol-vel* | herd-urgent-motion | when the main herd is in motion | The migration proper; *vel-auwel* (route-speech) in constant use; *nel-auwel* transmission deferred |
+| *tel-thraun* | ford-the-route | at the seasonal water crossing | The major annual legal moment for water-right assertions; competing claims resolved at the site, in person |
+| *gol-wol* | herd-at-seasonal-water | summer grazing period | Greatest community density; trade with neighboring groups; annual tally of young animals |
+| *nel-vel* | toward-winter-motion | when the herd begins returning | Memory of the outward route is tested against reality; disputes from the ford are revisited |
+| *hom-nel* | staying-at-winter | the settled winter period | *Nel-auwel* transmission season; *aul-sor* gatherings; caull-making and repair |
+| *aul-sor* | Memory-Grass-knowing | during *hom-nel*, timing varies by site | The annual formal Memory Grass reading season; *u-kaul* practitioners visit each site in the tradition |
+
+The named events are predicates and fully inflectable. The elder who announces *bel-vel* says *a-bel-vel-ko-voth* — "I observe first-motion now — direct experience." This is not ceremony; it is a legal statement, because the cycle's beginning triggers *vel-caull* obligations. An announcement made in *-nel* (received) would imply the elder did not personally see the first animals move, which is notable enough to be questioned.
+
+The *tel-thraun* ford event is the highest-stakes moment of the cycle. A route-right claim involving the ford must be asserted in person at the ford, in *-aul* if backed by Memory Grass or *-voth* if based on ancestral use. A claim not asserted at the ford during *tel-thraun* must wait a full cycle — which can determine whether a community's water access holds through a drought year.
+
+*Aul-sor* is the period most valued by *u-kaul* practitioners and most opaque to outside observers, because it is the season when the slow work of *sor* is possible. A *u-kaul* who must keep moving with the migration cannot sit at a site for a full day. During *hom-nel*, they can. The readings made in *aul-sor* update the *kaul-nel* for the following year's *thraun-nel* transmission. The calendar and the oral tradition are a single system.
+
+---
+
+## Idiom and Proverbial Speech
+
+Grassic idiom emerges from the same sources as Grassic grammar: the spatial system, the evidential hierarchy, the seasonal cycle, and the vocabulary of route and Memory Grass. What would be metaphorical in Mittoli is often literally accurate in Grassic — the idiomatic meaning emerges from the full predicate, which already encodes position, knowledge-source, and temporal standing.
+
+**Common expressions:**
+
+*Gaur-vel* — "circling-urgent-motion." The Memory Grass site response (*gaur*: to circle without settling) applied to *vel* (urgent, directed movement). Said of a person who is agitated and moving without purpose — moving in the migration direction with the restlessness of an animal that smells a site rather than the destination. Not quite a criticism. It describes a state the observer has seen before and understands. Applied to disputes that have become heated without resolution: *gaur-vel-ko-ther* — "you're moving urgently around something you can't settle — I infer this from your behavior."
+
+*Hom-nel-sor* — "winter-knowing-by-being-there." To become clear about something through staying rather than moving. Used when a person needs to stop acting and wait — not passively but with the specific attention of *sor*. "You need to *hom-nel-sor* this" means: sit with it until it gives you something. Applied to disputes where both sides are moving urgently and neither has read the site.
+
+*Bel-vel-auwel* — "first-new-motion-speech." Said of a young person who says something true that the elders have known and chosen to say less directly. The young person is the *bel* (first-time) instance of a route traveled before. Their freshness is the point, not a limitation. Said with warmth.
+
+*Tel-ther* — "inferring-the-ford." Making a crossing decision based on near-bank evidence rather than having swum it first. A legitimate *-ther* (inferred) claim, not a *-voth* (direct) certainty. Applied to any decision made with incomplete information that is still the best available decision. "I made a *tel-ther*" — said without apology. The ford was crossable; the inference was sound.
+
+*Gol-thraun-nol* — "community-route received." What you know about your community's obligations not from having traveled them yourself but from having been told. Not an accusation — *-nol* (received) is legitimate — but a reminder that your claim carries received weight, not direct weight. Applied when someone invokes tradition they have not personally tested.
+
+*Vel-gaur* — "moving-toward while circling." Said of someone who is drawn toward something and also unsettled by it — the *vel* (urgent migration direction) and *gaur* (circling site-response) in conflict. Usually said about a young *u-kaul* candidate approaching their first major site: moving toward it, unable to settle around it.
+
+**Proverbs:**
+
+*Vel; kaul.* — "Move; retain." The fundamental rhythm. You move with the route; the Memory Grass retains what passes. What you do here will be recorded in matter you cannot see, and it is permanent. Said of impermanence that is not quite impermanence: the action ends; what it left does not.
+
+*Nel-auwel thos; vel-auwel bel.* — "Settled-speech is old; route-speech is new." The appropriate register for each kind of knowledge. Tradition should be treated as old even when it is freshly recited; current observation should be treated as new even when it seems to confirm the tradition. Do not collapse them into one thing by pretending either certainty.
+
+*Sor-aul; vel-bel.* — "Know-the-site; then move new." The decision-making pattern. Read what the Memory Grass holds; then act from the current season, not the ancient one. Knowing the old record is not the same as being bound by it. The site speaks the past; the person acts in the present.
+
+*Gol-ther; thraun-voth.* — "The herd is inferred; the route is direct experience." What you inherit (*-ther*: you conclude from evidence that this herd has been traveling this passage before you) and what you acquire personally (*-voth*: the route you yourself have traveled). Both are real claims. Neither cancels the other. Hold both with the evidential weight they actually carry.
+
+*Gaur-vel ther.* — "Circling-urgent-motion is inferred." When you see someone moving without settling, you can conclude they have encountered something that disturbs without explaining itself — a site, or something site-like. Said of situations that are clearly significant but not yet readable. The appropriate response is neither to dismiss the disturbance nor to act before *sor*.
 
 ---
 
