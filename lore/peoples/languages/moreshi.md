@@ -487,6 +487,124 @@ Numbers above ten are formed by combination: *ʕashara wa-waḥd* (ten and one =
 
 *Al-Mawsim* is both a season name and a common noun: *mawsim* has entered trade dialects across the Iberos coast to mean "season" in the sense of "the right time for something" — a borrowing that happened through the trade corridor and has naturalized in several other languages.
 
+### The Desert Bestiary
+
+Desert peoples do not name animals casually. An animal named in Moreshi carries root meanings that say something about its nature — what it is, how it relates to the desert, what observing it tells you.
+
+**J-M-L** — camel, the creature of endurance
+*jamal* = camel (masculine noun); *naqa* = female camel (root N-Q-W, separate word for the nursing female); *jimal* = camels; *jammaal* = camel-driver. The camel is the one creature the desert peoples credit with an understanding of the desert comparable to their own. The saying *al-jamal yaʕrifu al-majiil* — "the camel knows what is far" — is used when following an animal's route preference over a human navigator's calculation. The camel has historically won this argument often enough that the saying is not ironic.
+
+**Gh-Z-L** — gazelle, the creature of speed and the elusive
+*ghazaal* = gazelle; *ghizlaan* = gazelles; *ghazal* = the lyric poem (the shortest poetic form, named for the creature that cannot be caught — see Oral Poetry). Canyon Moreshi uses *ghazaala* (the feminine form, "a gazelle seen") for the first sighting of a gazelle at sunrise — which is treated as a directional omen in cliff navigation.
+
+**N-S-R** — eagle, any soaring raptor, the high watcher
+*nasr* = eagle, large soaring raptor; *nusuur* = eagles; *nassaar* = one who watches from above (agent noun; applies to human scouts). The Moreshi do not distinguish at the root level between eagle and vulture — both are *nasr* — but context makes the distinction: eagles hunt, vultures wait. *Nasr al-muruuṣ* specifically denotes the desert eagle observed to circle over water sources. Navigation practice: a tight spiral of *nusuur* over a fixed point almost always indicates a carcass; a single hovering *nasr* usually indicates living movement below, and sometimes water.
+
+**Ṣ-Q-R** — falcon
+*ṣaqr* = falcon; *ṣuquur* = falcons. Falconry (*ṣayd al-ṣuquur*, literally "hunting of falcons" — the prey is hunted *by* falcons, not the birds themselves, but the phrase persists) is a prestige practice among oasis community leaders. A trained falcon is called *bint al-shayx* ("elder's daughter") in informal speech — the title reflects the amount of attention and care required, not any ornithological resemblance.
+
+**Ḥ-N-Sh** — snake
+*ḥanash* = snake; *ḥanaash* = snakes. Canyon communities maintain detailed taxonomies of regional snake species, catalogued by scale pattern, behavior, venom type, and habitat — a product of necessity and long observation. The general proverb *laa taqtal al-ḥanash ḥattaa taʕrifahaa waadiyahaa* ("do not kill the snake until you know its valley") applies beyond zoology: context is prior to response.
+
+**ʕ-Q-R-B** — scorpion (quadriliteral root; notably preserves four consonants where Standard Moreshi uses three — one of the few quadriliterals in everyday vocabulary)
+*ʕaqrab* = scorpion; *ʕaqaarib* = scorpions. The scorpion in Moreshi is not primarily a symbol of evil but of consistency. *Al-ʕaqrab taluubu ʕalaa ṭabiiʕatihaa* — "the scorpion stings according to its nature" — is said of people or situations that behave exactly as their nature predicts. Neither praise nor condemnation. Merely accurate.
+
+**Th-ʕ-L** — fox
+*thaʕlab* = desert fox; *thaʕaalib* = foxes. The fox is the figure for adaptability and indirection. *ʔUmm thaʕlab* ("mother of foxes") is a title given, with genuine respect, to an extraordinarily skilled negotiator — someone who achieves their purpose so indirectly that the other party is uncertain whether they lost. It is not an insult.
+
+**N-M-R** — leopard
+*nimr* = leopard; *numuur* = leopards. Found in the canyon country's vertical terrain rather than the open desert. Canyon navigators treat a fresh leopard track on a route as a sign that humans have not used that route recently — the leopard moves where it is not disturbed. A route marked by leopard is either newly discovered or long abandoned. The two possibilities require different responses.
+
+**W-ʕ-L** — ibex, mountain goat
+*waʕl* = mountain ibex; *wuʕuul* = ibex. The ibex is the acknowledged master of vertical terrain in canyon navigation. Canyon routes through cliff sections often follow ibex trails, which encode generations of accumulated route knowledge in their curves and footholds. The *waʕl* is considered to know the cliff in a way no single human generation can equal; the knowledge in the trail predates the individual animal.
+
+**Dh-ʔ-B** — wolf
+*dhiʔb* = wolf; *dhiʔaab* = wolves. Present in the canyon country; rare in open desert. The wolf tests community solidarity. A caravan or oasis community that cannot drive wolves away from their animals is understood to have a cohesion problem. The wolves are not the problem; they are the test.
+
+**Gh-R-B** — crow, raven (note: this root also produces *gharb*, west, and *ghurub*, sunset)
+*ghurab* = crow, raven; *aghriib* = crows. The overlap between the west-direction root and the crow is held together by the concept of departure: the crow goes where things go when they go. Caravan navigators avoid using the word *ghurab* in any navigational context — when discussing the western route, they use the directional description (*jihat ghurub al-shams*, "the direction of the sun's setting") and do not speak the crow's name. Whether this is navigational precision or superstition is not a distinction the caravan tradition finds useful.
+
+---
+
+### Food, Hospitality, and the Sacred Table
+
+Desert hospitality is not courtesy — it is law. Whoever approaches a tent is owed food and protection for three days without being asked their name or their business. After three days, the host may ask. Until then, the guest's affairs are the host's responsibility before the community. The law's name is *ḍiyaafa* (root Ḍ-Y-F: guest, hospitality) — not a custom but an obligation that the language does not permit to be refused.
+
+**Ḍ-Y-F** — guest, hospitality, the obligation
+*ḍayf* = guest; *ḍuyuuf* = guests; *ḍiyaafa* = the act of hospitality, the obligation itself; *ḍayyafa* = to host (verb). The word for guest and the word for the obligation share a root: to be a guest is to create an obligation, and to host is to take it on. A host who has fulfilled *ḍiyaafa* correctly is *musaddir* ("one who has sent forward") — the guest's safety has been dispatched into the world. The phrase *laa ḍiyaafata lahu* ("no hospitality to him") is one of the strongest social exclusions in desert speech, applied only to those who have harmed a guest they were hosting.
+
+**Q-H-W** — coffee, the bitter drink, the social center
+*qahwa* = the bitter drink made from roasted seeds, ground and brewed. The ceremony of preparation is itself communication: the sound of the grinding pestle (*miḥbaab*, from Ḥ-B-B: beloved — the drink is beloved; the instrument of its preparation is named accordingly) carries outside the tent and functions as an audible invitation. A tent where grinding can be heard is a tent receiving guests.
+
+Serving conventions: the host drinks the first cup — *ʕayn al-qahwa* ("the eye of the coffee") — to demonstrate the drink is safe. A guest's cup is refilled continuously until the guest shakes it: *hazzat al-finjaan* (shaking the cup) is the signal for "enough." Not shaking the cup means the guest wishes more, even without saying so. A host who fails to notice that a guest's cup has been still for some time is understood to not be paying attention. In formal reception, failing to track a guest's cup is the first observable failure of *ḍiyaafa*.
+
+**T-M-R** — dates
+*tamr* = dried dates; *tamar* = fresh dates; *tumuur* = date palms; *tammaar* = date merchant. Dates are the primary survival food of the desert interior — high-calorie, self-preserving, producible in oasis conditions. The date palm (*naxl*, root N-X-L) is the indicator species of the oasis: where *naxl* grows, water is accessible at depth. Planting a date palm is an act of generational optimism; the palm produces for decades but requires years before it bears fruit. An elder who plants palms is doing so for children who have not yet arrived.
+
+**X-B-Z** — bread
+*xubz* = bread; *axbaaz* = breads; *xabbaz* = baker. Moreshi bread in desert communities is flatbread (*xubz al-ṣaxr*, "bread of the stone-surface") — unleavened, baked on a hot stone or buried in coals. The word for leavened bread (*xubz al-xamiir*, "bread of the ferment") enters Coastal Trade Moreshi as a borrowing category; in nomadic Moreshi, leavened bread is simply bread that was allowed to wait too long.
+
+**Ḥ-L-B** — milk, milking
+*ḥalab* = to milk (verb); *ḥaliib* = milk; *maḥlab* = a milking place; *ḥalaab* = the milking season. Camel and goat milk are the primary liquid nutrition for nomadic communities. Camel milk (*ḥaliib al-naqa*) is distinguished from goat milk (*ḥaliib al-maʕz*) in both vocabulary and culinary use. The fermented form (*laban*) is produced by allowing milk to sit in a skin: the caravan practice of carrying milk in motion ferments it through the journey itself — the road makes the food.
+
+---
+
+### Wells and Water Infrastructure
+
+**B-ʔ-R** — well
+*biʔr* = a well; *ʔabʔaar* = wells; *baaʔir* = one who digs wells. Wells are named and the names are owned: a well's name belongs to the community that dug it. Using a well requires using its name — and using the name is an acknowledgment of the community's claim. A nameless well is either a new discovery or one whose community has died. The distinction matters: the first requires sending word to nearby communities; the second is more complicated. Canyon communities maintain wells and cisterns whose builders are entirely outside memory, under the name *ʔabʔaar al-Qadmaat* (wells of the ancient ones), used according to the same principle that governs the ruins: what they left, they left for use, and using it correctly is the obligation.
+
+**M-ʕ-N** — spring (expanded)
+The distinction between *biʔr* (a dug well) and *maʕan* (a natural spring) is social as well as physical. A *biʔr* is owned; a *maʕan* is not. It came without human labor and cannot be claimed as property, only as a location. A community established near a *maʕan* may defend the surrounding territory but cannot, in desert tradition, deny the spring itself to a traveler in genuine need. The legal distinction between defending a *biʔr* (permissible) and denying a *maʕan* to the desperate (not permissible) is the oldest documented point of desert law. Scholars date the distinction earlier than any surviving written text; the canyon communities consider this unremarkable.
+
+**Ṣ-H-R-J** — cistern (quadriliteral)
+*ṣahriij* = a carved stone cistern; *ṣahaariij* = cisterns. The oldest cisterns in the canyon country predate all memory and all written record. Canyon communities maintain them without claiming to have built them. The practice of maintaining infrastructure you did not create is expressed by a specific verb: *tawaaratha al-ṣahriij* — "inherited the cistern" — where *waarath* (root W-R-Th: to inherit) is used here for non-personal inheritance, things that pass from unknown predecessors to the current generation. The verb is also used for knowledge traditions whose originators are not remembered.
+
+---
+
+### Navigation and Wayfinding
+
+Desert navigation is a discipline the language encodes at the root level. The difference between navigational Moreshi and other registers is not vocabulary alone but a cognitive precision about position, condition, and direction that does not exist in languages developed in landscapes where getting lost is correctable.
+
+**The Named Winds**
+
+The winds are not atmospheric events in Moreshi navigation — they are cognitive tools. Knowing which wind is blowing is equivalent to knowing one coordinate of your position.
+
+*Al-Qibliiy* (the north wind, from Q-B-L: facing, before) — the cold wind from the north; its name is also the word for facing, for what confronts you. Navigators orient toward the *qibliiy* in the same way they orient toward what must be addressed directly. In winter, its constancy makes it the primary navigational anchor.
+
+*Al-Baḥriyy* (the sea wind, from B-Ḥ-R: sea) — the moist wind from the Iberos Sea coast; it brings Mediterranean influence into the eastern desert margins. Arriving in the eastern Moroshé with a *baḥriyy* wind at your back means you have not yet gone deep enough to lose the sea. Caravan navigators track the precise day each year when the *baḥriyy* can no longer be felt — this is the entry into the deep interior.
+
+*Al-Simoom* (the poison wind, from S-M-M: to poison) — the lethal hot wind of the deep desert interior. Sand-laden, capable of killing in minutes of unprotected exposure. Caravan protocol for *simoom*: the caravan stops, animals are faced away from the wind and their nostrils covered, travelers shelter against or beneath the animals, and no one speaks — speaking opens the mouth to the sand. The protocol is not a rule; it is behavior so established that the word *simoom* spoken once by anyone initiates it without further instruction.
+
+*Al-Khamsiiniyy* (the fifty-day wind) — a sustained directional wind that caravan planners treat as a seasonal fact. The name reflects the traditional duration: fifty days during which the wind blows consistently enough to rely on for direction. The count is not always exactly fifty. It is "the fifty" the way a generation is "the generation" — approximately right, and right enough for planning.
+
+**The Star System**
+
+*Qalb al-Muruuṣ* (heart of the desert, root Q-L-B: heart) — the fixed northern star; the pole star equivalent. The name is not metaphorical — the heart of the desert is the center that does not move while everything else turns around it. Navigation practice: if *Qalb al-Muruuṣ* is visible, direction is known. If it is not, the *nujuum al-masiir* (journey stars) are used — a constellation whose relationship to *Qalb al-Muruuṣ* is known and can be extrapolated.
+
+*Bint al-Layl* (daughter of the night, root B-N-T: daughter) — the brightest navigational star used for timing rather than direction. Its position at midnight tells experienced navigators how far through the night they are and how many travel-hours remain before dawn. The feminine designation: it is the star that guides you home in the way a daughter calls you back.
+
+*Al-Qamaraan* (the two moons, dual) — formal name for Corav's two moons. Individual names: *Saabiq* (the preceding one, root S-B-Q: to precede) — the faster moon, the one that leads; *Taabiʕ* (the following one, root T-B-ʕ: to follow) — the slower moon, the one that confirms. During an aligned month (*shahar al-tawʔamayn*), navigation tables must be recalculated for the combined tidal and light effects. Canyon cisterns are sometimes disturbed during aligned months; caravan masters regard this as a factual complexity rather than an omen.
+
+**Route Memory and Classification**
+
+Routes in Moreshi navigation are living entities. The vocabulary reflects this:
+
+| Term | Status | Meaning |
+|------|--------|---------|
+| *ḥayy* | alive | actively used; known to multiple navigators |
+| *naaʔim* | sleeping | known but not recently traveled; landmarks may have shifted |
+| *mayyit* | dead | lost from collective memory; requires rediscovery, not navigation |
+| *maḥmuul* | carried | held in one person's memory; no independent confirmation |
+
+A *maḥmuul* (carried) route is understood to be endangered: when its carrier dies without transmission, the route becomes *mayyit* (dead). The social obligation to transmit routes is expressed by the verb *warratha* (to bequeath): a navigator who knows a *maḥmuul* route and dies without teaching it has committed an act against the community comparable to destroying a well.
+
+**Ḥ-Y-R** — navigational disorientation
+*ḥayra* = disorientation in open desert (root meaning: bewilderment); *ḥayraan* = a person who has lost spatial orientation. The caravan word *ḥayra* is distinct from ordinary confusion: it names the specific experience of losing one's position relative to direction in open desert — a navigational emergency, not a social or intellectual confusion. Experienced navigators describe *ḥayra* as a physical sensation before it becomes a cognitive one; the body knows it is lost before the mind confirms it. This is the first symptom listed in caravan practice; the response — stop moving, count stars, identify wind — is initiated on the sensation, not the intellectual conclusion.
+
+**D-L-L** — indication, evidence, the guide
+*daleel* = guide, indicator, navigational evidence; *ʔadilla* = proofs, signs. The *daleel* is both the navigator and the sign that proves a route — the person who points you toward something and the fact that points itself. A desert navigator described as *daleel* is being called evidence rather than guide: someone whose confidence in a direction is itself proof that the direction is correct. This is a high designation and applies only to navigators whose track record allows the claim to be made without irony.
+
 ## Place Name Etymologies
 
 **Muruuṣ** (rendered in Mittoli as *Moroshé*)  
@@ -617,6 +735,42 @@ Desert cultures preserve compressed knowledge in proverbs precisely because a pr
 
 ---
 
+*Laa taqtal al-ḥanash ḥattaa taʕrifahaa waadiyahaa.*  
+"Do not kill the snake until you know its valley."  
+*Context is prior to response. A snake may be a territorial marker, a protector of a specific site, or simply a creature going about its business. Acting before knowing context destroys information you needed. Applied to disputes, unfamiliar people, and the ruins: do not respond to something you have not yet understood.*
+
+---
+
+*Al-jamal yaḥmil thuqlahu wa-yaḥmil ghayrah. Laa yashkuu.*  
+"The camel carries its burden and carries another's. It does not complain."  
+*Said of the reliably burdened — not as praise for silence under complaint, but as an observation that the most reliable carriers have integrated their load so completely it is no longer distinguishable from their nature. The camel does not experience the weight as separate from itself. This is the model.*
+
+---
+
+*Man samiʕa al-simoom fa-lam yaqif, saamiʕ wa-ghayr saamiʕ.*  
+"The one who heard the simoom and did not stop is a hearer and not a hearer."  
+*To receive information and not act on it is the same as not receiving it. Applied broadly: knowledge that does not change behavior is not knowledge. The simoom example is used because the consequence of the failure to act is absolute — there is no recovering from the error that follows ignoring a simoom.*
+
+---
+
+*Al-biʔr al-musammaa laa tanham; al-biʔr allatii laa ism lahaa — tilka al-khatar.*  
+"The named well does not disappear; the well with no name — that is the danger."  
+*What is named is owned, remembered, and maintained. What is unnamed can vanish with the knowledge of one person. Naming is preservation. Applied to knowledge traditions, routes, and people whose contributions have not been formally acknowledged.*
+
+---
+
+*Ghayth al-ṣaḥraaʔ laa yuntaẓar — yuftaqad.*  
+"Desert rain is not waited for — it is missed."  
+*Certain things do not come to those who prepare for them; they are only recognized afterward, as absences that have ended. Applied to luck, certain kinds of love, and caravan routes that can only be found by being found, not by being sought.*
+
+---
+
+*Ṣawt al-maaʔ min baʕiid; maʕan al-maaʔ min qariib.*  
+"The sound of water from far; the spring of water from near."  
+*The promise of a thing and the actual thing are at different distances. Hope for water can be heard from away; water itself can only be known by arriving at it. Said when someone has mistaken the announcement of a thing for the thing itself.*
+
+---
+
 ## Naming Conventions
 
 Moreshi names do not separate "first name" from "family name" in the Mittoli fashion. A person's full designation is a chain of identifications, each layer serving a different social function.
@@ -660,6 +814,70 @@ When relevant, the nisba suffix (-*ii* masculine, -*iyya* feminine) places a per
 A complete formal address: *Ṣabr ibn Ghayth al-Ḥamra al-Widyaaniyy* — "Ṣabr, son of Ghayth, the red one, of the canyons."
 
 Mittoli speakers encountering full Moreshi names for the first time often ask which part is the "real" name. The question does not translate well.
+
+## Oral Poetry (*al-Shiʕr*)
+
+The root Sh-ʕ-R produces *shaʕiir* (barley) and *shaʕr* (hair) and, in a third branch, *shiʕr* (poetry) — all understood as growth from a concentrated point. A grain grows from one seed; hair grows from one follicle; a poem grows from one root. The Moreshi tradition does not separate these meanings but holds them as three expressions of the same principle: what emerges from compressed origin is what endures.
+
+Oral poetry is not a supplement to desert culture — it is the primary preservation technology. A poem survives transport in a way that documents do not. A proverb crossed the continent; a written contract did not outlast the water-skin it was carried in.
+
+### Forms
+
+**Al-Qaṣiida** (root Q-Ṣ-D: to intend, to aim at) — the formal ode. Long, structured, composed for public recitation. By convention, a *qaṣiida* opens with a *nasiib* (prelude) contemplating a deserted campsite — an abandoned fireplace, wind-scoured tent pegs, tracks already filling with sand. The deserted camp is the conventional entry into any subject because it holds everything the poem is about to address: impermanence, the people who were here, the landscape that remains. A poet who opens without the deserted camp is making a deliberate statement about the form itself.
+
+**Al-Ghazal** (root Gh-Z-L: gazelle) — the lyric; the short poem of pursuit and beauty. Named for the creature that makes you aware of how fast the desert is. A *ghazal* is never longer than twelve lines; it does not resolve. Resolution would require catching the gazelle.
+
+**Al-Ḥikma** (root Ḥ-K-M: to govern, to judge, to be wise) — the wisdom saying compressed into a line or two; the most portable form. *Ḥikam* (plural) are the proverbs of the poetic tradition — they travel without a poet, survive without attribution, and enter the language as if they always existed.
+
+### The Root-Layer
+
+The technical distinction of Moreshi oral poetry from other Azhoran poetic traditions: it operates simultaneously on two levels. The surface level carries explicit meaning. The root level carries the semantic field of the consonant skeleton of each word — the implied meanings that flow from a root's full network rather than from the specific word used.
+
+A skilled poem layers root-meanings beneath surface meanings, so that the same text can be read two ways: the apparent and the implied.
+
+*Qafiiya* (rhyme, root Q-F-Y: to follow, to succeed): Moreshi poetry rhymes on the final consonants of roots, not on vowel sounds. Two words "rhyme" if they share their last two consonants regardless of which vowel pattern is applied. *Maraṣa* and *yamruṣu* rhyme in the Moreshi tradition; an outside listener hears no rhyme at all. A Moreshi listener hears the root returning — the echo is consonantal, not phonemic.
+
+### Sample Texts
+
+**A Ḥikma poem:**
+
+*Al-muruuṣ laa tansiinaa.*  
+*Naḥnu alladhiina nansaahaa.*  
+*Wa-fii qalbiinaa maraṣatun lam tuṭwaa.*
+
+The desert does not forget us.  
+We are the ones who forget it.  
+And in our hearts is an expanse that has not been folded away.
+
+*Notes: The root M-R-Ṣ appears three times — as muruuṣ (the desert), as maraṣa (an expanse), and implied in "folded away" (the opposite of what an expanse does). The root Q-L-B (heart) carries its secondary meaning — reversal, turning — so the heart that holds the desert-expanse is the heart that can be undone by it, overturned by it. The poem's surface is about forgetting; the root-layer is about the heart as a mirror of the desert. A Moreshi reader hears both.*
+
+---
+
+**A Nasiib (the conventional opening of a qaṣiida):**
+
+*Waqaftu ʕalaa al-mawqit alladhii lam yabaqa minhu illaa al-ṭuluul.*  
+*Mawqit man saara wa-lam yarjiʕ wa-man rajaʕa wa-lam yasir.*  
+*Al-riḥ taqraaʔu al-asmaaʔa allatii kutibat fii al-rimaal.*
+
+I stood at the waypoint of which nothing remains but the traces.  
+Waypoint of those who left and did not return, and those who returned and had not left.  
+The wind reads the names that were written in the sand.
+
+*Notes: The second line describes two different experiences of journey — departure without return, and return without departure (those who never truly left even when they went). The third line uses the root Q-R-ʔ (to read) with* al-riḥ *(the wind) as the subject — the wind as reader. The wind that erases sand inscriptions is simultaneously described as the agent that reads them, because in desert understanding, what erases receives. The traces (*ṭuluul*) are the conventional nasiib image: remains of a campsite, people who were here and are gone.*
+
+---
+
+**A caravan ghazal fragment:**
+
+*Raaḥa al-ghazaal qabla an amarrahu.*  
+*Wa-raaḥat maʕahu asraaruhu al-ṣaḥraaʔ.*  
+*Man yaʕrifu siraatan lam tasir?*
+
+The gazelle left before I could mark its path.  
+And with it went the desert's reasons for the direction it took.  
+Who knows a road that has never been walked?
+
+*Notes: The fragment poses the navigational question as a question about beauty and pursuit — consistent with the ghazal form. The word *siraatan* (its path, its direction) also means "biography" in its nominal form (*siira*): the ghazal asks whether you can know the life of something that got away. The fragment is traditionally sung rather than spoken; the distinction is observed.*
 
 ## The Ritual Register: *Qadimuur*
 
@@ -718,6 +936,40 @@ When asked why the ritual language differs from spoken Moreshi, the most common 
 
 The most detailed published analysis concludes that the Qadimuur either represents a separate language family entirely — not descended from Standard Moreshi, but phonologically assimilated to Moreshi sounds over centuries of use — or represents a very early stage of whatever proto-language gave rise to the Moreshi family, preserved before the three-consonant root system was established. Both hypotheses have significant problems. The linguist who wrote the analysis spent eleven years in the canyon country gathering data and did not publish until a year after returning to the Caeras Valley Academy. She described the delay as "needing time to think." She has not returned to the canyon country.
 
+## Healing and the Canyon Tradition
+
+The canyon communities of the deep Moroshé have developed a medical tradition enabled by a specific circumstance: the dry climate preserves organic material, including human remains, in ways that wet climates do not. What other cultures have learned about the body through inference and theory, the canyon peoples have learned through direct observation over many generations. The vocabulary reflects this: Moreshi medical language is descriptive and anatomical where coastal medical traditions are humoral and speculative.
+
+### Anatomy Vocabulary
+
+**ʕ-Ẓ-M** — bone, structure, greatness
+*ʕaẓm* = bone; *ʕiẓaam* = bones; *ʕaẓiim* = great, significant. The canyon peoples note, without surprise, that their word for greatness is their word for bone. To say something is *ʕaẓiim* is to say it has the structural quality of bone — it holds the shape; it does not bend; without it, the rest collapses. Canyon medical tradition treats bone health as the primary diagnostic starting point; a patient's *ʕiẓaam* are examined before anything else is addressed.
+
+**D-M** — blood
+*dam* = blood; *dimaaʔ* = bloods (the plural used for blood shed in quantity — wounds, violence, sacrifice). The root is treated with care in canyon speech; it is not used casually or in trade contexts. Canyon medical tradition established — earlier than coastal humoral medicine reached the region — that the heart moves blood rather than generating it. The discovery was made through observation of wounds in which the heart continued beating while blood moved consistently in one direction. This is not theorized; it is observed. The vocabulary encodes the observation: the heart is *qalb* (the turning thing), and blood is *dam* (the moved thing). The heart turns; the blood moves.
+
+**Ṣ-D-R** — chest
+*ṣadr* = chest, breast; *ṣuduур* = chests; *ṣadr al-majlis* = the honored seat in an assembly ("the chest of the council" — the structural center, where breath and voice originate). Canyon tradition notes that the *ṣadr* holds both the *qalb* (heart) and the *riḥ* (breath, wind). Two things from the same root (*R-W-Ḥ*) occupy the chest: the wind at a personal scale, and the heart that moves what the wind needs to move. Canyon medicine treats respiratory and cardiac illness as separate conditions requiring different treatments — the vocabulary distinguishes them, and the treatments follow the vocabulary.
+
+**B-Ṭ-N** — belly, interior, hidden layer
+*baṭn* = belly; *buṭuun* = bellies; *biṭaana* = inner lining, the interior surface of something; *baṭiin* = large-bellied (not an insult — implies prosperity and successful nutrition). Canyon medical tradition treats the *baṭn* as the location of conversion: food becomes body in the *baṭn*, and what the *baṭn* cannot convert leaves the body as not-food. The extension of *biṭaana* to any interior surface — the lining of a cistern, the inner wall of a tent, the underside of a canyon shelf — reflects the root's basic meaning: what is not visible from the outside and does the work from within.
+
+**J-B-R** — to set, to restore, to heal by force
+*jabara* = to set (a bone), to compel; *jibaar* = the practice of bone-setting; *mujabbir* = a bone-setter. The root also produces, in languages that borrowed it, the word for algebra — the discipline of restoring broken equalities. Canyon bone-setters find this connection obvious: you restore what is broken to its correct form, whether the broken thing is a limb or an equation. The canyon tradition has developed tools and techniques that appear in Iberos coastal medical practice under borrowed terminology; the direction of transmission is not documented.
+
+**Th-Q-L** — weight, heaviness, the burden of illness
+*thuql* = weight; *thaqiil* = heavy, gravely ill. A patient described as *thaqiil al-maraḍ* ("heavy with illness") is in serious condition. The weight metaphor in canyon medicine is diagnostic: a *thaqiil* patient is not processing food, is generating *ḥarr al-maraḍ* (fever-heat), and accumulating what should be moving. Canyon treatment for severe illness emphasizes movement of what has thickened or stopped — directed breath, massage, herbal preparations understood to make *thaqiil* things *xafiif* (light). The path from heavy to light is the physician's work.
+
+### The Practitioner Distinction
+
+Canyon tradition holds two medical roles separate:
+
+The *ṭabiib* (physician, root Ṭ-B-B: to attend to, to care for) diagnoses and treats. They know the patient.
+
+The *muʕashib* (herbalist, root ʕ-Sh-B: grass, herb) knows the plants. They know the medicines.
+
+Canyon tradition keeps these roles separate deliberately: if the herbalist is also the diagnostician, there is a systematic tendency to see every illness as treatable by what the herbalist has. Separating the roles forces the physician to diagnose first and seek medicines second. The *muʕashib* who says "this plant cures" is speaking plant knowledge. The *ṭabiib* who says "this patient needs what this plant provides" is speaking medical knowledge. The two statements are not the same statement.
+
 ## Contact with Other Languages
 
 The Moreshi family has been in contact with the Iberos coastal languages for several centuries along the trade corridor, and Coastal Trade Moreshi has absorbed significant vocabulary in commerce, seafaring, and governance. Words borrowed from Iberos coastal speech tend to be bisyllabic and resist integration into the root system — they sit in Moreshi as unanalyzable units, which speakers of other dialects find irritating.
@@ -727,3 +979,67 @@ What Mittoli borrowed from Moreshi is less obvious but present. Several Mittoli 
 The Moreshi-Mittoli language barrier is significantly harder to cross than the Mittoli-Pyrosi barrier. Pyrosi and Mittoli share a distant common ancestor and enough structural features that mutual exposure, given time, produces rough comprehension. Moreshi shares nothing structural with Mittoli — different phonology, different root system, different word order — and exposure without instruction produces very little comprehension. Trade along the desert border has always been conducted through interpreters or through Coastal Trade Moreshi, and even the Trade dialect requires specific training for Mittoli speakers.
 
 The word Moreshi speakers use for the Mittoli language, when they need to refer to it, translates approximately as "the long water-sound": descriptive, not unkind, and accurate in the way that a person who cannot distinguish between rain and a river would still correctly identify that both involve something flowing.
+
+## Dialect Profiles
+
+The four-dialect summary earlier in this document names features without demonstrating them. The following section gives examples.
+
+### Canyon Moreshi: The [r] / [ʀ] Distinction
+
+Standard Moreshi has one r-sound: a trill or tap [r]. Canyon Moreshi has two: the standard [r] and a uvular trill [ʀ]. Canyon practitioners, when asked what the distinction encodes, give examples rather than definitions:
+
+[r] (standard) — directional, singular, unrepeated events and things. A road traveled once. A wound that healed. The sunrise on a specific named day.
+
+[ʀ] (uvular) — cyclic, returning, recurring phenomena. The seasonal migration of ibex to lower canyon. The wound that keeps reopening because it has not healed correctly. The sunrise as an event that happens every day.
+
+Examples in practice:
+
+| Standard r | Uvular ʀ | Difference |
+|-----------|----------|-----------|
+| *al-rimaal* — sand, counted as material | *al-ʀimaal* — the sands that reform; dunes that have been wind-shaped and will be wind-reshaped | material vs. cyclic event |
+| *ruʔyaa* — a single vision, a one-time dream | *ʀuʔyaa* — a recurring dream, a vision that returns | singular vs. repeating |
+| *ṭariiq* — a road traveled by this caravan, this journey | *ṭaʀiiq* — a route that has been walked seasonally for generations | individual use vs. inherited route |
+
+An oasis speaker attempting the distinction sounds affected or confused. Canyon speakers identify immediately when someone outside the tradition is attempting it without understanding it. The attempt is not discouraged, but it is noticed.
+
+The Caeras Valley Academy's position is that the canyon r-distinction is a phonological archaism preserved in isolation — a sound that simplified elsewhere and survived here through reduced contact. Canyon speakers have not formally responded to this characterization. When asked, they demonstrate the distinction and wait.
+
+### Nomadic Moreshi: The Compressed Register
+
+Caravan speech operates under a constraint that shapes every feature of the dialect: maximum information, minimum syllables. A sandstorm does not wait for a complete sentence.
+
+**Subject ellipsis:** Oasis speech expresses every subject. Caravan speech drops the subject when context makes it recoverable. *Yaṣbiru* — "waits" — is a complete caravan sentence when the subject is implicit (the caravan, the desert, the navigator). Identifying the agent is done when the identification matters; the action is reported when it does not.
+
+**Contracted prepositions:**
+- *min al-* → *mal-*: *malmuruuṣ* (from the desert) rather than *min al-muruuṣ*
+- *fii al-* → *fil-*: universal, not optional as in Oasis Moreshi
+- *ʕalaa al-* → *ʕal-*: most contexts
+
+**Water terminology:** Caravan speech has the most precise water vocabulary of any Moreshi variety, because the distinctions have survival value.
+
+| Term | Meaning |
+|------|---------|
+| *maaʔ baarid* | cold water from deep well; drinkable in quantity without concern |
+| *maaʔ ḥaarr* | surface water warmed by sun; drinkable but monitor |
+| *maaʔ qadiim* | water carried too long; still potable, beginning to taste |
+| *maaʔ faasid* | corrupted water; must not be drunk |
+
+The word *faasid* (corrupted, root F-S-D) is among the strongest negative terms in caravan speech, reserved for water, broken agreements, and character that cannot be trusted. A caravan master who calls a person *faasid* is not using a metaphor.
+
+**The compressed directive:** Caravan emergency vocabulary compresses standard phrases into single-word commands. Different halts have different names: *qif taam* (full halt — stop everything), *qif muʔaqqat* (temporary halt — maintenance), *qif simoom* (simoom halt — the specific protocol). In practice, *simoom* spoken alone initiates *qif simoom* without the verb. A caravan that does not respond to *simoom* spoken once by anyone — navigator, cook, apprentice — is operating incorrectly. The word carries its own imperative.
+
+### Coastal Trade Moreshi: Borrowed Stress
+
+Coastal Trade Moreshi is the dialect that has absorbed the most vocabulary from outside the Moreshi family. Its speakers can often be identified by which words they pronounce with Moreshi stress patterns (final or heavy-syllable stress) and which they pronounce with preserved foreign stress (typically penultimate or initial, depending on the lending language).
+
+Native Moreshi words follow the heavy-syllable rule: stress falls on the last syllable containing a long vowel or consonant cluster. Borrowed words preserve their donor-language stress. A skilled Coastal Trade speaker can identify the origin of an unfamiliar word by its stress alone. This is a learned skill; it is not universal, but it is respected — accurate etymological knowledge in a commercial context is practical intelligence, not pedantry.
+
+**Notable borrowings that have not assimilated into the root system** — they sit in the dialect as unanalyzable units, which speakers of inland dialects find irritating:
+
+*bortalan* — the port registry book; an Iberos loan for which no Moreshi equivalent exists (the desert peoples had no harbor-administration practice before coastal contact). The word takes no Moreshi plural; the plural is *bortalanat* using the feminine loan-plural suffix, which is itself a compromise.
+
+*gashuun* — a dock-worker cooperative; an Iberos concept and loan. The Moreshi *qawm* structure does not map onto port labor organization — *qawm* implies kinship or survival-proximity as the basis for community, neither of which describes a dock-worker association. The foreign term was adopted without modification.
+
+*mirsa* — anchorage. Disputed origin: some scholars argue this is native Moreshi (root R-S-W: to anchor, to fix in place) that independently developed a nautical application; others argue it is an Iberos loan that back-formed a spurious Moreshi root. The canyon communities find this debate irrelevant. The oasis communities note that arguing about where a word came from does not help you anchor a ship.
+
+**What the dialect lost:** Coastal Trade Moreshi has weakened the gender agreement system — in port contexts where Iberos, Pyrosi, and Moreshi speakers are trading in mixed groups, full agreement marking becomes a source of confusion rather than clarity. Coastal Trade speakers in commercial registers drop gender agreement on adjectives, keeping it only on verbs. This strikes inland Moreshi speakers as something failing; it strikes Coastal Trade speakers as something working.
