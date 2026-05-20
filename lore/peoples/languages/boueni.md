@@ -20,6 +20,20 @@ The substrate is the other defining feature: a layer of vocabulary and structura
 
 **Azner Island Bouéni** — spoken on the Azner Shores island chain extending south from the peninsula's tip. More conservative than the mainland variety: preserves grammatical forms that mainland speakers have simplified, retains substrate vocabulary that the mainland has replaced with Mittoli borrowings, and maintains phonological distinctions that mainland speech has collapsed. Linguists find the island dialect invaluable; island speakers find linguists reliable for provisions and otherwise of limited interest.
 
+The island dialect preserves several specific forms that mainland Bouéni has simplified or lost:
+
+**The old genitive *-av***: Island speech uses *-av* alongside *-el* in contexts of irreversible or complete possession — things that belonged wholly and are gone, or things that cannot be transferred. *Barrav* (of the ship, in the sense of fully belonging-to) survives in ritual songs where mainland speakers now say *barrel*. Linguists note that the ending is phonologically consistent with several substrate words; whether it is a preserved Proto-Western variant or a substrate-influenced form is not established, and the evidence does not clearly distinguish the two possibilities.
+
+**The strong aspect marker *via-***: Island dialect preserves *via-* in certain verb classes. Where mainland Bouéni says *vi-vaelõ* (I have sailed), an Azner elder may say *via-vaelõ*, marking a completed voyage that was in some sense definitive — one that changed something. The distinction is grammatically archaic but semantically alive; mainland speakers recognize the form as emphasis without fully reconstructing the original contrast.
+
+**Island-retained substrate vocabulary**:
+
+*tehel* — the moment at open sea when a navigator's position becomes suddenly and completely clear, not through gradual accumulation of readings but through their crystallization into a single known place. Mainland Bouéni has *lell* (navigable, clear enough) but no equivalent for this specific interior event. Azner navigators use *tehel* consistently for an experience they distinguish from deduction and estimation. Whether the mainland always lacked this word or gradually lost it as coastal navigation reduced the need for open-water reckoning is not established.
+
+*wõn* — the sound-quality of the sea over deep water: a particular resonance distinct from the sounds over shallows. Experienced island navigators use it as a depth indicator and a bearing marker. The mainland uses *bou-vel* (deep-cold, the felt quality of deep water) for related conditions; *wõn* is more specific and refers consistently to the auditory perception, suggesting a precisely developed term in the substrate tradition.
+
+*oul* — the physical sensation of the outer current taking hold of a hull before the vessel has traveled far enough to see that it is being pulled. A subtle thing — movement without visible cause. Island navigators track *oul* as an early indicator that a vessel has entered the Deep River current. The phonological shape (two open syllables, no nasal vowels, vowel sequence) is substrate-consistent. It appears in certain Southern Archipelago navigational accounts as a named condition, under a different word.
+
 **Te Nillium Maritime** — a contact variety spoken at the gateway city and along the northern trade coast, mixing Bouéni grammar with Mittoli vocabulary in proportions that vary by topic. When discussing commerce, weather, or navigation, it sounds primarily Bouéni; when discussing politics, scholarship, or anything the Mittoli had words for first, it sounds primarily Mittoli. Not a fully separate dialect — more a style of use that reflects a century of pragmatic coexistence.
 
 ## Writing
@@ -482,6 +496,97 @@ Bouéni emotion vocabulary is practical. It often names the outward navigational
 **liñĩl** — to speak, to use language  
 **shevĩl** — to freeze, to go cold; a sailor who "shevals" (goes cold internally) has lost their nerve
 
+### The Sky and Stars
+
+Bouéni navigational astronomy is not a formal science in the Academy sense. It is a body of memorized relationships between stars, swells, and current patterns transmitted through the *ornel-kelo* (star-table recitation) and through apprenticeship.
+
+**kelo** — SUBSTRATE. The southern navigation star, visible from the Azner Shores and the peninsula's southern tip. Already noted.
+
+**veld-kelo** — cold-wind star: the northern bearing star, the one a Bouéni navigator uses for due-north readings. Not a substrate word — the name is descriptive: the star in the direction from which the cold current-wind comes. In the island dialect this star is sometimes called *örn-sav* (sky-rope), because a line from *veld-kelo* to *kelo* is the rope that measures north-south orientation on open water.
+
+**barran örnel** — the sky-crew, the crew in the sky: a prominent southern constellation of seven stars used for bearing confirmation on open-ocean voyages. The stars are individually named, several after seabird species. The constellation is visible only from latitudes south of the Mittolo heartland — it is a Bouéni navigational reference that mainland Mittoli sailors cannot use directly, which is one of the small daily reasons Bouéni pilots continue to be hired for southern routes.
+
+**kãvel örnel** — dawn-sky stars: the configuration of stars just before sunrise that experienced navigators read for the day's likely weather. Not a specific star but a set of observational relationships. Learning to read *kãvel örnel* accurately is one of the later stages of navigational training.
+
+**bou-örn** — deep-sky, the zenith directly overhead: in substrate navigational practice, the overhead star at a given latitude is a primary position fix. The term treats the deep sky directly above the vessel as analogous to the deep water directly below it — both are unknowable in their full extent, both are navigated through reading what can be observed at the surface.
+
+**ornel-kelo** — star-table: a memorized sequence of star bearings used in instruction. Not a physical table. Students recite it in rhythm while pointing with two fingers — one for the star, one for the expected swell. See also: *Boats, Work, and Daily Life* above.
+
+### Sea Creatures
+
+**bou-barr** — the whale: literally "deep-ship." Probably a Bouéni compound rather than substrate, but the naming convention — the largest sea creature rendered as a vessel of the depth — reflects substrate categories. Whales are considered *bou* creatures: things of the deep water rather than the navigated sea. Killing one is neither prohibited nor practiced.
+
+**barr-nima** — ship-children: dolphins. Named for their habit of traveling with vessels. Grammatically masculine plural despite *barr* (ship) being feminine, because the dolphins are the children, not the ship. A vessel accompanied by *barr-nima* is considered well-situated, though Bouéni sailors are careful not to treat this as guarantee.
+
+**shem-nosh** — signal-fish: a schooling species that surfaces in large quantities and unusual movement patterns twelve to twenty-four hours before major storms. Named for the warning function — a sailor who reads *shem-nosh* behavior correctly has received the sea's *shevel*. The species is edible, unremarkably flavored, and economically unimportant. Its navigational value far exceeds its commercial value.
+
+**briñ-nosh** — fog-fish: a deep cold-water species that rises to upper water in dense fog conditions, possibly following temperature gradients. Their presence in the catch during fog is a depth indicator; an unusually large fog-fish haul means the vessel is over deep water regardless of what the chart says should be visible.
+
+**vael-korr** — sea-net: a jellyfish species with unusually long trailing tentacles. Grammatically feminine, grouped with fog and the sea because they conceal and reveal by the same action. Navigators note concentrations of *vael-korr* as indicators of current edges, where conditions change.
+
+**nosh-ia** — SUBSTRATE. An unknown deep-water creature referenced in several old navigational accounts as something felt through hull vibration at great depth. Not described in Azhoran natural history — the accounts come from Bouéni sailors and Azner Island oral traditions. Whether it is a specific creature, a category of creatures, or a navigational phenomenon misattributed to biology is not established. The name uses the substrate word *ia* (the unknowable beyond) as its second element, which is the naming pattern for several substrate concepts: the thing in the direction of what cannot yet be confirmed.
+
+### Color and Perception
+
+Bouéni color vocabulary is oriented toward maritime conditions. It has fewer terms for spectral abstraction than Mittoli and more terms for qualities of light and water-color that indicate navigational conditions.
+
+**belu** — blue-grey: the color of deep cold water, the Blue Stones, and overcast cold sky. The most important color word in the language; the standard of comparison.
+
+**aala** — reddish-orange: the horizon color associated with specific wind and current patterns. Already noted as a weather-sign word; the color itself is named from the phenomenon. When Bouéni speakers use *aala* as a pure color description, they are using a weather word as a color word — the association is primary.
+
+**briñ-vel** — fog-grey: the flat, de-saturated grey of fog-weather. Distinct from *belu* (which has depth and temperature quality) and from *örn-vel* (sky-cold). Not a prestige color, but it names the most common color of the Bouéni sky without sentimentalizing it.
+
+**örn-vel** — sky-cold: the blue-white of clear cold sky on a navigation day. A favorable color — it means the sky is open for star-work and the weather is settled.
+
+**lhav-vel** — marker-cold: the specific color of the Blue Stones — a cold blue-grey with slightly more green than *belu*. The distinction between *belu* and *lhav-vel* is one that most Mittoli visitors cannot perceive. Bouéni speakers maintain it because the Blue Stones are not the same color as the sea, and using the right word matters.
+
+**veld-belu** — current-blue: the specific color of water over the Deep River current, distinguishable to an experienced navigator from surrounding ocean by a slight darkening and cooling of tone. A navigator who spots *veld-belu* has confirmed their position relative to the current without any other reference.
+
+## Counting and Measurement
+
+### Numbers Beyond Ten
+
+Bouéni numbers above ten use a multiplicative system built on the base-ten count. The word for ten (*velõ*) combines with smaller numbers to form multiples:
+
+| Number | Bouéni | Notes |
+|--------|--------|-------|
+| 11 | *velõ-él* | ten-one |
+| 12 | *velõ-dĩ* | ten-two |
+| 20 | *dĩ-velõ* | two-tens |
+| 30 | *srĩ-velõ* | three-tens |
+| 40 | *kuv-velõ* | four-tens |
+| 50 | *mes-velõ* | five-tens |
+| 60 | *srel-velõ* | six-tens |
+| 70 | *sẽ-velõ* | seven-tens |
+| 80 | *nõsh-velõ* | eight-tens |
+| 90 | *ĩvõ-velõ* | nine-tens |
+| 100 | *savõ* | rope-count; see below |
+| 1000 | *vael-savõ* | sea-hundred; approximately uncountable |
+
+The word *savõ* (hundred) derives from *sava* (rope, obligation): large quantities were counted using knotted ropes, one knot per unit, a hundred knots per coil. A merchant who "has three savõ of fish" has three coils of counting-rope's worth. The *savõ* is simultaneously a numerical value and a physical object. Disputes about quantities are disputable only if a coil was wrong — which is the kind of precision the Bouéni find both satisfying and appropriate.
+
+*Vael-savõ* (literally sea-hundred, effectively thousand) is a more informal unit implying quantity beyond close counting. "A sea-hundred of fish" communicates *large and approximately enumerable*, with the understanding that the sea-count is approximate in the way the sea is: present, large, and not entirely amenable to precision.
+
+### Navigational Distance
+
+Bouéni does not measure distance in abstract units. It measures in conditions:
+
+**kã-vael** — a current-day: the distance a vessel makes in one day's sailing with the Deep River current. Variable but consistent enough to use for planning.
+
+**veld-noa** — a cold-wind return: the distance from which the coastal cold wind off the Bouén peninsula becomes detectable by a sailing vessel. "We're within a veld-noa" is not a precise statement but a navigational mood: close enough to home to recalibrate.
+
+**briñ-kã** — fog-time: the interval during which a vessel can navigate blind before dead-reckoning drift becomes unreliable. Approximately half a kã-vael; used as a threshold. Navigating fog for more than one briñ-kã without a reference demands specific technique.
+
+**ornas-sẽv** — star-night without land: a night's sailing on open ocean with no land visible by dawn. One ornas-sẽv means the journey requires open-ocean navigation; two consecutive nights means a vessel is genuinely at sea.
+
+### Cargo and Fishery
+
+**nosh-barran** — crew-fish: the share of catch assigned to one crewmember as their portion. A unit used when dividing catch rather than when assessing total yield.
+
+**korr-sav** — net-line: the full content of one net-haul. A vague unit — nets vary — but standard enough in the smokehouse trade that "three net-lines of cold-current fish" communicates clearly.
+
+**dõm-vel** — house-cold: the quantity of provisions needed to supply one household through the cold season. Used for supply assessment before winter and before long voyages. "We have two dõm-vel" means the household is provisioned to twice the cold-season need — surplus for trade or guests.
+
 ## The Substrate
 
 Scattered throughout Bouéni — in navigation vocabulary, in certain kinship terms, in the names of coastal phenomena, and prominently in the words that describe things the Bouéni believe were here before they were — is a layer of words that does not come from Proto-Western and has no cognates anywhere else on Azhora.
@@ -600,7 +705,19 @@ Bouéni has no formal class register comparable to Pyrosi and no ritual language
 
 **Fog Speech** — the restricted command style used during low visibility. Short clauses, evidential particles, repeated bearings, no jokes. Fog Speech avoids personal names unless someone is in danger; names carry too much emotional force and can pull attention away from the shared task.
 
-**Stone Speech** — the formulaic language used near the Blue Stones and old navigation markers. It preserves archaic word order in a few fixed phrases and uses feminine agreement for stones that ordinarily take masculine agreement. Outside scholars have tried to collect Stone Speech as a coherent ritual register. Bouéni informants tend to provide three phrases, stop, and say the rest is "for when the stones are there."
+**Stone Speech** — the formulaic language used near the Blue Stones and old navigation markers. It preserves archaic word order in a few fixed phrases and uses feminine agreement for stones that ordinarily take masculine agreement. Outside scholars have tried to collect Stone Speech as a coherent ritual register. Bouéni informants tend to provide three or four phrases, stop, and say the rest is "for when the stones are there."
+
+The phrases that informants reliably produce:
+
+*"De vael, ven lhav. Të lhav vi-lĩla-on brẽ noa."* — "From sea, to the markers. The markers have spoken before return." The approach phrase, used when a vessel nears the Blue Stones after a voyage. This form also appears in the Sample Texts below.
+
+*"Lhav sẽ nima; lhav noa-vel."* — "The marker is not a child; the marker is the return-cold." *Noa-vel* is an unusual compound: return-cold, the cold that belongs to completion approaching. Said near the Blue Stones when approaching from the south.
+
+*"Ia vi-bou-a. Bou nav ia."* — "Out there has sounded in the deep. The deep is not out there." Outside scholars initially rendered this as simple spatial description ("Out there was deep"), but Bouéni speakers correct this consistently: *bou-a* is a verb form — the deep sounded, acted, made itself known in the direction of *ia*. The reversal in the second clause is not contradiction. It is the full meaning: the action moved from beyond toward the deep, and the deep is not reducible to the beyond.
+
+A fourth phrase, which some informants produce before stopping: *"Kelo vi-navell-o. Nõ sẽ vi-navell-õ."* — "The star has voyaged. I have not [yet] voyaged." Here *sẽ* (ontological negation) does unusual work: not "I have not sailed" but "I have not yet reached the completed state of having voyaged." A statement of ongoing journey, not failure. The phrase appears more often among young navigators than old ones.
+
+After these, informants stop — not from reluctance exactly, but in accordance with the principle encoded in the Lhav proverb: the marker does not speak to you. You speak toward the marker. The rest requires the stones to be present.
 
 ## Proverbs and Sayings
 
@@ -642,6 +759,48 @@ Used to correct overconfident interpretations of old signs. Also said to childre
 "If your heart is open-ocean, follow the near-shore."
 When disoriented, choose the route with landmarks. Said as advice for grief, drunkenness, navigation, and accounts.
 
+---
+
+*Të bou nav veld-a; të bou vi-veld-o.*
+"The deep does not blow cold; the deep has been cold."
+The cold of the deep is not weather — it is what the deep is. Used to distinguish conditions that can change from natures that cannot.
+
+---
+
+*Sava vi-brena-a brẽ bou.*
+"The rope knew the deep before."
+Old obligations are older than you realize. Said when someone is surprised by a duty they should have anticipated.
+
+---
+
+*Vi-briñĩla-a mes kã.*
+"She navigated fog for five seasons."
+Said of someone who endured a long, ambiguous difficulty with skill. The feminine agreement is grammatical — fog is feminine.
+
+---
+
+*Nav shi ĩ-sulĩl, nav ma ĩ-shevel.*
+"Not knowing who will land, not knowing what will warn."
+Said when too many things are unresolved to plan. Not a despairing saying — it is followed in practice by action. The point is that unresolved conditions are where attention goes, not where it stops.
+
+---
+
+*Briñ nav liñĩl; briñ tevilĩl.*
+"Fog does not speak; fog is navigated by swell."
+Do not ask conditions to explain themselves. Read what they show. Used for teachers who over-explain and for authorities who speak at length when movement is needed.
+
+---
+
+*Të nill vi-viña-a brẽ barr.*
+"The strait arrived before the ship."
+The geography existed before you got here. Said to people who are surprised by a difficulty that was always there, and to powers that attempt to control what they did not make.
+
+---
+
+*Ornas nav kã-vel; ornas nav briñĩl.*
+"Star-time is not a current-day; star-time does not navigate fog."
+Different conditions require different knowledge. Not a hierarchy — night-sailing requires stars; fog requires swell. Applying the wrong skill to the wrong condition is the failure, not lack of skill.
+
 ## Sample Texts
 
 ### A fog-navigation instruction
@@ -668,6 +827,64 @@ From sea, to the markers. The markers have spoken before return.
 
 *Notes: lhav = SUBSTRATE, the navigation stones. vi-lĩla-on = perfective-speak-3plM (masculine plural for stones, though in certain ritual uses the stones take feminine agreement). The phrase is conventional — the specific words are not analyzed by Bouéni sailors, just used. It is said on approach to the Blue Stones, before landing near them.*
 
+### A children's bearing rhyme
+
+A teaching song for orientation. Each number is paired with a direction or navigational condition; the sequence teaches numbers 1–10 and a map of attention priorities simultaneously.
+
+*Él ven noa — one, toward return.*
+*Dĩ ven barr — two, toward the ship.*
+*Srĩ ven veld — three, toward the cold wind.*
+*Kuv ven lenn — four, toward near-shore.*
+*Mes ven sul — five, toward land.*
+*Srel ven briñ — six, into fog.*
+*Sẽ ven örn — seven, toward sky.*
+*Nõsh ven kelo — eight, toward the southern star.*
+*Ĩvõ ven ia — nine, toward out there.*
+*Velõ ven bou — ten, toward the deep.*
+
+*Notes: The sequence moves from domestic (return, ship, near-shore, land) through weather (cold wind, fog) through navigation (sky, southern star) to the unknowable (out there, the deep). The island dialect version reverses ĩvõ and velõ so the deep comes before the out-there — a small difference with implicit meaning about which is more fundamental.*
+
+### A naming ceremony exchange
+
+Formal naming in House Speech, spoken at a quayside when a young person receives their sea-name:
+
+*"Shi vi-briñĩla-o?"*
+"Who navigated fog?"
+
+*"Lell, briñmar. Nõ vi-briñĩla-õ."*
+"Lell, the fog-navigator. I navigated fog."
+
+*"Ma vi-shevelĩla-a?"*
+"What gave warning?"
+
+*"Të biru vi-shevelĩla-a. Nõ vi-sẽna-õ ya."*
+"The storm-sign gave warning. I saw it and I did not ignore it."
+
+*"Shi ĩ-noa-vel?"*
+"Who will receive return?"
+
+*"Amme Teñel, noamar nõel."*
+"Mother Teñel, my return-person."
+
+*"Es la Shemlell."*
+"You are Shemlell — Clear Signal."
+
+*Notes: The exchange confirms three things: the act that earned the name, the evidence (including the evidential particle ya — directly observed), and the noamar. The name is given in response to what was observed, not chosen. The ceremony is short; names given by long speeches are considered suspicious.*
+
+### A House Speech dispute
+
+Two households in disagreement over a shared boat obligation:
+
+*"Barr nõel vi-barrana-a srĩ kã. Barr esel nav vi-sulĩla. Avẽl-ma ĩ-kova-o nõel kã-vael?"*
+
+"My ship carried your crew for three seasons. Your ship did not land. Along what path will my current-day be repaid?"
+
+*"Sava vi-brena-a brẽ bou. Nõn brizel-õn wĩs esen, nav sev. Kã srĩ vi-viña-a — barran nõn ĩ-lhavĩl ven esen."*
+
+"The rope knew the deep before. We shelter with you, not without. Three seasons have come — our crew will mark toward you."
+
+*Notes: The resolution uses barran nõn (our crew) to signal collective obligation, and offers future service (ĩ-lhavĩl ven esen — will mark toward you) rather than immediate material repayment. Citing the rope proverb in House Speech signals that the speaker is aware they are entering an old pattern, not inventing a new grievance. This is conventional and considered a move toward resolution.*
+
 ## Contact with Other Languages
 
 Standard Mittoli borrowed significantly from Bouéni in maritime domains, and the loans are old enough to have naturalized. Mittoli words for several coastal weather phenomena, the standard Mittoli term for a long-distance sea voyage (*naveloss*, from Bouéni *navel*), and several ship-part names entered Mittoli through Bouéni contact at Te Nillium and the northern peninsula coast. The borrowing direction reversal — Bouéni giving to Mittoli rather than receiving — is unusual in an era when Mittoli cultural and commercial influence was dominant, and reflects the fact that the Bouéni had things Mittoli needed: nautical knowledge, southern sea routes, weather reading.
@@ -677,3 +894,35 @@ In the other direction, Bouéni has absorbed Mittoli vocabulary in governance, a
 The relationship between Bouéni and the Southern Archipelago languages is documented but poorly understood. Three hundred years of contact has produced shared vocabulary in the maritime trade domain — mostly Bouéni words absorbed into Archipelago trade speech rather than the reverse, since the Bouéni were the ones arriving — but certain Bouéni navigators who have spent extended time in the northern archipelago report recognizing things: in the swell-reading vocabulary, in the navigational star names, in words for the sea that have no reasonable explanation for their similarity. These navigators, when they report this, are believed or not believed according to the listener's prior assumptions. The substrate sits at the center of the question regardless.
 
 Bouéni and Moreshi are mutually unintelligible and share no ancestry. Bouéni sailors and desert caravan traders have been trading at the southern coastal ports for centuries and have developed a small specialized pidgin — *Vaelmorash* (sea-desert speak) — for transactional purposes. It has no native speakers and its grammar borrows from neither parent language in a consistent way, which is typical of emergency contact varieties and which both communities find satisfactory.
+
+### Vaelmorash
+
+**Sound system**: Moreshi uvular consonants are softened to Bouéni fricatives; Bouéni nasal vowels appear in a handful of established words but are not reliably produced by Moreshi speakers. The overall phonological feel is approximated Bouéni.
+
+**Grammar**: SVO word order (Bouéni influence). No articles. No grammatical gender. No cases. Tense is marked by time words rather than verb forms, which satisfies neither side but works.
+
+**Vocabulary source**: Roughly 60% Bouéni-derived nouns and verbs, 35% Moreshi-derived (especially numbers and cargo terms), 5% East Pyrosi trade borrowings. Moreshi counting words displaced Bouéni numbers in commercial contexts because Moreshi's counting system handles large quantities more efficiently. Bouéni maritime nouns dominate everything else.
+
+**Sample vocabulary**:
+
+| Vaelmorash | Source | Trade meaning |
+|------------|--------|---------------|
+| *nosh* | Bouéni | fish, fish products |
+| *barr* | Bouéni | boat, vessel |
+| *belu* | Bouéni | good, quality ("blue quality" — deep cold water is the good standard) |
+| *shevel* | Bouéni | warning, problem, defect |
+| *kuv* | Bouéni | four; loosely "several" |
+| *qad* | Moreshi | price, value |
+| *drikh* | Moreshi | caravan load, unit of dry goods |
+| *lhav belu* | Bouéni | guarantee — "blue marker," a binding trade agreement |
+| *nav lhav* | Bouéni | dispute — "no marker," denial of a previous agreement |
+
+**Characteristic phrases**:
+
+*Nosh belu, qad ma?* — "Good fish, what price?" The most common question in the southern port markets.
+
+*Barr vi-navell-a. Shevel nav.* — "The ship has voyaged. No warning." Goods arrived safely, no damage.
+
+*Lhav belu sulĩl.* — "Blue-marker lands." The agreement stands. A confirmation of terms.
+
+Neither community considers Vaelmorash a real language. Both use it comfortably for commercial purposes. The Caeras Valley Academy has not studied it formally, partly because it lacks the antiquity that makes languages interesting to Academy linguists and partly because most Academy scholars cannot produce the Moreshi consonants required for the Moreshi half of the vocabulary.
