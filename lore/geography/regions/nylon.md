@@ -1,9 +1,9 @@
 ---
 name: Nylon
 category: geography
-tags: [Nylon, city-state, Iberos Coast, Lizeem River, philosophy, intellectual, culture, independent]
+tags: [Nylon, city-state, Iberos Coast, Lizeem River, philosophy, intellectual, culture, independent, walls]
 status: draft
-related: [Iberos Coast, Mittolo, Svaleen, Azhora, Caeras Valley Academy, Lizeem River]
+related: [Iberos Coast, Mittolo, Svaleen, Azhora, Caeras Valley Academy, Lizeem River, Eer]
 ---
 
 # Nylon
@@ -65,6 +65,20 @@ The Lizeem is not itself Nyloni — it runs through Mittoli country for most of 
 The river traffic is the city's heartbeat. The character of the day in the river districts is governed by the tides and the current and the seasonal state of the water upstream, and Nyloni who have no professional relationship with the river nonetheless learn to read these conditions the way all inhabitants of port cities eventually learn to read the weather — not because they need to, but because it is always there, shaping the mood of the day without announcing itself.
 
 The upriver communities have complicated feelings about Nylon. They depend on it; they resent the dependence; they send their clever children there; they complain about how the clever children come back changed. This is a relationship the Nyloni consider so standard as to be barely worth commenting on.
+
+---
+
+## Eer and the Walls
+
+Nylon's relationship to the world beyond its walls is shaped by a recurring strategic reality that the city has learned to plan around rather than prevent: its hinterland, the agricultural region called Eer lying north and east of the city, changes hands regularly. The inland powers that periodically threaten the city all arrive at the same calculation — seize Eer, cut Nylon's food supply, wait — and they all encounter the same problem, which is that the calculation assumes a city that can be starved.
+
+Nylon cannot be starved. The harbor is inside the walls.
+
+The Walls of Nylon are the structural answer to Eer's vulnerability. They are older than the city's intellectual reputation, probably older than its current form of government, and their design is not that of walls built to defend a prosperous city against opportunistic raiders. They are built to the specification of a city that expects to lose its farmland repeatedly and must be able to survive that loss indefinitely. The harbor is integrated into the wall system so that ships can offload into the city's protected interior without passing through unsecured space. The provision stores built into the wall fabric are deep enough to supply the city for seasons without external resupply. The curtain sections can be sealed from one another.
+
+What this means in practice: when Eer is occupied by a hostile power, Nylon's food becomes more expensive, its north-road revenues disappear, and its landward trade slows to what can reach the city by sea. It does not fall. The occupying power holds productive agricultural land and northern road revenues and the ability to camp soldiers within sight of Nylon's walls, and none of these things translate into control of the city. Eventually the occupying power withdraws. Nylon reasserts control of Eer, rebuilds what was damaged, and the cycle continues.
+
+The Nyloni are not casual about this dynamic — they maintain the walls with the seriousness of an institution that understands its own survival depends on them, and the question of who built them and whether the engineering can be replicated if a section is damaged is a genuine subject of scholarly interest rather than mere antiquarianism. But they are also, after enough iterations, not alarmed by it. The walls are their argument that they cannot be owned. The argument has held.
 
 ---
 
