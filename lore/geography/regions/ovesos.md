@@ -1,7 +1,7 @@
 ---
 name: Ovesos
 category: geography
-tags: [Ovesos, Oveth, Lizeem, inner branches, agriculture, river kingdom, grain, orchard, water rights, five branch countries, Thelom, Noras, Errath, Selvar, Middle Reach, Water Council]
+tags: [Ovesos, Oveth, Lizeem, inner branches, agriculture, river kingdom, grain, orchard, water rights, five branch countries, Thelom, Noras, Errath, Nethereum, Middle Reach, Water Council]
 status: draft
 related: [Telemonia, Gala, Minora, Lizeem River, Mittolo, Mithala, Nylon]
 ---
@@ -46,7 +46,7 @@ Ovesos is one of five polities that recognize themselves, and are recognized fro
 
 **Errath** occupies the eastern inner branch, a separate river and a separate valley system. The oldest dispute in the inner-branch country is between Ovesos and Errath; the original grievance is not remembered with any precision by either side, which has made it remarkably durable. Ovesos and Errath have been at formal peace for forty years and share a boundary that neither side is satisfied with. Errath and Thelom have periodically cooperated against Ovesos; this cooperation has never produced decisive results but has shaped Ovesian external policy, which tends toward preoccupation with the two-front problem.
 
-**Selvar** occupies the western inner branch, the smallest of the five, positioned against the forested upland country to the west. Selvar manages its smallness by being consistently useful to whatever combination of the other four it currently favors. It is presently aligned with Ovesos against Errath, an alignment Ovesos receives without fully trusting.
+**Nethereum** occupies the northwestern inner branch — a flood country built around the Nethermere, a seasonally-expanding basin lake. Its economy runs on fish, wet-adapted crops, and post-flood cattle pasture rather than orchard and grain. Governed by a Flood Council of distributed ridge communities; no single capital, no binding interlocutor. Currently maintaining a workmanlike commercial relationship with Ovesos — neither ally nor active rival, but present in each other's calculations whenever the inner-branch alignment shifts.
 
 These five polities have no formal federation, no shared institution, and no agreement that has lasted more than a generation. What they share is the Lizeem's upper water system and the downstream obligations Minora imposes on all who use it. The Branch Courts can theoretically adjudicate inner-branch disputes; in practice, Branch Court decisions are only enforced when the party against whom they are decided is weaker than the enforcing party. This is the basic structure of all legal systems. Here it is simply more visible.
 
