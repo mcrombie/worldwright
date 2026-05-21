@@ -3,7 +3,7 @@ name: Caricas
 category: geography
 tags: [Caricas, Errath, Carica, vel-caric, river fox, inner branches, corridor, fox keepers, five branch countries, Lizeem, water rights, Ovesos, Isoruous, woodland, mining]
 status: draft
-related: [Ovesos, Isoruous, Thelom, Nethereum, Minora, Lizeem River, Mittolo, Mithala]
+related: [Ovesos, Isoruous, Nescor, Nethereum, Minora, Lizeem River, Mittolo, Mithala]
 ---
 
 # Caricas
@@ -76,7 +76,7 @@ The fox keeper families hold council seats through their valley community member
 
 **Minora** — The Branch Court's consistent failure to find applicable precedent for corridor-related claims has made Carican legal strategy primarily defensive: protecting what is established rather than expanding it. The First Divider's office treats Carican petitions with somewhat more attention than it gives Ovesos's, because Carican submissions tend to be shorter and more focused. The Caricas have noted this and continued the practice.
 
-**Thelom** — Upstream of Ovesos and geographically distant from Caricas; the two have no direct relationship. Thelom and Caricas have occasionally found themselves aligned in three-way Branch Court proceedings involving Ovesos, which has produced working communication without warmth. The Thelom-Caricas alignment that Ovesos has historically been concerned about has never produced decisive coordination, partly because Thelom and Caricas have no more reason to trust each other than they have reason to cooperate against Ovesos.
+**Nescor** — Upstream of Ovesos and geographically distant from Caricas; the two have no direct relationship. Nescor and Caricas have occasionally found themselves aligned in three-way Branch Court proceedings involving Ovesos, which has produced working communication without warmth. The Nescor-Caricas alignment that Ovesos has historically been concerned about has never produced decisive coordination, partly because Nescor and Caricas have no more reason to trust each other than they have reason to cooperate against Ovesos.
 
 **Nethereum** — Separated from Caricas by Ovesos and the main Lizeem channel. No direct relationship. They appear in each other's political calculations only when the inner-branch alliances shift enough to matter.
 
