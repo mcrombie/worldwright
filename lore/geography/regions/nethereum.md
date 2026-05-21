@@ -3,7 +3,7 @@ name: Nethereum
 category: geography
 tags: [Nethereum, Neth, Nethermere, Lizeem, inner branches, flood, wetland, river, fish, cattle, five branch countries, Ovesos, flood memory, Nethrani, marshland, seasonal]
 status: draft
-related: [Ovesos, Telemonia, Gala, Minora, Lizeem River, Mittolo, Mithala]
+related: [Ovesos, Isoruous, Telemonia, Gala, Minora, Lizeem River, Mittolo, Mithala]
 ---
 
 # Nethereum
@@ -76,7 +76,7 @@ Minora finds the Flood Council difficult to deal with because there is no single
 
 **Ovesos** — Northwest boundary neighbors and, by the standards of the inner-branch competition, neither allies nor active rivals. Ovesos's water-rights obsession and Nethereum's flood-management orientation produce different political languages; they compete in the Minoran Branch Court for different things and rarely find themselves in direct opposition. The Ovesian Water Council finds the Flood Council's structure frustrating — there is no equivalent body to negotiate with, no binding agreement mechanism. The Nethrani find the Ovesian fixation on documented claims slightly absurd in the context of a landscape that periodically resets. The practical relationship is workmanlike: Nethrani fish and Ovesian grain move through shared border markets; neither polity spends significant political capital on the other.
 
-**Noras** — The most important relationship in the inner-branch system for Nethereum, since Noras controls the route by which Nethrani fish and marsh goods reach the main Lizeem market. The Nethrani have a passage arrangement with Noras, maintained separately from Ovesos's arrangement and on different terms. Noran factors have been buying preserved Nethrani fish for long enough that there is a standing commercial relationship beneath the political one; in the rare event that the Flood Council fails to reach agreement and Noras must decide who to favor, the fish trade tends to inform the decision.
+**Isoruous** — The most important relationship in the inner-branch system for Nethereum, since Isoruous controls the staging grounds at Vel-Oss where Nethrani fish and marsh goods transfer to Lizeem barges for the downstream market. The Nethrani have a passage arrangement with Isoruous, maintained separately from Ovesos's arrangement and on different terms — the Nethrani deal primarily with the Upstream Faction of the Isor River Council, which values the fish trade as an asset independent of the Minoran commercial relationship. Isorani factors at Vel-Oss have been buying preserved Nethrani fish for long enough that there is a standing commercial relationship beneath the political one; in the rare event that the Flood Council fails to reach agreement and the Isor River Council must decide who to favor, the fish trade tends to inform the decision.
 
 **Thelom** — Upstream of Ovesos and further removed from Nethereum. The Nethrani have periodic disputes with Thelom over the western upper tributaries where the two river systems' catchments overlap; when Thelom diverts water upstream it affects the Neth's flow into the Nethermere. These disputes are slower-developing and less intense than the Ovesos-Thelom boundary conflict, because changes to the Nethermere's water level are gradual and ambiguous in cause. The Nethrani do track the correlation. They simply cannot prove it to Branch Court standards.
 
