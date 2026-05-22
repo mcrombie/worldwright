@@ -3,7 +3,7 @@ name: The Lotharn Mountains
 category: geography
 tags: [Lotharn, mountains, old-growth, valleys, mining, ancient, eastern Azhora, forested, passes, geology]
 status: draft
-related: [Mittolo, Mithala, Amod, Elagos, Ambron, The Plains, East Pyros, Azhora, Lizeem, Minora]
+related: [Mittolo, Mithala, Amod, Elagos, Ambron, The Plains, East Pyros, Azhora, Lizeem, Minora, Yunethre, Celder]
 ---
 
 # The Lotharn Mountains
