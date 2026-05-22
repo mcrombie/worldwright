@@ -3,7 +3,7 @@ name: Celder
 category: region
 tags: [Celder, plains, horses, cavalry, Mittolo, Oremindi, Canerd, horse-lords, decentralized, grassland, upper Lizeem, breeding, military]
 status: draft
-related: [Mithala, Mittolo, The Oremindi Mountains, Minora, Lizeem River, Azhora, Acorwood, Sevron, Yunethre]
+related: [Mithala, Mittolo, The Oremindi Mountains, Minora, Lizeem River, Azhora, Acorwood, Sevron, Yunethre, Narcosh]
 ---
 
 # Celder
