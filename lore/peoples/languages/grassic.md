@@ -1,7 +1,7 @@
 ---
 name: Grassic Language Family
 category: language
-tags: [language, conlang, Grassic, Plains, evidentiality, polysynthetic, oral-law, Memory-Grass, caull, cord-notation, Auwel, primordial, sor-practice, oral-tradition, tallhorn, seasonal-calendar, idiom, proverbs]
+tags: [language, conlang, Grassic, Plains, evidentiality, polysynthetic, oral-law, Memory-Grass, caull, cord-notation, Auwel, primordial, sor-practice, oral-tradition, tallhorn, seasonal-calendar, idiom, proverbs, negation, discourse, body-vocabulary, weather-vocabulary, trade-register, language-acquisition, humor, wordplay]
 status: draft
 related: [The Plains, Languages of Azhora, Standard Mittoli, Moreshi Language Family, Pyrosi Language Family, Bouéni Language]
 ---
@@ -297,6 +297,58 @@ In Grassic, asking a question reveals what the asker already believes. This is n
 
 ---
 
+## Negation and Correction
+
+Grassic has no negative particle. A language designed around evidential commitment has no grammatical slot for bare denial. Negation is handled through three mechanisms, each consistent with the evidential framework.
+
+**Evidential correction** — the most common form in conversation. When a hypothesis is wrong, the respondent corrects the specific element that is inaccurate and replaces it with the right one in the appropriate evidential. A question stating *vel-u-thraun-ko-thor* ("the group traveled toward water this season — I infer?") receives not "no" but *nell-u-thraun-no-voth* — "toward winter, not water; last cycle, not this — direct experience." The correction specifies what was wrong and what the truth is. Bare denial has nowhere to go; a denial with no correcting predicate leaves the listener with an uncorrected evidential claim and nothing to do with it.
+
+**The *gaul-* negation** — for ongoing states without a clear contrary. The spatial prefix *gaul-* (lateral, off the route) applied to a stable claim produces something between "this is not functioning" and "this has no reliable direction." *Gaul-o-thraun-ko-voth* — "the passage circles without settling in the current cycle — direct experience" — indicates that what was a route is now in the *gaur* state: present but without clear forward direction. Used for abandoned routes, failed routes, claims no longer actively supported, and a person who has no community. The thing exists; it just cannot be relied upon. This is different from absence (*bel-thraun*, below) because the thing is still there.
+
+**The *bel-thraun* absence** — for things that are genuinely not present. A route no one is traveling is *bel-thraun*: a first-time route, the passage that begins again with no history. Anything untraveled is being traveled for the first time by the nothing that uses it. This works as an idiom for non-occurrence, silence, and death. "Nobody went that way" is *bel-u-thraun-ko-ther* — "a first-time-route animate: I infer." Death uses *bel-thraun* in the sense of the community route resuming without the person who traveled it before — *bel-gol-thraun*, the herd-route begins again — while the person's *sor* enters the Memory Grass retention. These are the grammatically available forms for the concepts in question; the language provides no other architecture for them.
+
+**The philosophical consequence:**
+Grassic cannot assert that something definitely does not exist. It can only assert the degree to which evidence for existence is absent. *Bel-o-kaul-ko-ther* — "no Memory Grass site here: I infer" — is not a declaration of non-existence but an inference from current evidence, carrying the *-ther* suffix's built-in acknowledgment that the speaker might be wrong. A *u-kaul* who makes this inference and later finds a site reports: the inference was accurate across most of the area; the new site was present but not yet readable to them. Neither claim cancels the other. Both were accurate statements of evidential standing at the time they were made.
+
+A Mittoli epistemologist published a paper arguing that this makes Grassic negation not weaker but structurally more precise than Mittoli's — the Grassic speaker commits to the degree of their knowledge, which a bare denial does not. The paper has not been widely cited in Mittoli contexts. Plains scholars who encountered it tend to say it describes something they had not realized needed describing.
+
+---
+
+## Predicate Chaining and Discourse Structure
+
+Grassic has no words for "and," "but," "because," or "therefore." Extended discourse is built from predicate chains whose spatial prefixes establish the logical relationship between statements. The chain's coherence comes not from logical connectives but from spatial and temporal continuity — each predicate tells the listener where the next one comes from.
+
+**Sequential chaining**: Events in temporal sequence use the same or an advancing spatial prefix. The listener reads spatial continuity as temporal progression:
+
+*vel-u-thraun-ko-voth. vel-o-wol-ko-voth.*
+
+"A group traveled toward the water. The seasonal water [was] there."
+
+The repeated *vel-* tells the listener that the water was the destination of the first movement — spatial continuity functioning as sequencing. When the spatial prefix changes, it marks a transition: the action moved somewhere different.
+
+**Causal chaining**: When one predicate causes the next, the effect predicate uses *aul-* (toward Memory Grass), pointing the causal claim toward the land's authority rather than the speaker's reasoning:
+
+*gaur-u-gol-ko-voth. aul-a-sor-bel-ther.*
+
+"The herd circled without settling — direct experience. I sat at the site for the first time to receive it — I infer [this was why the herd circled]."
+
+The *aul-* prefix on the second predicate indicates the listener should draw the causal connection through land-witness logic rather than through the speaker's stated reasoning. Causation is pointed to, not stated. A language that considers the land the highest epistemic authority does not build arguments from personal inference alone.
+
+**Contrast**: A claim followed by a *gaul-* (lateral, off the route) predicate introduces a contrasting observation:
+
+*thel-u-thraun-ko-voth. gaul-i-thraun-no-voth.*
+
+"The group traveled the route this cycle — direct. [But] you traveled laterally last cycle — direct."
+
+*Gaul-* in discourse marks a departure from what the prior predicate would predict. This is the closest Grassic comes to "however" — the next statement is an off-route observation, not a continuation of the established direction.
+
+**Extended discourse in practice:**
+Long *thos-nel* transmissions and formal legal proceedings construct chains of predicates that can run for hours, their logical architecture encoded entirely in the movement of spatial prefixes. A trained listener follows a complex multi-party historical argument by tracking the changing directions; an untrained listener hears the same sequence as unconnected assertions.
+
+The difficulty of written transcription is noted repeatedly by Mittoli scribes. Recording a Grassic legal proceeding produces a row of predicate-words that can be decoded morphologically but whose logical connections — which predicates are the cause of which, which are the contrast, which continue the sequence — cannot be recovered without knowing the spatial context in which they were spoken. The scribe records what was said; without the spatial grammar of a Grassic speaker, they cannot record how the parts related. This is another form of the evidential degradation problem: written Grassic is the argument's skeleton without its joints.
+
+---
+
 ## Core Vocabulary
 
 ### Land and Routes
@@ -384,6 +436,64 @@ The *gol-nel-sor* — the lead animal — holds a specific legal status. A route
 The boundary of *gol-thraun* (the traveling community) is behavioral rather than biological. One who travels the route is of the group; one who does not is not. Communities have absorbed outsiders — including individual Mittoli and Pyrosi people who have chosen Plains life — by traveling with them through a full seasonal cycle. After that cycle the person is *gol-thraun* by predicate, not by decision: *thel-u-gol-thraun-no-voth* — "they traveled alongside the community last cycle — direct experience." No other admission is possible or required.
 
 The Caeras Valley Academy has characterized Grassic kinship vocabulary as "lacking in biological specificity." Several scholars who have spent extended time on the Plains have subsequently revised their understanding of which vocabulary is deficient and in what direction.
+
+---
+
+## Body and Health Vocabulary
+
+The body, in Grassic, is a set of ongoing processes. Every body-word is a predicate, and the predicate chosen reflects what the body region does essentially rather than what it is.
+
+| Grassic | Literal | Body referent | Notes |
+|---|---|---|---|
+| *vel-thraun* | urgent-motion-along-the-route | the leg | The limb whose essential action is route travel; "to walk" and "leg" use the same root in different grammatical positions |
+| *thraun-kor* | route-claim | the hand | The hand claims, ties knots, holds the caull — the same compound as "route-claim"; hands assert and record route-right |
+| *sor-hom* | know-by-resting-in-place | the trunk; the torso | The body's staying center; the part that is still while legs move; *sor* reception is located here by practitioners |
+| *vel-auwel* | urgent-motion-speak | the mouth; the face | Where speech moves urgently toward the listener; the forward-facing surface; both are the same predicate |
+| *nel-sor* | toward-winter-receiving | the ear; the head | The organ that receives oral tradition; the compound matches *nel-sor* (parent/elder) — the ear and the transmitting elder are structurally the same kind of receiver |
+| *gaur-vel* | circling-urgent-motion | the gut; the stomach | Where the *gaur* response is felt — the unsettled circling sensation at a Memory Grass site; "gut feeling" is a literal anatomical description in Grassic, not a metaphor |
+| *bel-vel* | first-new-motion | a newborn; the young | A child is a first-cycle traveler; the same root as the seasonal event *bel-vel* (first animals of the migration) |
+
+**Health:**
+Health is expressed as route integrity. A healthy person is *thel-thraun* (traveling the route, on course). Illness is displacement: something has pushed the person *gaul-* (off route). Recovery is *vel-thraun* (returning toward the route's forward direction). These are not metaphors; they are the available predicates for these states, and the states are not understood differently from the predicates.
+
+Death with a body present uses *hom-aul*: the person has stopped moving and entered the land's retention. The dead are placed at known Memory Grass sites on the understanding that what the person knew about the route is retained there as any impression is retained. A *u-kaul* who sits at a burial site in *aul-sor* season may receive from it. Whether what is received is the person's specific knowledge or the site's general accumulation is not, in Grassic, a coherent question. The distinction requires *-nol* (received) vocabulary from outside to construct and is not one the language has the architecture to maintain.
+
+---
+
+## Weather and Terrain Vocabulary
+
+A people who migrate with the seasons have weather vocabulary of corresponding depth. The following covers terms most significant for route and legal purposes; the full range, especially in Northern Grassic, extends considerably further.
+
+**Wind** (the route-direction system makes wind highly specific):
+
+| Grassic | Meaning | Notes |
+|---|---|---|
+| *vel-wol* | wind-toward-water; headwind on outbound migration | *Wol* applies to both water-flow and wind-flow by functional analogy — both are persistent directional forces; the same root covers both |
+| *nell-wol* | wind-toward-winter; tailwind on return | Favorable on the return route; the same *wol* root |
+| *gaul-wol* | lateral wind; crosswind | Associated with *gaul-* observations — things arriving from unexpected directions |
+| *aul-wol* | wind from a Memory Grass site direction | Considered significant by *u-kaul* practitioners; the most receptive *sor* readings often occur when *aul-wol* is present — wind from a site carries what the site holds |
+
+**Precipitation:**
+
+| Grassic | Meaning | Notes |
+|---|---|---|
+| *vel-bel* | first-rain of the migration season | The rain that announces the route is ready; paired with *bel-vel* (first animal motion announcing the same thing from a different direction) — rain and herd confirm each other |
+| *gol-wol* | herd-flow; heavy sustained rainfall | Rain thick enough to move like a herd — massive, undifferentiated, difficult to cross; also applied to any overwhelming sustained force |
+| *nel-kaul* | toward-winter-retaining; first frost | Frost as the winter season's first Memory Grass moment — it retains the impression of footprints and route shape in the ground |
+| *hom-wol* | staying-flow; slow persistent drizzle | Not dangerous, but interferes with *sor* readings by filling the air with its own diffuse impressions; patience is the only response |
+| *thraun-bel* | empty route; drought | The failed seasonal-water route: the migration completed but the water was not at the route's end |
+
+**Terrain:**
+
+| Grassic | Meaning | Notes |
+|---|---|---|
+| *gaul-taur* | lateral ridge; visible horizon away from the route | High ground you can see but do not travel to; used for orientation when route markers are unclear |
+| *vel-tel* | toward-water crossing; the ford approach | The specific terrain near the seasonal ford; sub-vocabulary in communities with complex ford dispute histories |
+| *hom-au* | staying-land; ground a community winters on | Consistent return across many cycles constitutes route-right by accumulated *-voth* (direct experience) claim |
+| *bel-taur* | first-ridge; first visible high ground on the migration route | A landmark used in *thraun-nel* to mark terrain transitions |
+
+**Weather in legal contexts:**
+A *thraun-bel* year — drought, the water not present at the route's end — creates a legal emergency around route-right. Route-right requires assertion: a community that does not arrive at the ford loses its cycle-claim. The Grassic legal position is that the community must arrive at the dried ford and name it — speaking the *-voth* claim at the empty site, inscribing the arrival in the caull. Arriving at a dry ford and claiming it is the correct legal act. The oral record contains several formulas for the *thraun-bel* ceremony. The claim: I arrived here; the route brought me here; the water is absent; my claim stands. The ford's condition is not the claim's condition. The Memory Grass has the route's record. The absence of water this cycle does not erase the history of every cycle before it.
 
 ---
 
@@ -682,6 +792,14 @@ Grassic idiom emerges from the same sources as Grassic grammar: the spatial syst
 
 *Gaur-vel ther.* — "Circling-urgent-motion is inferred." When you see someone moving without settling, you can conclude they have encountered something that disturbs without explaining itself — a site, or something site-like. Said of situations that are clearly significant but not yet readable. The appropriate response is neither to dismiss the disturbance nor to act before *sor*.
 
+*Gaul-o-kaul-ther; aul-a-sor-voth.* — "A site away from the route: inferred. A site I sit at: direct." What you know from descriptions and received accounts is an inferred or received claim. What you know from presence is direct experience. The same site carries different evidential weight depending on where you are standing. Proximity changes the authority of a claim, not its content.
+
+*Thraun-kor voth; kor-gol nol.* — "Route-claim: direct experience. A claimed herd: received." What you have personally traveled is yours by *-voth* standing. What you have been told is yours arrives with *-nol* weight. Both are real claims. Neither is the other. Do not argue a received claim in the direct evidential and expect the caull to back you.
+
+*Hom-wol, sor-bel.* — "Staying-rain, first-knowing." Persistent drizzle fills the air and interferes with *sor* reception. Wait it out; the first clear reading after the rain lifts is the cleanest. Applied more broadly: steady background confusion is not the same as ignorance. It ends. The reading after it will be fresh.
+
+*Nel-auwel vel; vel-auwel nell.* — "Settled-speech moves; route-speech settles." What you received in winter you carry on the route. What you observed on the route you transmit in winter. The cycle turns: transmission becomes movement; movement becomes transmission. Neither exists without the other. Said of the relationship between the oral tradition and the living experience that feeds and tests it.
+
 ---
 
 ## Contact with Other Languages
@@ -693,6 +811,61 @@ The fundamental incompatibility of the two legal systems has been a recurring fe
 **With Moreshi**: Contact at the desert edge is mediated by Border Grassic. The two families share nothing structural. They have, however, found pragmatic resonance: both have sophisticated oral-legal traditions, both have a concept of landscape-as-witness (the Moreshi Qadimuur's universal animate agreement is not the same as Grassic *-aul* but is recognizably adjacent), and both have developed effective practices for interacting with outside legal systems without submitting to them. The Moreshi word for Grassic speakers translates approximately as "those-who-read-the-ground." The Grassic word for Moreshi speakers is a dark-harmony predicate meaning "those-who-move-through-what-persists" — a description of desert travel through ancient landscape that the Plains peoples intend as respect.
 
 **With Pyrosi**: The Pyrosi transit routes cross the Plains edge, and East Pyrosi and Central Grassic have been in commercial contact for centuries. No significant structural borrowing has occurred in either direction. Pyrosi's register system and Grassic's evidential system are both forms of social-epistemic grammar — both encode relationship and knowledge in verb morphology — but in completely different ways. Pyrosi *kael-* (the elevated register, used for the land and for those of high standing) and Grassic *-aul* (the land-witness evidential) are sometimes compared by scholars as parallel grammaticalizations of "the land as a category requiring special grammar." Plains peoples who have been shown this comparison tend to say that the Pyrosi approach this from the direction of respect and the Grassic approach it from the direction of evidence, and that these are not the same thing. Pyrosi speakers who have been shown the comparison say that both the land's testimony and the act of listening to it with the correct form are important, and that the two approaches address different parts of the same question.
+
+---
+
+## Trade Register
+
+The contact variety developed for interaction with Mittoli and Pyrosi merchants is called *vel-nol* by Plains speakers — "moving-received" — a register that explicitly marks its foreign-vocabulary content while maintaining the full Grassic grammar. It is not a pidgin. The spatial and evidential systems operate without modification. What changes is the vocabulary domain, where Mittoli commercial terms have been absorbed and stamped with the *-nol* (received) marker they carry in formal speech.
+
+**Key borrowed terms:**
+
+| Source | Borrowed form | Use |
+|---|---|---|
+| Mittoli numerals | *o-[numeral]-ko-nol* | Any precise quantity claim; *-nol* marks the number as received from outside; *o-* marks it as landscape-class, belonging to the domain of transactions rather than to the direct experience of any speaker |
+| Mittoli *gal* (crossing) | *thraun-gal* | A completed commercial transaction; by analogy with *tel-thraun* (the ford ceremony), to close a deal is to make a crossing — the transaction moves from one state to another |
+| Mittoli *hel* (writing; seal) | *hom-hel* | A written agreement that stays in place; the staying-form of a transaction; treated as *-nol* in Grassic's evidential hierarchy — it is a received account of what was agreed, not the agreement itself |
+| Mittoli *ver* (price) | *vel-ver* | The route-price; what something is worth in a specific spatial-temporal context; explicitly not fixed |
+
+**The transaction problem:**
+A Mittoli merchant states a price. A Plains trader evaluates it using two incommensurable frameworks: the Mittoli framework, in which exchange value is abstractly fixed by market conditions, and the Grassic framework, in which this transaction occurs at a specific point on a specific route in a specific seasonal phase, and all of those factors are part of the price. What a measure of salt is worth at the seasonal ford during *gol-wol* (sustained rain, difficult crossing, supply constrained) is not what it is worth on the open route in *gol-vel* (summer grazing peak, everything accessible). Plains traders consider these contextual factors basic. Mittoli merchants consider them complications.
+
+The resolution is *vel-ver*: the explicitly spatial-temporal price. A Plains trader states the price with a spatial prefix and temporal suffix — *vel-o-ver-kegol-voth* in Northern Grassic: "the price at the grazing peak, this cycle, direct experience." Both parties understand this is the price in that specific context. If context changes, the price may. Mittoli merchants who have worked with Plains traders long enough learn to expect this. Mittoli merchants who have not describe Plains traders as difficult to pin down, which Plains traders tend to describe as the least accurate thing ever said about them — they are the only party in the transaction who has fully specified the terms.
+
+**What Plains speakers observe about Mittoli:**
+Grassic speakers who have learned Standard Mittoli for trade purposes describe the experience consistently: Mittoli is a language where almost anything can be said without specifying how you know it. Every Mittoli statement is implicitly *-nol* (received, from some unspecified source, with no declared epistemic standing). Spoken Mittoli is better — the speaker is present, their standing can be observed. But a Mittoli contract is a document full of claims with no evidential suffixes, which is what Plains traders mean when they say a Mittoli agreement "has no feet to stand on." This is not an accusation of dishonesty. It is a grammatical description of a document that cannot, by its own architecture, tell you how confident the author was in any given line.
+
+---
+
+## Language Acquisition
+
+Children raised speaking Grassic acquire the spatial prefix system first, consistent with how the prefixes work: they are perceptual-positional rather than abstract, grounded in the body's orientation in moving terrain. A two-year-old on the seasonal migration knows *vel-* (that is where we are going) and *nell-* (that is where we came from) before most other vocabulary.
+
+The evidential system is acquired last. Outside scholars initially assumed the direct evidential (*-voth*) would come first, since children directly experience their immediate environment, with the received evidential (*-nel*) developing last as a sophisticated marker of reported speech. What actually happens is reversed.
+
+Children first use *-voth* (direct experience) for everything — every predicate, regardless of how they know it, receives direct-evidential marking. Elders do not correct this immediately; they model correct usage in their own speech, and the child observes *-nel* applied consistently to transmitted knowledge and *-ther* to inference. The child's developmental task is the gradual narrowing of *-voth* to what they actually experienced directly — learning not to add a new evidential but to accurately categorize what they already know.
+
+The first reliable use of *-ther* (inferred) instead of *-voth* for a conclusion drawn from evidence — a prediction made without direct observation that turned out accurate — is considered the key marker. A child who says *vel-u-thraun-ko-ther* ("the group moved toward water this season — I infer") before they have seen the group move, reasoning from the season and the direction of tracks, has done something noticed. They have held their own experience apart from their inference about it, and named each correctly. The elder who observes this is expected to say *bel-vel-auwel* — "first-new-motion speech" — the expression for a young person who has said something true that older speakers have known and chosen to say less directly. Said with warmth. The child has arrived at something.
+
+The *-aul* (land-witness) evidential is the last acquired, and for non-*u-kaul* speakers it is only ever available as a *-nol* (received) fact — "I was told that the Memory Grass at this site confirms." Only a practitioner who has personally sat at a site can speak *-aul* with *-voth* authority. Children who show early *gaur* responses at sites — the circling-without-settling behavioral response, dreams at site locations with specific rather than vague content — are on a different acquisition path. Their evidential development for site material is a separate track, watched without comment until a pattern emerges.
+
+One consequence of the acquisition sequence: scholars who learn Grassic as adults, particularly those who learn it analytically from grammar descriptions rather than immersion, tend to acquire the evidentials in reverse order — *-aul* first because it is structurally distinctive, then *-nel* and *-ther* from teaching examples, then finally working backward toward *-voth*. Adult learners who have done this report that the last and hardest step is learning when *-voth* genuinely applies — because by the time they reach it, they have fully understood that most of what they know is not first-hand, and the direct evidential, which children begin by overusing, becomes difficult to use with confidence at all. Plains elders consider this a reasonable place to arrive. They do not consider it the end of the process.
+
+---
+
+## Wordplay and Humor
+
+Grassic enables humor that is, technically, not wordplay at all — the same predicate in two grammatical positions with different spatial prefixes is not a pun but a parallel observation that the language treats as continuous. The humor emerges from accuracy taken further than the listener expected.
+
+**Evidential downgrading**: The most common form. A speaker states something in *-voth* (direct experience); a listener responds with the same claim in *-nol* (received), citing the speaker's own testimony as the only source available. *Thel-a-thraun-ko-voth.* ("I traveled the route this season — direct.") Response: *thel-u-thraun-ko-nol.* ("The route was traveled this season — I was told.") The respondent has correctly marked their own knowledge: they only know this because someone just told them. This is technically impeccable Grassic grammar and also, in context, pointed commentary on the speaker's reliability as a source. Used between friends whose direct-experience claims are being examined with more skepticism than direct experience usually warrants.
+
+**The *sor* joke**: Applying the Memory Grass perception vocabulary to ordinary sleep. *A-sor-hom-ko-voth* — "I knew-by-resting at the staying place this cycle — direct experience" — said after a long, deep night's sleep, claiming *u-kaul* perceptual status for a nap. The predicate technically applies — you did rest at a location and something was received — but the implication of genuine site-reading is obviously unearned. It is the Grassic equivalent of claiming expert testimony for common experience.
+
+**Spatial precision in minor situations**: Using the full predicate structure for events that do not require it. A child whose food falls reports *gaul-u-feli-ko-voth* — "the food grazes laterally off the route this cycle — direct experience" — using the herd-grazing predicate for food that has moved away from the route (to the ground). Adults find this accurate. The food has indeed traveled *gaul-* (off route). The full evidential claim is correct. The appropriateness of applying route-law vocabulary to dropped food is the joke.
+
+**The evidential accusation**: Replacing someone's *-voth* (direct) claim with *-ther* (inferred) implies their own knowledge of their direct experience is merely inferential. Said to someone who has described an action with more certainty than the circumstances warranted: *thel-i-thraun-ko-ther* — "You traveled the route this season — I infer from your account." This is a grammatical error on purpose — you cannot have inferred someone else's first-person direct experience; witnessed would be the correct evidential at minimum — but the point is precisely that the speaker's *-voth* claim was so dubious it can only be represented as inference. Used between friends who have earned the right to downgrade each other's evidentials. The accused's correct response is to accept the *-nol* degradation: "apparently I know this; I was just told by my own account." Accepting the joke confirms they have understood it. Defending the *-voth* confirms they have not.
+
+**The *bel-vel-auwel* return**: When an adult states something so obvious that it registers as a genuine first-time discovery, *bel-vel-auwel* is applied to them. The expression is normally said of children discovering what elders have long known; applied to an adult who has just noticed something true for their entire life, it carries the same warmth and a considerably larger proportion of gentle mockery. The adult receiving it has the option of using *-nol* to acknowledge their late receipt of the information — "apparently this is true; I was just told" — which is considered the correct response.
 
 ---
 
