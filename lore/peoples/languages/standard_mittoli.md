@@ -1,7 +1,7 @@
 ---
 name: Standard Mittoli
 category: language
-tags: [language, Mittoli, grammar, phonology, vocabulary, Azhora, conlang, kinship, legal, body, color, substrate, interior-substrate, causative, verbal-morphology, health, death]
+tags: [language, Mittoli, grammar, phonology, vocabulary, Azhora, conlang, kinship, legal, body, color, substrate, interior-substrate, causative, verbal-morphology, health, death, evidentiality, oral-tradition, poetry, humor, acquisition, register]
 status: draft
 related: [Languages of Azhora, Mittolo, Northern Azhora, Pyros, Azhoran Academy of Natural History]
 ---
@@ -517,6 +517,68 @@ The Academy's formal position is that the Interior Substrate requires systematic
 
 ---
 
+## Language Acquisition
+
+Children learning Standard Mittoli follow a recognizable sequence that reveals which structures are genuinely complex and which are simply acquired by exposure later.
+
+**Phase 1: Root plus *-os*.**
+
+Children produce bare verb roots with the third-person animate ending *-os* before almost anything else. A young Mithali child will say *milos* (he/she sees) for any perceptual event, including their own. The first-person *-om* emerges several months later and takes time to be used consistently without *milos* reverting as default. The animate third singular is apparently the least marked grammatical position in the language from a child's perspective; it requires the fewest commitments.
+
+**Phase 2: Noun class confusion — or insight.**
+
+Children around age three to four systematically overapply Class I endings (for living beings) to inanimate nouns of strong personal significance: a beloved house, a river crossed daily, a storm that frightened them. They treat these things as agentive. This is not universally treated as error. A number of elder oral tradition practitioners in the Mithala valley describe Phase 2 children as "seeing clearly before they learn not to." The correction is gentle and typically begins only after five. Scholars have noted that the Class I assignments children make in Phase 2 correspond closely to inanimate nouns that take animate constructions in oral poetry — where something important enough to carry narrative weight is spoken as if it acts. Whether children are finding a genuine grammatical register or simply modeling a living world is an open question that the Academy has so far declined to answer directly.
+
+**Phase 3: The prospective aspect.**
+
+The prospective *ae-* is the last of the three aspects to be used correctly. Children acquire imperfective (unmarked, default) and perfective *ve-* (completion) before the prospective. The characteristic error: using *ae-* as a future tense, treating "I *ae-*go to the river tomorrow" as a definite statement. The distinction between "I will certainly go" and "I intend to go" — which adult speakers make automatically — is one that children around seven to eight are still sorting out.
+
+Households involved in regular commercial exchange are reportedly more precise about this correction earlier. When adults in the household use *ae-* in contract contexts, children encounter the ambiguity as a practical problem rather than a grammatical one.
+
+**Phase 4: Compound verb analysis.**
+
+Children acquire compound verbs — *mil-azh*, *nil-azh*, *mil-veth* — by imitation well before analyzing them. A child who has learned *nilazhael* as "to go away / to leave" has absorbed the word whole; the *nil-azh* analysis (to un-endure, to cease remaining) typically arrives through formal education or oral tradition training, not through natural acquisition. When it arrives, it reliably produces a response — speakers who have been saying *nilazhael* their whole lives and have not parsed its parts report a perceptual shift. Oral tradition teachers consider this moment significant. The word has not changed; the speaker now hears what it is doing.
+
+**The Hill Mittoli child's experience in Standard contexts.**
+
+Children learning Standard Mittoli in Standard-speaking communities do not encounter the cessative aspect (*dre-*, the Hill form for "ceased to see/do"). The absence is invisible to them. A Hill Mittoli child arriving in a Standard context faces the reverse: they have the cessative as part of natural grammar, and they discover that Standard cannot express it. "How do you say he *stopped looking*?" A Standard-trained adult will say *vemilos* (he completed seeing) and consider the job done. The Hill child knows that *vemilos* and *dremilos* are not the same thing. Learning Standard in this context means learning not to say something the child knows how to say, and learning that the absence of that thing does not bother most of the people around them.
+
+---
+
+## Address and Register
+
+The SOV/SVO formal-colloquial distinction describes one axis of Mittoli register. A second axis operates through address forms and subject-marking — who the speaker acknowledges, and how, encodes the social relationship without explicit vocabulary.
+
+### Second-Person Address
+
+Standard Mittoli has three second-person address modes encoded in verb endings:
+
+*-eth* — the neutral second-person singular, already listed. Used with adults whose relationship to the speaker is established but not household-intimate. The default for strangers, acquaintances, and anyone met in commercial or civic contexts.
+
+*-elom* — the household-second; suffix from *elom* (a day's turning), encoding the sense of shared-time intimacy. Used within acknowledged *homvoran* relationships — people under the same household's obligation. An outsider who uses *-elom* to a household member they do not know is claiming a relationship they have not been given. The correction is always indirect: the person addressed will use *-eth* in reply, and most native speakers understand the signal. A person who persists with *-elom* after this correction is being offensive.
+
+*-oss* (the plural third, pressed into elevated singular) — formal petition register; used when addressing someone of significantly higher standing in a context where that standing must be acknowledged. A person petitioning a city-state compact representative in open proceedings uses this form. The fiction of plurality as elevation is transparent to all speakers and considered elegant rather than deceptive.
+
+Northern Mittoli collapses all three into one form and supplements with posture and eye-contact protocol, which southerners find opaque and northerners find efficient.
+
+### Subject Retention and Social Distance
+
+In direct address, Standard Mittoli speakers maintain or drop the explicit subject to signal social tracking:
+
+With a known *homvoran*: subject drops. *Milos?* — "Do you see [it]?" Verb only; the subject is assumed.
+
+With a stranger or formal interlocutor: subject retained. *Voran milos?* — "Does the person see?" — the third-person nominal used while physically addressing second-person. The grammatical maintenance of distance while directly speaking is a social performance that speakers execute without deliberation.
+
+Children overapply the familiar form before the social calculus develops. A child who drops the subject when addressing a stranger is corrected — not harshly, not as rudeness, but as an error in social perception. The correction is teaching the child to see.
+
+### High-Stakes Social Register
+
+A speaker who uses SOV order, retains *-oss* address, and uses formal epistemic markers (*milazh*, *aelazh*) throughout a conversation is operating in what Mittoli speakers call *aeloss-veth* — "held speech," speech that is being maintained at deliberate formal register. Held speech occurs in legal proceedings, in compact negotiations between city-states, and in initial exchanges between delegations from communities that have had prior conflict. It signals that every word is being carefully said and will be heard as carefully meant.
+
+The socially interesting case: a speaker who *drops* from held speech to colloquial SVO mid-conversation is not being careless. In the right context — after a tense negotiation has resolved, after an agreement has been reached — the drop signals the formal occasion is over. Both parties exhale. The SVO is a social gesture.
+
+---
+
 ## Notes for Scholars
 
 The *-ael* infinitive suffix deserves separate comment. It contains the root *ael* (speech, saying), which means that grammatically, Mittoli treats infinitives as "the expression of the action" — the act named rather than performed. This is not merely linguistic coincidence; it reflects a philosophical position encoded into the language itself. An action that has not been performed is still, in some sense, a word. The Mittoli verb for "to promise" is *aelael* — "to speak a speaking" — which captures this exactly: a promise is an action that exists first as language and may or may not become deed.
@@ -653,6 +715,46 @@ The Hill Mittoli legal tradition additionally uses the cessative aspect: *dre-mi
 | *galoss-drossael* | arbitration; the repair of a broken deal | *galoss* + *drossael* (becoming broken); the process of addressing breach |
 
 The question of who may witness a *galoss* to make it *galoss-azh* — enduring — is handled differently by the city-state, river-community, and hill-community traditions, and these differences are a recurring source of dispute in cross-community legal proceedings. The Caeras Valley formal position is that a witness must be *caer-voran* — a person known to both parties, whose standing has been established. River communities tend to accept any adult third party present at the exchange. Hill communities require a specific form of dual witnessing (preserved from the Hill grammatical dual) that Standard proceedings cannot precisely replicate and tend to approximate badly.
+
+---
+
+## Evidentiality and Epistemic Marking
+
+Mittoli does not have grammaticalized evidentiality — the language does not *require* speakers to mark their source of knowledge in every sentence. What it has instead is a set of epistemic particles, placed at clause-boundary positions, that indicate certainty and information source when the speaker chooses to mark them. The choice to deploy or omit these particles carries social information.
+
+The key particles:
+
+*milazh* — "witnessed"; from *mil-azh* (see-endure); placed after a statement to mark direct personal observation. "The flood was high this year, *milazh*" = I saw this myself and commit to it.
+
+*aelazh* — "told-and-held"; from *ael-azh* (speak-endure); marks secondhand information from a source the speaker endorses. "The northern passes are closed, *aelazh*" = I was told this by someone I trust. Does not identify the source; the endorsement is the speaker's.
+
+*caeloss* — "in the flow of things"; marks inference or probability from observed conditions. "The harvest will be late, *caeloss*" = this is my reading of the situation, not what I saw or was told.
+
+*nilmilom* — "I do not see"; explicitly marks absence of evidence. Used, paradoxically, *before* the statement it qualifies: "nilmilom, the roads north are clear" = I have no direct knowledge but I believe this. Puts the epistemically honest limitation first and the claim second. Considered both correct and self-undermining; a speaker who uses it habitually signals either great personal integrity or a negotiating style that discloses weakness early.
+
+*thaloss* — "tradition-held"; marks a statement as belonging to oral record or inherited knowledge rather than personal witness or contemporary report. "The Bay of Lol was named before Mittoli, *thaloss*" = this is what the tradition says. Used in oral performance contexts to mark the register shift into preserved material; used in scholarly contexts for claims that rest on old sources.
+
+### Interaction with the Prospective Aspect
+
+The prospective aspect *ae-* marks intended, wished-for, or expected action without distinguishing which. The epistemic particles resolve the ambiguity in contexts where it matters:
+
+- *aemilom, milazh* — "I expect to see it, based on what I've witnessed" (commitment from evidence)
+- *aemilom, caeloss* — "I expect to see it, inferentially" (a probability, not a promise)
+- *aemilom, nilmilom* — "I wish to see it, with no evidence I will" (inadmissible in legal contexts; a wish is not a claim)
+
+Legal Mittoli deploys this system formally. *Aemilom, milazh* in a contract context is a specific representation of confident expectation based on known conditions. A party who later says conditions changed is expected to show what their *milazh* evidence was and what changed it.
+
+### Social Use of Epistemic Particles
+
+In everyday conversation the particles appear without ceremony. A speaker saying *milazh* after a statement is understood to be vouching personally; omitting it in shared-knowledge contexts is natural and unremarkable.
+
+The socially precise moves:
+
+Disagreement with a *milazh* claim begins by replacing it with *caeloss*: "I see you say *milazh* — but what I have is *caeloss*." This is a precise and public act of epistemic downgrading. It is not calling the speaker a liar; it is reclassifying their personal observation as one inference among others. The disagreement is polite and structural rather than personal and accusatory.
+
+Saying *thaloss* of something a speaker has just claimed as *milazh* is a stronger move: you are placing their personal present-tense account in the category of inherited tradition — as if they are merely repeating something old rather than seeing something new. This is an insult with deniability, and its delivery requires exact timing. Done correctly it produces brief silence. Done slightly wrong it is just insulting.
+
+Omitting any particle in a context where particles are expected — particularly in formal proceedings or witnessed agreements — reads as either confident (the claim is so obvious it needs no marking) or careless (the speaker is not attending to precision). Which reading applies depends on who the speaker is.
 
 ---
 
@@ -868,6 +970,22 @@ Mittoli scholarship recognizes several proverbs in wide circulation that speaker
 
 ---
 
+## Humor and Wordplay
+
+The Mittoli comic tradition exploits the same structural features that make the language interesting and occasionally difficult.
+
+**Gemination jokes.** The *nill* / *nil* distinction (stone versus nothing) is the oldest and most exhausted vein of Mittoli wordplay. A statement that makes sense with one reading is made ambiguous by the other. The standard form: *Nilloss azhoas* ("the mountain endures") delivered in a context where *Niloss azhoas* ("the nothing endures") would also fit. The version children discover first. Among adults, a more pointed form: *Milom nill — nilmilom nil* ("I see the stone — I do not see the nothing"). Either a statement of the obvious or a remark about the problem of perceiving absence, depending on who is saying it and why.
+
+**Prospective-aspect timing.** The deliberate exploitation of *ae-* ambiguity in commercial contexts is pervasive and considered a distinct skill. A seller who says "I *ae-*deliver the grain by season-turning" in a tone that makes it impossible to determine whether this is a commitment, an expectation, or a wish is making a joke — at the buyer's expense. The humor requires a victim and requires them to catch it too late to object. Whether it remains funny depends on what happens at season-turning.
+
+**Compound verb reanalysis.** Educated speakers sometimes perform mock-solemn decomposition of everyday words for comic effect. *Galael* (to trade) pressed back to its components: "You want to *ford* something? What are you fording?" — the literal meaning of the root restored and applied with slight excess. This is Academy-adjacent humor; river-traders who have never thought about the *gal* root in *galael* find it mildly amusing once.
+
+**The *thaloss* move.** The epistemic particle *thaloss* ("this belongs to tradition") applied deadpan to a living speaker's firsthand account reclassifies them as myth. "My neighbor's house burned last night." — "*Thaloss*." Delivered with exactly the right pause and scholarly distance, this is considered genuinely funny by a nearby third party. The neighbor does not typically agree. The line between aggressive humor and simple insult is the delivery; the deniability is that *thaloss* is technically a statement about information type, not a personal remark.
+
+**The proverb interrupt.** Recognized in Mithala valley conversation: a speaker begins a common proverb; the listener completes it incorrectly before the speaker reaches the end; the speaker then completes it correctly with slightly too much insistence. "*Cael novos—*" / "*—cael azhoas*." / "*—nill azhoas.*" The exchange claims the proverb, disputes it, and corrects the dispute. The interrupter's version — "water renews; water endures" — is grammatically valid but defeats the proverb's meaning. The correction is the joke. Everyone knows the proverb. The interrupter gave the wrong half on purpose.
+
+---
+
 ## The Writing System in Practice
 
 The Cael Script as described is the formal literary standard. Several variants exist in practical use.
@@ -877,6 +995,44 @@ The Cael Script as described is the formal literary standard. Several variants e
 **The Stone Script:** Monument inscriptions in pre-standard Mittoli cities use a formally identical alphabet but in angular carved forms rather than rounded cursive. Some Stone Script inscriptions include characters not present in current Cael Script, representing sounds that Standard Mittoli no longer uses. Philologists have reconstructed four of these sounds; three remain uncertain.
 
 **The River-Mark system:** Not an alphabet. Approximately two hundred marks traditionally carved or painted on significant navigational points along the Lizeem and its tributaries — rocks at fords, tree-roots near dangerous currents, the edges of established camps. River-marks communicate specific navigational and seasonal information (flood markers, low-water routes, camp quality, last-known hazard) through a symbol vocabulary that does not correspond to the sounds of any language. They are maintained by the river-trading communities. Scholars who have attempted to describe River-marks as a language have been corrected by river-traders, who describe them as practical information.
+
+---
+
+## Music, Poetry, and Oral Performance
+
+Mittoli has a strong oral tradition that predates its writing system and continues in parallel with it. The oral and written registers are related but not equivalent. Oral performance uses prosodic features the script cannot represent; skilled tradition-keepers are considered culturally distinct from Academy scholars even when both work with the same texts.
+
+### Prosodic Features
+
+**Gemination carry across sentence boundaries.** In formal oral tradition, a sustained geminate consonant can be extended across a sentence boundary, linking clauses acoustically rather than syntactically. The final *-ss* of *voranoss drossael* in the First Departure text, in performance, continues into the following clause's opening. On the page the rupture and what followed it are sequential. In performance they overlap. The difference is not decoration.
+
+**The *dae-milael* frame.** Formal oral performance traditionally opens at dawn and closes at dusk — two seeings. The sky's light is a second narrator: the audience is aware of how much day remains, and the performance is paced against it. The frame is not ritual in a religious sense; it is structural. A performance that extends past dusk has violated something. Festivals that use the frame treat its observance as content, not convention.
+
+**Breath-group as semantic unit.** Oral tradition-keepers are trained to align breath-group endings with argument completions rather than syntactic sentence endings. A breath-group that ends mid-argument creates an expectation the next breath must resolve. When a breath-group ends with the argument complete, the listener's body registers the completion slightly before the mind processes it. This is the mechanism the written text cannot capture; transcriptions that break at grammatical sentence endings are close but not exact.
+
+### Verse Structure
+
+Standard Mittoli poetry is stress-based rather than syllable-counted. The formal verse unit is the *vethael-elom* — "the held-day line" — a line with a fixed number of stressed syllables (traditionally six, with five-stress lines appearing in archaic forms) surrounded by any number of unstressed syllables. The name reveals the tradition's connection to the *dae-milael* frame: a verse that watches its own day.
+
+The *ae* diphthong has structural function in verse: a line ending on *ae* is "open" — it expects continuation or response. A line ending on a back vowel or final consonant is "closed" — it completes. Extended poems alternate open and closed lines in patterns that control where the audience breathes. A reader of written Mittoli detects these partially. A listener does not detect them; they are simply moved.
+
+### The Three Forms
+
+Three formal oral performance types are recognized across most Mittoli-speaking communities:
+
+*Velael* ("the speaking of growth") — narrative, continuous, carrying a story forward in time. The First Departure text is *velael*. Its defining feature is forward motion; its closure markers are backward-looking (*nill azhoas* — stone still there; stone was there before the story, stone is there after). The audience receives. The performer does not invite response.
+
+*Aelazh* ("the enduring speech") — call-and-response; one voice states, another responds in recognition. Used in seasonal ceremonies, in the Caeras Compact renewal ritual, in formal household events. Not a debate; the response is confirmatory. Both voices are formally prepared; the content is traditional and known. What is renewed by saying it together is not the knowledge but the having-said-it.
+
+*Nilazh* ("the un-remaining speech") — formally *nilazh-vethael*, "the speech that holds what left." Memory recitation; the formal naming of departed things. Used in the Mithala flood-calendar tradition, in the Narcoshi valley naming practices, in household death rites. Its distinctive feature: the departed things are spoken in the present tense. A *nilazh* does not say "the flood took three granaries last year." It says "the flood takes three granaries." The departed thing is summoned into the present during its naming and released at the close. Hill Mittoli *nilazh* performance uses the cessative throughout — *dre-miloss* (ceased to be seen), *dremazh* (ceased to remain) — building the form from endings rather than negations. Standard Mittoli *nilazh* uses *vemiloss-nil* (was seen no more). The two forms reach the same place through different grammar.
+
+### The Boundary Between Oral and Written
+
+The scholarly romanization in this document does not notate breath-group structure, gemination carry, or vowel-length variation. These are not omissions of convenience; they resist the notation system. The written text is not wrong — it is an approximate record of something that has its own system.
+
+Academy scholars trained in written Mittoli read the oral texts with approximately correct stress placement. Mithala valley people with extensive oral training and limited writing can perform them with acoustic precision. The two competencies overlap imperfectly, and neither community considers itself to have the partial form.
+
+The informal Academy position, not stated formally: the written record is authoritative; the oral tradition preserves what survived until it was written down. The informal position of oral tradition-keepers, stated when asked directly: the written form is a useful aide-mémoire for what the performance already knows. Both positions have been stable for several centuries. Neither has moved.
 
 ---
 
