@@ -8,5 +8,7 @@ contextBridge.exposeInMainWorld('electronAPI', {
     chooseImage: ()                                    => ipcRenderer.invoke('map:choose-image'),
     listRecent:  ()                                    => ipcRenderer.invoke('map:list-recent'),
     addRecent:   (path: string, name: string)          => ipcRenderer.invoke('map:add-recent', path, name),
+    listExamples: ()                                   => ipcRenderer.invoke('map:list-examples'),
+    loadExample:  (id: string)                         => ipcRenderer.invoke('map:load-example', id),
   },
 })

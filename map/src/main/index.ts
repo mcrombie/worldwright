@@ -2,6 +2,19 @@ import { app, shell, BrowserWindow, ipcMain, dialog } from 'electron'
 import { join } from 'path'
 import { readFileSync, writeFileSync, existsSync } from 'fs'
 
+const EXAMPLES_DIR = app.isPackaged
+  ? join(process.resourcesPath, 'examples')
+  : join(app.getAppPath(), 'resources', 'examples')
+
+const BUNDLED_EXAMPLES = [
+  {
+    id: 'azhora',
+    name: 'Azhora',
+    description: 'The continent of Azhora on the planet Corav — a prototype world-building example with terrain, regions, rivers, and settlements.',
+    filename: 'azhora.wwmap',
+  },
+]
+
 function createWindow(): BrowserWindow {
   const win = new BrowserWindow({
     width: 1400,
@@ -89,6 +102,23 @@ ipcMain.handle('map:choose-image', async () => {
   const ext  = result.filePaths[0].split('.').pop()?.toLowerCase() ?? 'png'
   const mime = ext === 'jpg' || ext === 'jpeg' ? 'image/jpeg' : `image/${ext}`
   return { dataUrl: `data:${mime};base64,${buf.toString('base64')}`, filePath: result.filePaths[0] }
+})
+
+// ── Example maps IPC ──────────────────────────────────────────────────────────
+
+ipcMain.handle('map:list-examples', () =>
+  BUNDLED_EXAMPLES.map(({ id, name, description }) => ({ id, name, description }))
+)
+
+ipcMain.handle('map:load-example', (_, id: string) => {
+  const ex = BUNDLED_EXAMPLES.find(e => e.id === id)
+  if (!ex) return { canceled: true, error: 'Unknown example.' }
+  try {
+    const raw = readFileSync(join(EXAMPLES_DIR, ex.filename), 'utf-8')
+    return { data: raw }
+  } catch {
+    return { canceled: true, error: 'Example file not found.' }
+  }
 })
 
 // ── Recent files IPC ──────────────────────────────────────────────────────────

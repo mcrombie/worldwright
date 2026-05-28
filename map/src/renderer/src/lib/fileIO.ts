@@ -8,6 +8,12 @@ export interface RecentFile {
   savedAt: string  // ISO string
 }
 
+export interface ExampleMeta {
+  id: string
+  name: string
+  description: string
+}
+
 export interface FileIO {
   saveMap(json: string, currentPath?: string): Promise<SaveMapResult>
   loadMap(): Promise<LoadMapResult>
@@ -15,6 +21,8 @@ export interface FileIO {
   chooseImage(): Promise<ImageResult>
   listRecent(): Promise<RecentFile[]>
   addRecent(path: string, name: string): Promise<void>
+  listExamples(): Promise<ExampleMeta[]>
+  loadExample(id: string): Promise<LoadMapResult>
 }
 
 // Set VITE_PLATFORM=browser in .env.browser to switch implementations.
@@ -26,8 +34,10 @@ const electronIO: FileIO = {
   loadMap:     ()           => (window as any).electronAPI.map.load(),
   loadByPath:  (path)       => (window as any).electronAPI.map.loadByPath(path),
   chooseImage: ()           => (window as any).electronAPI.map.chooseImage(),
-  listRecent:  ()           => (window as any).electronAPI.map.listRecent(),
-  addRecent:   (path, name) => (window as any).electronAPI.map.addRecent(path, name),
+  listRecent:   ()           => (window as any).electronAPI.map.listRecent(),
+  addRecent:    (path, name) => (window as any).electronAPI.map.addRecent(path, name),
+  listExamples: ()           => (window as any).electronAPI.map.listExamples(),
+  loadExample:  (id)         => (window as any).electronAPI.map.loadExample(id),
 }
 
 const browserIO: FileIO = {
@@ -76,8 +86,10 @@ const browserIO: FileIO = {
     })
   },
 
-  listRecent:  async () => [],
-  addRecent:   async () => {},
+  listRecent:   async () => [],
+  addRecent:    async () => {},
+  listExamples: async () => [],
+  loadExample:  async () => ({ canceled: true }),
 }
 
 export const fileIO: FileIO = IS_BROWSER ? browserIO : electronIO

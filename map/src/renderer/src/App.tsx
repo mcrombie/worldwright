@@ -6,16 +6,18 @@ import { NewMapDialog } from './components/NewMapDialog'
 import { RandomMapDialog } from './components/RandomMapDialog'
 import { ResizeDialog } from './components/ResizeDialog'
 import { MapLibraryDialog } from './components/MapLibraryDialog'
+import { ExampleMapsDialog } from './components/ExampleMapsDialog'
 import { useMapStore } from './store/mapStore'
 import { fileIO, IS_BROWSER, type RecentFile } from './lib/fileIO'
 import { autoSave, loadAutoSave, saveToLibrary } from './lib/mapLibrary'
 import type { MapData } from './types/map'
 
 export default function App() {
-  const [showNewDialog,     setShowNewDialog]     = useState(false)
-  const [showRandomDialog,  setShowRandomDialog]  = useState(false)
-  const [showResizeDialog,  setShowResizeDialog]  = useState(false)
-  const [showLibraryDialog, setShowLibraryDialog] = useState(false)
+  const [showNewDialog,      setShowNewDialog]      = useState(false)
+  const [showRandomDialog,   setShowRandomDialog]   = useState(false)
+  const [showResizeDialog,   setShowResizeDialog]   = useState(false)
+  const [showLibraryDialog,  setShowLibraryDialog]  = useState(false)
+  const [showExamplesDialog, setShowExamplesDialog] = useState(false)
   const [recentFiles,       setRecentFiles]       = useState<RecentFile[] | undefined>(undefined)
 
   const map         = useMapStore((s) => s.map)
@@ -132,6 +134,9 @@ export default function App() {
         <button className="px-3 py-1 text-sm rounded hover:bg-gray-700" onClick={() => setShowNewDialog(true)}>
           New
         </button>
+        <button className="px-3 py-1 text-sm rounded hover:bg-gray-700" onClick={() => setShowExamplesDialog(true)}>
+          Maps
+        </button>
         <button className="px-3 py-1 text-sm rounded hover:bg-gray-700" onClick={() => setShowRandomDialog(true)}>
           Generate
         </button>
@@ -209,6 +214,12 @@ export default function App() {
         Worldwright &nbsp;|&nbsp; Scroll to zoom · Middle-click or Pan tool to pan · Click to paint
       </footer>
 
+      {showExamplesDialog && (
+        <ExampleMapsDialog
+          onClose={() => setShowExamplesDialog(false)}
+          onLoad={(data, id) => { storeLoad(data, id); setShowExamplesDialog(false) }}
+        />
+      )}
       {showNewDialog     && <NewMapDialog     onClose={() => setShowNewDialog(false)} />}
       {showRandomDialog  && <RandomMapDialog  onClose={() => setShowRandomDialog(false)} />}
       {showResizeDialog  && <ResizeDialog     onClose={() => setShowResizeDialog(false)} />}
