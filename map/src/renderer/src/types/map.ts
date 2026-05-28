@@ -12,12 +12,23 @@ export type TerrainType =
   | 'wetland'
 
 export type SettlementSize = 'village' | 'town' | 'city' | 'capital'
+export type Climate    = 'temperate' | 'oceanic' | 'cold' | 'arid' | 'steppe' | 'tropical'
+export type CoreStatus = 'homeland' | 'core' | 'frontier'
+
+export interface RegionData {
+  name: string
+  color: string
+  faction?: string
+  climate?: Climate
+  coreStatus?: CoreStatus
+  notes?: string
+}
 
 export interface HexData {
   q: number
   r: number
   terrain: TerrainType
-  region?: string
+  region?: string          // key into MapData.regions
   settlement?: string
   settlementSize?: SettlementSize
   notes?: string
@@ -30,10 +41,11 @@ export interface MapData {
   hexSize: number
   hexes: Record<string, HexData>
   underlayPath?: string
-  rivers: string[]  // canonical edge keys: "q1,r1|q2,r2"
+  rivers: string[]                       // canonical edge keys: "q1,r1|q2,r2"
+  regions: Record<string, RegionData>    // regionId → RegionData
 }
 
-export type Tool = 'paint' | 'erase' | 'select' | 'pan' | 'river'
+export type Tool = 'paint' | 'erase' | 'select' | 'pan' | 'river' | 'region'
 
 export interface LayerVisibility {
   terrain: boolean

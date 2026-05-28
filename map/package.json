@@ -4,9 +4,10 @@
   "description": "Interactive hex map editor for Azhora world-building",
   "main": "./out/main/index.js",
   "scripts": {
-    "dev": "cross-env ELECTRON_RUN_AS_NODE= electron-vite dev",
+    "dev": "powershell -Command \"Remove-Item Env:ELECTRON_RUN_AS_NODE -ErrorAction SilentlyContinue; npx electron-vite dev\"",
     "build": "electron-vite build",
-    "start": "cross-env ELECTRON_RUN_AS_NODE= electron-vite preview"
+    "build:browser": "vite build --config vite.browser.config.ts --mode browser",
+    "start": "powershell -Command \"Remove-Item Env:ELECTRON_RUN_AS_NODE -ErrorAction SilentlyContinue; npx electron-vite preview\""
   },
   "dependencies": {
     "zustand": "^5.0.0"

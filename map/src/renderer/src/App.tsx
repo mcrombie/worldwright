@@ -1,72 +1,141 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { HexCanvas } from './components/HexCanvas'
 import { Toolbar } from './components/Toolbar'
 import { InfoPanel } from './components/InfoPanel'
 import { NewMapDialog } from './components/NewMapDialog'
+import { RandomMapDialog } from './components/RandomMapDialog'
+import { ResizeDialog } from './components/ResizeDialog'
+import { MapLibraryDialog } from './components/MapLibraryDialog'
 import { useMapStore } from './store/mapStore'
-import { MapData } from './types/map'
+import { fileIO, IS_BROWSER, type RecentFile } from './lib/fileIO'
+import { autoSave, loadAutoSave, saveToLibrary } from './lib/mapLibrary'
+import type { MapData } from './types/map'
 
 export default function App() {
-  const [showNewDialog, setShowNewDialog] = useState(false)
-  const map           = useMapStore((s) => s.map)
-  const isDirty       = useMapStore((s) => s.isDirty)
-  const currentPath   = useMapStore((s) => s.currentFilePath)
-  const history       = useMapStore((s) => s.history)
-  const loadMap       = useMapStore((s) => s.loadMap)
-  const markSaved     = useMapStore((s) => s.markSaved)
-  const undo          = useMapStore((s) => s.undo)
+  const [showNewDialog,     setShowNewDialog]     = useState(false)
+  const [showRandomDialog,  setShowRandomDialog]  = useState(false)
+  const [showResizeDialog,  setShowResizeDialog]  = useState(false)
+  const [showLibraryDialog, setShowLibraryDialog] = useState(false)
+  const [recentFiles,       setRecentFiles]       = useState<RecentFile[] | undefined>(undefined)
 
+  const map         = useMapStore((s) => s.map)
+  const isDirty     = useMapStore((s) => s.isDirty)
+  const currentPath = useMapStore((s) => s.currentFilePath)
+  const history     = useMapStore((s) => s.history)
+  const storeLoad   = useMapStore((s) => s.loadMap)
+  const markSaved   = useMapStore((s) => s.markSaved)
+  const undo        = useMapStore((s) => s.undo)
+
+  // ── Restore autosave on mount (browser only) ──────────────────────────────
+  const restoredRef = useRef(false)
+  useEffect(() => {
+    if (!IS_BROWSER || restoredRef.current) return
+    restoredRef.current = true
+    if (useMapStore.getState().map) return
+    const raw = loadAutoSave()
+    if (!raw) return
+    try { storeLoad(JSON.parse(raw) as MapData, '__autosave__') } catch {}
+  }, [storeLoad])
+
+  // ── Auto-save on blur / beforeunload (browser only) ──────────────────────
+  useEffect(() => {
+    if (!IS_BROWSER) return
+    function save() {
+      const m = useMapStore.getState().map
+      if (m) autoSave(JSON.stringify(m))
+    }
+    window.addEventListener('blur', save)
+    window.addEventListener('beforeunload', save)
+    return () => {
+      window.removeEventListener('blur', save)
+      window.removeEventListener('beforeunload', save)
+    }
+  }, [])
+
+  // ── Keyboard shortcuts ────────────────────────────────────────────────────
   useEffect(() => {
     function onKeyDown(e: KeyboardEvent) {
-      if ((e.ctrlKey || e.metaKey) && e.key === 'z') {
-        e.preventDefault()
-        undo()
-      }
+      if ((e.ctrlKey || e.metaKey) && e.key === 'z') { e.preventDefault(); undo() }
+      if ((e.ctrlKey || e.metaKey) && e.key === 's') { e.preventDefault(); handleSave() }
     }
     window.addEventListener('keydown', onKeyDown)
     return () => window.removeEventListener('keydown', onKeyDown)
-  }, [undo])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [undo, map, currentPath])
 
+  // ── Save ──────────────────────────────────────────────────────────────────
   async function handleSave() {
     if (!map) return
-    const json = JSON.stringify(map, null, 2)
-    const result = await window.electronAPI.map.save(json, currentPath ?? undefined)
-    if (!result.canceled && result.filePath) markSaved(result.filePath)
+    if (IS_BROWSER) {
+      const existingId = currentPath && !currentPath.startsWith('__') ? currentPath : undefined
+      const id = saveToLibrary(map, existingId)
+      markSaved(id)
+    } else {
+      const json = JSON.stringify(map, null, 2)
+      const result = await fileIO.saveMap(json, currentPath ?? undefined)
+      if (!result.canceled && result.filePath) {
+        markSaved(result.filePath)
+        await fileIO.addRecent(result.filePath, map.name)
+      }
+    }
   }
 
-  async function handleLoad() {
-    const result = await window.electronAPI.map.load()
+  // ── Export to file (browser only) ─────────────────────────────────────────
+  async function handleExport() {
+    if (!map) return
+    await fileIO.saveMap(JSON.stringify(map, null, 2), map.name)
+  }
+
+  // ── Open / library ────────────────────────────────────────────────────────
+  async function handleOpen() {
+    if (IS_BROWSER) {
+      setShowLibraryDialog(true)
+    } else {
+      const recent = await fileIO.listRecent()
+      setRecentFiles(recent)
+      setShowLibraryDialog(true)
+    }
+  }
+
+  function handleLibraryLoad(data: MapData, id: string) {
+    storeLoad(data, id)
+    if (!IS_BROWSER) fileIO.addRecent(id, data.name)
+    setShowLibraryDialog(false)
+  }
+
+  async function handleBrowse() {
+    setShowLibraryDialog(false)
+    const result = await fileIO.loadMap()
     if (!result.canceled && result.data && result.filePath) {
       try {
         const data = JSON.parse(result.data) as MapData
-        loadMap(data, result.filePath)
+        storeLoad(data, result.filePath)
+        await fileIO.addRecent(result.filePath, data.name)
       } catch {
         alert('Failed to parse map file.')
       }
     }
   }
 
-  const title = map
-    ? `${map.name}${isDirty ? ' •' : ''} — Azhora Map`
-    : 'Azhora Map'
+  // ── Status display ────────────────────────────────────────────────────────
+  const saveStatus = IS_BROWSER
+    ? (isDirty ? 'Unsaved changes' : currentPath ? 'Saved' : '')
+    : (currentPath ?? (map ? 'Unsaved' : ''))
 
   return (
     <div className="flex flex-col h-screen bg-gray-950 text-gray-100 select-none">
 
-      {/* ── Menu bar ──────────────────────────────────────────────────────── */}
+      {/* ── Menu bar ── */}
       <header className="flex items-center gap-2 px-4 py-2 bg-gray-900 border-b border-gray-800 shrink-0">
         <span className="font-semibold text-indigo-400 mr-2">Azhora Map</span>
 
-        <button
-          className="px-3 py-1 text-sm rounded hover:bg-gray-700"
-          onClick={() => setShowNewDialog(true)}
-        >
+        <button className="px-3 py-1 text-sm rounded hover:bg-gray-700" onClick={() => setShowNewDialog(true)}>
           New
         </button>
-        <button
-          className="px-3 py-1 text-sm rounded hover:bg-gray-700"
-          onClick={handleLoad}
-        >
+        <button className="px-3 py-1 text-sm rounded hover:bg-gray-700" onClick={() => setShowRandomDialog(true)}>
+          Generate
+        </button>
+        <button className="px-3 py-1 text-sm rounded hover:bg-gray-700" onClick={handleOpen}>
           Open
         </button>
         <button
@@ -75,6 +144,23 @@ export default function App() {
           disabled={!isDirty}
         >
           Save{isDirty ? ' *' : ''}
+        </button>
+        {IS_BROWSER && (
+          <button
+            className={`px-3 py-1 text-sm rounded ${map ? 'hover:bg-gray-700' : 'opacity-40 cursor-default'}`}
+            onClick={handleExport}
+            disabled={!map}
+            title="Download as .azmap file"
+          >
+            Export
+          </button>
+        )}
+        <button
+          className={`px-3 py-1 text-sm rounded ${map ? 'hover:bg-gray-700' : 'opacity-40 cursor-default'}`}
+          onClick={() => setShowResizeDialog(true)}
+          disabled={!map}
+        >
+          Resize
         </button>
         <button
           className={`px-3 py-1 text-sm rounded ${history.length > 0 ? 'hover:bg-gray-700' : 'opacity-40 cursor-default'}`}
@@ -85,21 +171,13 @@ export default function App() {
           Undo
         </button>
 
-        <span className="ml-auto text-xs text-gray-500 truncate max-w-xs">
-          {currentPath ?? (map ? 'Unsaved' : '')}
-        </span>
-
-        {map && (
-          <span className="text-xs text-gray-500">
-            {map.width}×{map.height} hexes
-          </span>
-        )}
+        <span className="ml-auto text-xs text-gray-500 truncate max-w-xs">{saveStatus}</span>
+        {map && <span className="text-xs text-gray-500">{map.width}×{map.height} hexes</span>}
       </header>
 
-      {/* ── Main area ─────────────────────────────────────────────────────── */}
+      {/* ── Main area ── */}
       <div className="flex flex-1 overflow-hidden">
         <Toolbar />
-
         <main className="flex-1 relative overflow-hidden">
           {map ? (
             <HexCanvas />
@@ -115,7 +193,7 @@ export default function App() {
                 </button>
                 <button
                   className="px-4 py-2 rounded bg-gray-700 hover:bg-gray-600 text-sm"
-                  onClick={handleLoad}
+                  onClick={handleOpen}
                 >
                   Open Map
                 </button>
@@ -123,16 +201,25 @@ export default function App() {
             </div>
           )}
         </main>
-
         <InfoPanel />
       </div>
 
-      {/* ── Status bar ────────────────────────────────────────────────────── */}
+      {/* ── Status bar ── */}
       <footer className="px-4 py-1 text-xs text-gray-500 bg-gray-900 border-t border-gray-800 shrink-0">
-        {title} &nbsp;|&nbsp; Scroll to zoom · Middle-click or Pan tool to pan · Click to paint
+        Azhora Map &nbsp;|&nbsp; Scroll to zoom · Middle-click or Pan tool to pan · Click to paint
       </footer>
 
-      {showNewDialog && <NewMapDialog onClose={() => setShowNewDialog(false)} />}
+      {showNewDialog     && <NewMapDialog     onClose={() => setShowNewDialog(false)} />}
+      {showRandomDialog  && <RandomMapDialog  onClose={() => setShowRandomDialog(false)} />}
+      {showResizeDialog  && <ResizeDialog     onClose={() => setShowResizeDialog(false)} />}
+      {showLibraryDialog && (
+        <MapLibraryDialog
+          onClose={() => setShowLibraryDialog(false)}
+          onLoad={handleLibraryLoad}
+          recentFiles={IS_BROWSER ? undefined : recentFiles}
+          onBrowse={IS_BROWSER ? undefined : handleBrowse}
+        />
+      )}
     </div>
   )
 }

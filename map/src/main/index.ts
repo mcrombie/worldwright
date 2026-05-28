@@ -1,6 +1,6 @@
 import { app, shell, BrowserWindow, ipcMain, dialog } from 'electron'
 import { join } from 'path'
-import { readFileSync, writeFileSync } from 'fs'
+import { readFileSync, writeFileSync, existsSync } from 'fs'
 
 function createWindow(): BrowserWindow {
   const win = new BrowserWindow({
@@ -32,7 +32,6 @@ function createWindow(): BrowserWindow {
 
 app.whenReady().then(() => {
   createWindow()
-
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow()
   })
@@ -42,12 +41,7 @@ app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit()
 })
 
-// ── IPC handlers ──────────────────────────────────────────────────────────────
-
-ipcMain.handle('map:new-dialog', async () => {
-  // Renderer handles the new-map dialog UI; this is a no-op placeholder
-  return {}
-})
+// ── Map file IPC ──────────────────────────────────────────────────────────────
 
 ipcMain.handle('map:save', async (_, jsonData: string, filePath?: string) => {
   let targetPath = filePath
@@ -75,6 +69,15 @@ ipcMain.handle('map:load', async () => {
   return { data: raw, filePath: result.filePaths[0] }
 })
 
+ipcMain.handle('map:load-by-path', async (_, path: string) => {
+  try {
+    const raw = readFileSync(path, 'utf-8')
+    return { data: raw, filePath: path }
+  } catch {
+    return { canceled: true, error: 'File not found or unreadable.' }
+  }
+})
+
 ipcMain.handle('map:choose-image', async () => {
   const result = await dialog.showOpenDialog({
     title: 'Select Underlay Image',
@@ -82,9 +85,38 @@ ipcMain.handle('map:choose-image', async () => {
     properties: ['openFile'],
   })
   if (result.canceled || result.filePaths.length === 0) return { canceled: true }
-  // Return as base64 data URL so renderer can load it without file:// protocol issues
-  const buf = readFileSync(result.filePaths[0])
-  const ext = result.filePaths[0].split('.').pop()?.toLowerCase() ?? 'png'
+  const buf  = readFileSync(result.filePaths[0])
+  const ext  = result.filePaths[0].split('.').pop()?.toLowerCase() ?? 'png'
   const mime = ext === 'jpg' || ext === 'jpeg' ? 'image/jpeg' : `image/${ext}`
   return { dataUrl: `data:${mime};base64,${buf.toString('base64')}`, filePath: result.filePaths[0] }
+})
+
+// ── Recent files IPC ──────────────────────────────────────────────────────────
+
+interface RecentFile { path: string; name: string; savedAt: string }
+const RECENT_MAX = 20
+
+function recentPath() {
+  return join(app.getPath('userData'), 'recent.json')
+}
+
+function readRecent(): RecentFile[] {
+  try {
+    const p = recentPath()
+    if (!existsSync(p)) return []
+    return JSON.parse(readFileSync(p, 'utf-8'))
+  } catch { return [] }
+}
+
+function writeRecent(files: RecentFile[]) {
+  try { writeFileSync(recentPath(), JSON.stringify(files), 'utf-8') } catch {}
+}
+
+ipcMain.handle('map:list-recent', () => readRecent())
+
+ipcMain.handle('map:add-recent', (_, path: string, name: string) => {
+  const files = readRecent().filter(f => f.path !== path)
+  files.unshift({ path, name, savedAt: new Date().toISOString() })
+  if (files.length > RECENT_MAX) files.length = RECENT_MAX
+  writeRecent(files)
 })

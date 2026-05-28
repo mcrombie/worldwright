@@ -16,64 +16,54 @@ interface ViewState {
 const MIN_ZOOM = 0.05
 const MAX_ZOOM = 4
 const SETTLEMENT_DOT_RADIUS: Record<string, number> = {
-  village: 2,
-  town: 3,
-  city: 4,
-  capital: 5,
+  village: 2, town: 3, city: 4, capital: 5,
 }
 
 export function HexCanvas() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const view = useRef<ViewState>({ offsetX: 100, offsetY: 100, zoom: 1 })
-  const isPainting = useRef(false)
-  const isPanning = useRef(false)
-  const lastMouse = useRef({ x: 0, y: 0 })
-  const underlayImg = useRef<HTMLImageElement | null>(null)
-  const rafRef = useRef<number>(0)
-  const needsRedraw = useRef(true)
+  const isPainting       = useRef(false)
+  const isPanning        = useRef(false)
+  const lastMouse        = useRef({ x: 0, y: 0 })
+  const underlayImg      = useRef<HTMLImageElement | null>(null)
+  const rafRef           = useRef<number>(0)
+  const needsRedraw      = useRef(true)
 
-  const map = useMapStore((s) => s.map)
-  const layers = useMapStore((s) => s.layers)
-  const selectedHex = useMapStore((s) => s.selectedHex)
-  const activeTool       = useMapStore((s) => s.activeTool)
-  const brushRadius      = useMapStore((s) => s.brushRadius)
-  const beginStroke      = useMapStore((s) => s.beginStroke)
-  const paintHex         = useMapStore((s) => s.paintHex)
-  const endStroke        = useMapStore((s) => s.endStroke)
-  const selectHex        = useMapStore((s) => s.selectHex)
-  const toggleRiverEdge  = useMapStore((s) => s.toggleRiverEdge)
+  const map             = useMapStore((s) => s.map)
+  const layers          = useMapStore((s) => s.layers)
+  const selectedHex     = useMapStore((s) => s.selectedHex)
+  const activeTool      = useMapStore((s) => s.activeTool)
+  const brushRadius     = useMapStore((s) => s.brushRadius)
+  const activeRegion    = useMapStore((s) => s.activeRegion)
+  const beginStroke     = useMapStore((s) => s.beginStroke)
+  const paintHex        = useMapStore((s) => s.paintHex)
+  const paintRegionHex  = useMapStore((s) => s.paintRegionHex)
+  const endStroke       = useMapStore((s) => s.endStroke)
+  const selectHex       = useMapStore((s) => s.selectHex)
+  const toggleRiverEdge = useMapStore((s) => s.toggleRiverEdge)
 
   const hoverCoord        = useRef<AxialCoord | null>(null)
   const hoverRiverEdge    = useRef<string | null>(null)
   const isRiverDrawing    = useRef(false)
   const riverDrawMode     = useRef<'add' | 'remove'>('add')
   const lastRiverEdgeRef  = useRef<string | null>(null)
-  const activeToolRef  = useRef(activeTool)
-  const brushRadiusRef = useRef(brushRadius)
-  activeToolRef.current  = activeTool
-  brushRadiusRef.current = brushRadius
+  const activeToolRef     = useRef(activeTool)
+  const brushRadiusRef    = useRef(brushRadius)
+  const activeRegionRef   = useRef(activeRegion)
+  activeToolRef.current   = activeTool
+  brushRadiusRef.current  = brushRadius
+  activeRegionRef.current = activeRegion
 
-  // Reload underlay image when underlayPath changes
   useEffect(() => {
-    if (!map?.underlayPath) {
-      underlayImg.current = null
-      needsRedraw.current = true
-      return
-    }
+    if (!map?.underlayPath) { underlayImg.current = null; needsRedraw.current = true; return }
     const img = new Image()
-    img.onload = () => {
-      underlayImg.current = img
-      needsRedraw.current = true
-    }
+    img.onload = () => { underlayImg.current = img; needsRedraw.current = true }
     img.src = map.underlayPath
   }, [map?.underlayPath])
 
-  // Request redraw whenever store state that affects visuals changes
-  useEffect(() => {
-    needsRedraw.current = true
-  }, [map, layers, selectedHex, brushRadius, activeTool])
+  useEffect(() => { needsRedraw.current = true }, [map, layers, selectedHex, brushRadius, activeTool, activeRegion])
 
-  // ── Render ───────────────────────────────────────────────────────────────────
+  // ── Render ────────────────────────────────────────────────────────────────────
 
   const render = useCallback(() => {
     const canvas = canvasRef.current
@@ -82,12 +72,11 @@ export function HexCanvas() {
     if (!ctx) return
 
     const { offsetX, offsetY, zoom } = view.current
-    const { hexSize, hexes, width, height } = map
+    const { hexSize, hexes, regions } = map
 
-    // Canvas viewport bounds in world space (for culling)
     const viewL = -offsetX / zoom
     const viewT = -offsetY / zoom
-    const viewR = (canvas.width - offsetX) / zoom
+    const viewR = (canvas.width  - offsetX) / zoom
     const viewB = (canvas.height - offsetY) / zoom
     const cullPad = hexSize * 2
 
@@ -97,20 +86,18 @@ export function HexCanvas() {
 
     // ── Underlay ──────────────────────────────────────────────────────────────
     if (layers.underlay && underlayImg.current) {
-      // Bounding box for offset-r rectangular grid.
-      // Col 0 of even rows → x=0; col 0 of odd rows → x=hSpacing/2 (shifted right).
-      // So left edge = -hSpacing/2, total width = width*hSpacing + hSpacing/2 for stagger.
       const hSpacing = Math.sqrt(3) * hexSize
-      const x0 = -hSpacing / 2
-      const y0 = -hexSize
-      const totalW = width * hSpacing + hSpacing / 2
-      const totalH = (height - 1) * hexSize * 1.5 + hexSize * 2
       ctx.globalAlpha = 0.45
-      ctx.drawImage(underlayImg.current, x0, y0, totalW, totalH)
+      ctx.drawImage(
+        underlayImg.current,
+        -hSpacing / 2, -hexSize,
+        map.width * hSpacing + hSpacing / 2,
+        (map.height - 1) * hexSize * 1.5 + hexSize * 2,
+      )
       ctx.globalAlpha = 1
     }
 
-    // ── Hex terrain fill ──────────────────────────────────────────────────────
+    // ── Terrain fill ──────────────────────────────────────────────────────────
     if (layers.terrain) {
       ctx.globalAlpha = 0.55
       for (const hex of Object.values(hexes)) {
@@ -122,6 +109,78 @@ export function HexCanvas() {
       ctx.globalAlpha = 1
     }
 
+    // ── Region fill + borders ─────────────────────────────────────────────────
+    if (layers.regions) {
+      // Translucent fill per region
+      ctx.globalAlpha = 0.22
+      for (const hex of Object.values(hexes)) {
+        if (!hex.region) continue
+        const rd = regions[hex.region]
+        if (!rd) continue
+        const [cx, cy] = hexToPixel(hex.q, hex.r, hexSize)
+        if (cx + cullPad < viewL || cx - cullPad > viewR) continue
+        if (cy + cullPad < viewT || cy - cullPad > viewB) continue
+        drawHexFill(ctx, cx, cy, hexSize, rd.color)
+      }
+      ctx.globalAlpha = 1
+
+      // Borders: draw an edge wherever adjacent hexes belong to different regions
+      ctx.lineCap = 'round'
+      for (const hex of Object.values(hexes)) {
+        if (!hex.region) continue
+        const rd = regions[hex.region]
+        if (!rd) continue
+        const [cx, cy] = hexToPixel(hex.q, hex.r, hexSize)
+        if (cx + cullPad < viewL || cx - cullPad > viewR) continue
+        if (cy + cullPad < viewT || cy - cullPad > viewB) continue
+        const corners = hexCorners(cx, cy, hexSize)
+        ctx.strokeStyle = rd.color
+        ctx.lineWidth = Math.max(1.5, hexSize * 0.12) / zoom
+        for (let d = 0; d < 6; d++) {
+          const nq = hex.q + HEX_NEIGHBORS[d].q
+          const nr = hex.r + HEX_NEIGHBORS[d].r
+          const neighbor = hexes[hexKey(nq, nr)]
+          if (neighbor?.region === hex.region) continue  // same region — no border
+          const slot = NEIGHBOR_TO_EDGE_SLOT[d]
+          const [x1, y1] = corners[slot]
+          const [x2, y2] = corners[(slot + 1) % 6]
+          ctx.beginPath()
+          ctx.moveTo(x1, y1)
+          ctx.lineTo(x2, y2)
+          ctx.stroke()
+        }
+      }
+
+      // Region name labels at centroid of each region's hex cluster
+      if (zoom > 0.25) {
+        const sums: Record<string, { x: number; y: number; n: number }> = {}
+        for (const hex of Object.values(hexes)) {
+          if (!hex.region || !regions[hex.region]) continue
+          const [cx, cy] = hexToPixel(hex.q, hex.r, hexSize)
+          if (!sums[hex.region]) sums[hex.region] = { x: 0, y: 0, n: 0 }
+          sums[hex.region].x += cx
+          sums[hex.region].y += cy
+          sums[hex.region].n++
+        }
+        ctx.textAlign = 'center'
+        ctx.textBaseline = 'middle'
+        const fontSize = Math.max(9, hexSize * 0.55)
+        ctx.font = `italic bold ${fontSize}px serif`
+        for (const [id, { x, y, n }] of Object.entries(sums)) {
+          if (n === 0) continue
+          const lx = x / n, ly = y / n
+          if (lx + cullPad < viewL || lx - cullPad > viewR) continue
+          if (ly + cullPad < viewT || ly - cullPad > viewB) continue
+          const rd = regions[id]
+          ctx.strokeStyle = 'rgba(0,0,0,0.7)'
+          ctx.lineWidth = 3 / zoom
+          ctx.strokeText(rd.name, lx, ly)
+          ctx.fillStyle = rd.color
+          ctx.fillText(rd.name, lx, ly)
+        }
+      }
+    }
+
     // ── Grid lines ────────────────────────────────────────────────────────────
     if (layers.grid && zoom > 0.15) {
       ctx.strokeStyle = 'rgba(0,0,0,0.25)'
@@ -131,24 +190,6 @@ export function HexCanvas() {
         if (cx + cullPad < viewL || cx - cullPad > viewR) continue
         if (cy + cullPad < viewT || cy - cullPad > viewB) continue
         strokeHex(ctx, cx, cy, hexSize)
-      }
-    }
-
-    // ── Region labels ─────────────────────────────────────────────────────────
-    if (layers.regions && zoom > 0.4) {
-      ctx.textAlign = 'center'
-      ctx.textBaseline = 'middle'
-      const labelSize = Math.max(8, hexSize * 0.5)
-      ctx.font = `italic ${labelSize}px serif`
-      ctx.fillStyle = 'rgba(255,255,255,0.7)'
-      const seen = new Set<string>()
-      for (const hex of Object.values(hexes)) {
-        if (!hex.region || seen.has(hex.region)) continue
-        seen.add(hex.region)
-        const [cx, cy] = hexToPixel(hex.q, hex.r, hexSize)
-        if (cx + cullPad < viewL || cx - cullPad > viewR) continue
-        if (cy + cullPad < viewT || cy - cullPad > viewB) continue
-        ctx.fillText(hex.region, cx, cy)
       }
     }
 
@@ -185,7 +226,7 @@ export function HexCanvas() {
       }
     }
 
-    // ── River edge hover preview (river tool) ─────────────────────────────────
+    // ── River hover preview ───────────────────────────────────────────────────
     const hre = hoverRiverEdge.current
     if (hre && activeToolRef.current === 'river') {
       const [a, b] = parseRiverEdge(hre)
@@ -221,12 +262,15 @@ export function HexCanvas() {
       strokeHex(ctx, cx, cy, hexSize * 0.85)
     }
 
-    // ── Brush preview ──────────────────────────────────────────────────────────
+    // ── Brush / region-paint hover preview ────────────────────────────────────
     const tool = activeToolRef.current
     const hc   = hoverCoord.current
-    if (hc && (tool === 'paint' || tool === 'erase')) {
+    if (hc && (tool === 'paint' || tool === 'erase' || tool === 'region')) {
       const radius = brushRadiusRef.current
-      const previewColor = tool === 'erase' ? '#ff6666' : '#ffffff'
+      const previewColor =
+        tool === 'erase'  ? '#ff6666' :
+        tool === 'region' ? (activeRegionRef.current ? (map.regions[activeRegionRef.current]?.color ?? '#ffffff') : '#ff6666') :
+        '#ffffff'
       const affected = hexesInRadius(hc.q, hc.r, radius).filter(
         ({ q: pq, r: pr }) => hexKey(pq, pr) in hexes
       )
@@ -245,22 +289,19 @@ export function HexCanvas() {
     }
 
     ctx.restore()
-  }, [map, layers, selectedHex])
+  }, [map, layers, selectedHex, activeRegion])
 
-  // ── RAF loop ─────────────────────────────────────────────────────────────────
+  // ── RAF loop ──────────────────────────────────────────────────────────────────
   useEffect(() => {
     const loop = () => {
-      if (needsRedraw.current) {
-        render()
-        needsRedraw.current = false
-      }
+      if (needsRedraw.current) { render(); needsRedraw.current = false }
       rafRef.current = requestAnimationFrame(loop)
     }
     rafRef.current = requestAnimationFrame(loop)
     return () => cancelAnimationFrame(rafRef.current)
   }, [render])
 
-  // ── Resize observer ──────────────────────────────────────────────────────────
+  // ── Resize observer ───────────────────────────────────────────────────────────
   useEffect(() => {
     const canvas = canvasRef.current
     if (!canvas) return
@@ -275,7 +316,7 @@ export function HexCanvas() {
     return () => ro.disconnect()
   }, [])
 
-  // ── Input helpers ─────────────────────────────────────────────────────────────
+  // ── Helpers ───────────────────────────────────────────────────────────────────
 
   const screenToWorld = useCallback((sx: number, sy: number): [number, number] => {
     const { offsetX, offsetY, zoom } = view.current
@@ -296,7 +337,7 @@ export function HexCanvas() {
     [map, screenToWorld]
   )
 
-  // ── Mouse / wheel events ──────────────────────────────────────────────────────
+  // ── Mouse events ──────────────────────────────────────────────────────────────
 
   const onMouseDown = useCallback(
     (e: React.MouseEvent<HTMLCanvasElement>) => {
@@ -306,35 +347,41 @@ export function HexCanvas() {
         lastMouse.current = { x: e.clientX, y: e.clientY }
         return
       }
-      if (e.button === 0) {
-        if (activeTool === 'river') {
-          const canvas = canvasRef.current
-          if (!canvas || !map) return
-          const rect = canvas.getBoundingClientRect()
-          const [wx, wy] = screenToWorld(e.clientX - rect.left, e.clientY - rect.top)
-          const ek = nearestRiverEdge(wx, wy, map.hexes, map.hexSize)
-          if (ek) {
-            const alreadyRiver = map.rivers?.includes(ek) ?? false
-            riverDrawMode.current = alreadyRiver ? 'remove' : 'add'
-            lastRiverEdgeRef.current = ek
-            isRiverDrawing.current = true
-            toggleRiverEdge(ek)
-          }
-          return
+      if (e.button !== 0) return
+
+      if (activeTool === 'river') {
+        const canvas = canvasRef.current
+        if (!canvas) return
+        const rect = canvas.getBoundingClientRect()
+        const [wx, wy] = screenToWorld(e.clientX - rect.left, e.clientY - rect.top)
+        const ek = nearestRiverEdge(wx, wy, map.hexes, map.hexSize)
+        if (ek) {
+          riverDrawMode.current = (map.rivers?.includes(ek) ?? false) ? 'remove' : 'add'
+          lastRiverEdgeRef.current = ek
+          isRiverDrawing.current = true
+          toggleRiverEdge(ek)
         }
-        if (activeTool === 'paint' || activeTool === 'erase') {
-          isPainting.current = true
-          beginStroke()
-          const coord = hexAtScreen(e.clientX, e.clientY)
-          if (coord) paintHex(coord.q, coord.r)
-        } else if (activeTool === 'select') {
-          const coord = hexAtScreen(e.clientX, e.clientY)
-          selectHex(coord ? hexKey(coord.q, coord.r) : null)
-          needsRedraw.current = true
-        }
+        return
+      }
+      if (activeTool === 'region') {
+        isPainting.current = true
+        beginStroke()
+        const coord = hexAtScreen(e.clientX, e.clientY)
+        if (coord) paintRegionHex(coord.q, coord.r)
+        return
+      }
+      if (activeTool === 'paint' || activeTool === 'erase') {
+        isPainting.current = true
+        beginStroke()
+        const coord = hexAtScreen(e.clientX, e.clientY)
+        if (coord) paintHex(coord.q, coord.r)
+      } else if (activeTool === 'select') {
+        const coord = hexAtScreen(e.clientX, e.clientY)
+        selectHex(coord ? hexKey(coord.q, coord.r) : null)
+        needsRedraw.current = true
       }
     },
-    [map, activeTool, beginStroke, hexAtScreen, paintHex, selectHex]
+    [map, activeTool, beginStroke, hexAtScreen, paintHex, paintRegionHex, selectHex, toggleRiverEdge, screenToWorld]
   )
 
   const onMouseMove = useCallback(
@@ -346,17 +393,13 @@ export function HexCanvas() {
         needsRedraw.current = true
         return
       }
-      // ── River tool ─────────────────────────────────────────────────────────
       if (activeTool === 'river') {
         const canvas = canvasRef.current
         if (!canvas || !map) return
         const rect = canvas.getBoundingClientRect()
         const [wx, wy] = screenToWorld(e.clientX - rect.left, e.clientY - rect.top)
         const ek = nearestRiverEdge(wx, wy, map.hexes, map.hexSize)
-        if (ek !== hoverRiverEdge.current) {
-          hoverRiverEdge.current = ek
-          needsRedraw.current = true
-        }
+        if (ek !== hoverRiverEdge.current) { hoverRiverEdge.current = ek; needsRedraw.current = true }
         if (isRiverDrawing.current && ek && ek !== lastRiverEdgeRef.current) {
           lastRiverEdgeRef.current = ek
           const hasRiver = map.rivers?.includes(ek) ?? false
@@ -367,18 +410,16 @@ export function HexCanvas() {
       }
 
       const coord = hexAtScreen(e.clientX, e.clientY)
-      // Update hover preview
       const prevKey = hoverCoord.current ? hexKey(hoverCoord.current.q, hoverCoord.current.r) : null
       const newKey  = coord ? hexKey(coord.q, coord.r) : null
-      if (prevKey !== newKey) {
-        hoverCoord.current = coord
-        needsRedraw.current = true
-      }
-      if (isPainting.current && (activeTool === 'paint' || activeTool === 'erase')) {
-        if (coord) paintHex(coord.q, coord.r)
+      if (prevKey !== newKey) { hoverCoord.current = coord; needsRedraw.current = true }
+
+      if (isPainting.current && coord) {
+        if (activeTool === 'paint' || activeTool === 'erase') paintHex(coord.q, coord.r)
+        if (activeTool === 'region') paintRegionHex(coord.q, coord.r)
       }
     },
-    [activeTool, map, hexAtScreen, paintHex, toggleRiverEdge, screenToWorld]
+    [activeTool, map, hexAtScreen, paintHex, paintRegionHex, toggleRiverEdge, screenToWorld]
   )
 
   const onMouseUp = useCallback(() => {
@@ -409,7 +450,6 @@ export function HexCanvas() {
     const rect = canvas.getBoundingClientRect()
     const factor = e.deltaY < 0 ? 1.1 : 1 / 1.1
     const newZoom = Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, view.current.zoom * factor))
-    // Zoom toward cursor (canvas-relative coords)
     const mx = e.clientX - rect.left
     const my = e.clientY - rect.top
     view.current.offsetX = mx - (mx - view.current.offsetX) * (newZoom / view.current.zoom)
@@ -460,12 +500,8 @@ function strokeHex(ctx: CanvasRenderingContext2D, cx: number, cy: number, size: 
 }
 
 function drawSettlement(
-  ctx: CanvasRenderingContext2D,
-  cx: number,
-  cy: number,
-  hex: HexData,
-  hexSize: number,
-  zoom: number
+  ctx: CanvasRenderingContext2D, cx: number, cy: number,
+  hex: HexData, hexSize: number, zoom: number,
 ) {
   const r = SETTLEMENT_DOT_RADIUS[hex.settlementSize ?? 'village']
   ctx.beginPath()
@@ -475,7 +511,6 @@ function drawSettlement(
   ctx.strokeStyle = '#000000'
   ctx.lineWidth = 0.8 / zoom
   ctx.stroke()
-
   if (zoom > 0.5 && hex.settlement) {
     const fontSize = Math.max(9, hexSize * 0.45)
     ctx.font = `${fontSize}px sans-serif`
@@ -502,7 +537,7 @@ function distToSegment(px: number, py: number, x1: number, y1: number, x2: numbe
 function nearestRiverEdge(
   wx: number, wy: number,
   hexes: Record<string, import('../types/map').HexData>,
-  hexSize: number
+  hexSize: number,
 ): string | null {
   const center = pixelToHex(wx, wy, hexSize)
   const candidates = [center, ...HEX_NEIGHBORS.map(n => ({ q: center.q + n.q, r: center.r + n.r }))]
@@ -520,10 +555,7 @@ function nearestRiverEdge(
       const [x1, y1] = corners[slot]
       const [x2, y2] = corners[(slot + 1) % 6]
       const dist = distToSegment(wx, wy, x1, y1, x2, y2)
-      if (dist < bestDist) {
-        bestDist = dist
-        bestKey = riverEdgeKey(hex.q, hex.r, nq, nr)
-      }
+      if (dist < bestDist) { bestDist = dist; bestKey = riverEdgeKey(hex.q, hex.r, nq, nr) }
     }
   }
   return bestKey

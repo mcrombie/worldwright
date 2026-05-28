@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useMapStore } from '../store/mapStore'
+import { fileIO } from '../lib/fileIO'
 
 interface Props {
   onClose: () => void
@@ -32,7 +33,7 @@ export function NewMapDialog({ onClose }: Props) {
   const setUnderlay = useMapStore((s) => s.setUnderlay)
 
   async function chooseImage() {
-    const result = await window.electronAPI.map.chooseImage()
+    const result = await fileIO.chooseImage()
     if (result.canceled || !result.dataUrl) return
     const img = new Image()
     img.onload = () => {

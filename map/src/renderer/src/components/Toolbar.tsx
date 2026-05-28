@@ -1,13 +1,16 @@
-import { useMapStore } from '../store/mapStore'
+import { useState } from 'react'
+import { useMapStore, REGION_PALETTE } from '../store/mapStore'
 import { ALL_TERRAINS, TERRAIN_COLORS, TERRAIN_LABELS } from '../lib/terrain'
+import { fileIO } from '../lib/fileIO'
 import { Tool, LayerVisibility } from '../types/map'
 
 const TOOLS: { id: Tool; label: string; icon: string }[] = [
-  { id: 'paint', label: 'Paint',  icon: '🖌' },
-  { id: 'erase', label: 'Erase',  icon: '⬜' },
-  { id: 'river', label: 'River',  icon: '〰️' },
+  { id: 'paint',  label: 'Paint',  icon: '🖌' },
+  { id: 'erase',  label: 'Erase',  icon: '⬜' },
+  { id: 'river',  label: 'River',  icon: '〰️' },
+  { id: 'region', label: 'Region', icon: '🗺' },
   { id: 'select', label: 'Select', icon: '🔍' },
-  { id: 'pan',   label: 'Pan',    icon: '✋' },
+  { id: 'pan',    label: 'Pan',    icon: '✋' },
 ]
 
 const LAYER_LABELS: Record<keyof LayerVisibility, string> = {
@@ -31,18 +34,39 @@ export function Toolbar() {
   const activeTerrain = useMapStore((s) => s.activeTerrain)
   const brushRadius   = useMapStore((s) => s.brushRadius)
   const layers        = useMapStore((s) => s.layers)
-  const setTool       = useMapStore((s) => s.setTool)
-  const setTerrain    = useMapStore((s) => s.setTerrain)
-  const setBrushRadius = useMapStore((s) => s.setBrushRadius)
-  const setLayer      = useMapStore((s) => s.setLayer)
-  const setUnderlay   = useMapStore((s) => s.setUnderlay)
+  const activeRegion  = useMapStore((s) => s.activeRegion)
+  const map           = useMapStore((s) => s.map)
+  const setTool         = useMapStore((s) => s.setTool)
+  const setTerrain      = useMapStore((s) => s.setTerrain)
+  const setBrushRadius  = useMapStore((s) => s.setBrushRadius)
+  const setLayer        = useMapStore((s) => s.setLayer)
+  const setUnderlay     = useMapStore((s) => s.setUnderlay)
+  const setActiveRegion = useMapStore((s) => s.setActiveRegion)
+  const upsertRegion    = useMapStore((s) => s.upsertRegion)
+  const deleteRegion    = useMapStore((s) => s.deleteRegion)
+
+  const [newRegionName, setNewRegionName] = useState('')
 
   async function chooseUnderlay() {
-    const result = await window.electronAPI.map.chooseImage()
-    if (!result.canceled && result.dataUrl) {
-      setUnderlay(result.dataUrl)
-    }
+    const result = await fileIO.chooseImage()
+    if (!result.canceled && result.dataUrl) setUnderlay(result.dataUrl)
   }
+
+  function nextColor(): string {
+    const used = Object.keys(map?.regions ?? {}).length
+    return REGION_PALETTE[used % REGION_PALETTE.length]
+  }
+
+  function createRegion() {
+    const name = newRegionName.trim()
+    if (!name) return
+    upsertRegion(name, { name, color: nextColor() })
+    setActiveRegion(name)
+    setNewRegionName('')
+  }
+
+  const regions = map?.regions ?? {}
+  const regionIds = Object.keys(regions)
 
   return (
     <aside className="w-48 flex flex-col gap-4 bg-gray-900 text-gray-100 p-3 overflow-y-auto shrink-0">
@@ -67,8 +91,8 @@ export function Toolbar() {
         </div>
       </section>
 
-      {/* Brush size — only for paint/erase, not river */}
-      {(activeTool === 'paint' || activeTool === 'erase') && (
+      {/* Brush size — paint / erase / region */}
+      {(activeTool === 'paint' || activeTool === 'erase' || activeTool === 'region') && (
         <section>
           <h3 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">Brush Size</h3>
           <div className="grid grid-cols-4 gap-1">
@@ -83,10 +107,7 @@ export function Toolbar() {
                     : 'bg-gray-800 hover:bg-gray-700 text-gray-300'}`}
               >
                 <div className="flex items-center justify-center mb-1" style={{ height: 18 }}>
-                  <div
-                    className="rounded-full bg-current"
-                    style={{ width: dotPx, height: dotPx }}
-                  />
+                  <div className="rounded-full bg-current" style={{ width: dotPx, height: dotPx }} />
                 </div>
                 <span className="text-xs leading-none">{hexCount}</span>
               </button>
@@ -96,27 +117,89 @@ export function Toolbar() {
       )}
 
       {/* Terrain palette */}
-      <section>
-        <h3 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">Terrain</h3>
-        <div className="flex flex-col gap-1">
-          {ALL_TERRAINS.map((t) => (
+      {(activeTool === 'paint' || activeTool === 'erase') && (
+        <section>
+          <h3 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">Terrain</h3>
+          <div className="flex flex-col gap-1">
+            {ALL_TERRAINS.map((t) => (
+              <button
+                key={t}
+                onClick={() => { setTerrain(t); setTool('paint') }}
+                className={`flex items-center gap-2 px-2 py-1 rounded text-sm transition-colors
+                  ${activeTerrain === t && activeTool === 'paint'
+                    ? 'ring-2 ring-indigo-400 bg-gray-800'
+                    : 'hover:bg-gray-800'}`}
+              >
+                <span
+                  className="inline-block w-4 h-4 rounded-sm border border-gray-600 shrink-0"
+                  style={{ background: TERRAIN_COLORS[t] }}
+                />
+                <span className="truncate">{TERRAIN_LABELS[t]}</span>
+              </button>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Region palette */}
+      {activeTool === 'region' && (
+        <section>
+          <h3 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">Regions</h3>
+          <div className="flex flex-col gap-1 mb-2">
+
             <button
-              key={t}
-              onClick={() => { setTerrain(t); setTool('paint') }}
+              onClick={() => setActiveRegion(null)}
               className={`flex items-center gap-2 px-2 py-1 rounded text-sm transition-colors
-                ${activeTerrain === t && activeTool === 'paint'
-                  ? 'ring-2 ring-indigo-400 bg-gray-800'
-                  : 'hover:bg-gray-800'}`}
+                ${activeRegion === null ? 'ring-2 ring-indigo-400 bg-gray-800' : 'hover:bg-gray-800'}`}
             >
-              <span
-                className="inline-block w-4 h-4 rounded-sm border border-gray-600 shrink-0"
-                style={{ background: TERRAIN_COLORS[t] }}
-              />
-              <span className="truncate">{TERRAIN_LABELS[t]}</span>
+              <span className="inline-block w-4 h-4 rounded-sm border border-dashed border-gray-500 shrink-0" />
+              <span className="truncate text-gray-400">None (erase)</span>
             </button>
-          ))}
-        </div>
-      </section>
+
+            {regionIds.map((id) => {
+              const rd = regions[id]
+              return (
+                <div key={id} className="flex items-center gap-1">
+                  <button
+                    onClick={() => setActiveRegion(id)}
+                    className={`flex items-center gap-2 px-2 py-1 rounded text-sm transition-colors flex-1 min-w-0
+                      ${activeRegion === id ? 'ring-2 ring-indigo-400 bg-gray-800' : 'hover:bg-gray-800'}`}
+                  >
+                    <span
+                      className="inline-block w-4 h-4 rounded-sm border border-gray-600 shrink-0"
+                      style={{ background: rd.color }}
+                    />
+                    <span className="truncate">{rd.name}</span>
+                  </button>
+                  <button
+                    onClick={() => { if (activeRegion === id) setActiveRegion(null); deleteRegion(id) }}
+                    className="text-gray-600 hover:text-red-400 px-1 text-xs shrink-0"
+                    title="Delete region"
+                  >
+                    ✕
+                  </button>
+                </div>
+              )
+            })}
+          </div>
+
+          <div className="flex gap-1">
+            <input
+              className="flex-1 bg-gray-800 rounded px-2 py-1 text-xs outline-none focus:ring-1 ring-indigo-500 min-w-0"
+              placeholder="New region…"
+              value={newRegionName}
+              onChange={(e) => setNewRegionName(e.target.value)}
+              onKeyDown={(e) => { if (e.key === 'Enter') createRegion() }}
+            />
+            <button
+              onClick={createRegion}
+              className="bg-indigo-600 hover:bg-indigo-500 rounded px-2 py-1 text-xs shrink-0"
+            >
+              +
+            </button>
+          </div>
+        </section>
+      )}
 
       {/* Layers */}
       <section>

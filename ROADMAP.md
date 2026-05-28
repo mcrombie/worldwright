@@ -128,19 +128,35 @@ These are not missing documents. They are open questions that should remain open
 
 ---
 
-## App Track
+## Map Editor Track
+
+The hex map editor lives in `map/` — Electron + React + Vite.
 
 | Feature | Status | Notes |
 |---------|--------|-------|
-| `LoreEntry` dataclass | ✓ Done | name, category, tags, body, source_file, related, status |
-| YAML frontmatter loader | ✓ Done | Recursive glob over `lore/`; parses `---` delimited frontmatter |
-| CLI: `list [category]` | ✓ Done | Lists entries, optionally filtered by category |
-| CLI: `show <name>` | ✓ Done | Full text with wrapping; fuzzy name match |
-| CLI: `search <query>` | ✓ Done | Full-text and tag search |
-| Childlike map generator | ✓ Done | `generate_map.py`; wobble function; crayon aesthetic; schoolchild framing |
-| Category/name normalization | ✓ Done | `region` entries list under `geography`; lookup/search is accent-insensitive and filename-aware |
-| Tag filtering in CLI | ✓ Done | `python main.py list geography --tag mystery` |
-| Cross-reference checker | ✓ Done | `python main.py check`; reports missing `related:` targets and duplicate normalized names |
-| Test suite | ✓ Done | `python -m unittest discover -s tests -v`; covers loader, lookup, search, and validation behavior |
-| Related-entry graph | — Planned | Visualize connections between lore entries; the `related:` frontmatter field is already populated |
-| Language entry formatter | — Planned | `show` command formats conlang tables better than raw markdown |
+| Hex grid rendering | ✓ Done | Pointy-top hexes, offset-r coordinates, canvas-based |
+| Terrain painting | ✓ Done | 11 terrain types; brush sizes 1–37 hexes |
+| River tool | ✓ Done | Paint/erase rivers on hex edges |
+| Region system | ✓ Done | Named regions with color, faction, climate, coreStatus, notes; painted with brush; borders and labels rendered |
+| Settlements | ✓ Done | Name + size (village/town/city/capital) per hex |
+| Hex notes | ✓ Done | Free-text annotation per hex |
+| Random map generator | ✓ Done | Noise-based terrain generation; 1–10 size scale; live minimap preview; configurable seed and parameters |
+| Map resize | ✓ Done | Expand or shrink an existing map; preserves hex data |
+| Underlay image | ✓ Done | Load a reference image beneath the grid |
+| Undo | ✓ Done | Stroke-grouped undo up to 50 steps |
+| Save / load | ✓ Done | `.json` map files via Electron file dialog |
+| Clashvergence export | — Planned | Python script: reads `.json` map, outputs a `maps.py` region graph entry with neighbors, terrain_tags, climate, owner derived from hex data |
+| Two-scale game layer | — Idea | See `docs/two-scale-game.md` for full design sketch |
+
+---
+
+## Two-Scale Game (Idea)
+
+A design sketch for using the hex map as the foundation for a two-layer strategy game is in [`docs/two-scale-game.md`](docs/two-scale-game.md).
+
+The core idea: regions are strategic nodes (Clashvergence-compatible), and when armies clash in a region, the game zooms into that region's hexes for a tactical battle. Terrain on the hexes drives movement costs, defense bonuses, and entry positions. The map editor already produces all the data the game would need — no extra authoring step required.
+
+Key open decisions before implementation:
+- Keep `gameState` separate from `MapData`, or embed it?
+- Full hex tactics vs. terrain-modified dice rolls?
+- Local-only, hotseat, or LAN multiplayer?
