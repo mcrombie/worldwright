@@ -35,6 +35,7 @@ export interface RegionData {
   climate?: Climate
   coreStatus?: CoreStatus
   notes?: string
+  lore?: string
 }
 
 export interface HexData {

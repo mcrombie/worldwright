@@ -75,6 +75,11 @@ export function InfoPanel() {
             rows={4} value={rd.notes ?? ''} placeholder="Lore notes…"
             onChange={(e) => upsertRegion(selectedRegion, { notes: e.target.value || undefined })} />
         )}
+        {field('Lore',
+          <textarea className="w-full bg-gray-800 text-sm rounded px-2 py-1 outline-none focus:ring-1 ring-indigo-500 resize-none font-mono"
+            rows={10} value={rd.lore ?? ''} placeholder="Lore (markdown)…"
+            onChange={(e) => upsertRegion(selectedRegion, { lore: e.target.value || undefined })} />
+        )}
       </aside>
     )
   }
@@ -223,6 +228,15 @@ export function InfoPanel() {
             value={regionData.notes ?? ''}
             placeholder="Lore notes, lore/geography/regions/…"
             onChange={(e) => upsertRegion(hex.region!, { notes: e.target.value || undefined })}
+          />
+        )}
+        {field('Lore',
+          <textarea
+            className="w-full bg-gray-800 text-sm rounded px-2 py-1 outline-none focus:ring-1 ring-indigo-500 resize-none font-mono"
+            rows={8}
+            value={regionData.lore ?? ''}
+            placeholder="Lore (markdown)…"
+            onChange={(e) => upsertRegion(hex.region!, { lore: e.target.value || undefined })}
           />
         )}
       </>}
