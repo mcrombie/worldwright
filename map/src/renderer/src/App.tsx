@@ -127,7 +127,7 @@ export default function App() {
 
       {/* ── Menu bar ── */}
       <header className="flex items-center gap-2 px-4 py-2 bg-gray-900 border-b border-gray-800 shrink-0">
-        <span className="font-semibold text-indigo-400 mr-2">Azhora Map</span>
+        <span className="font-semibold text-indigo-400 mr-2">Worldwright</span>
 
         <button className="px-3 py-1 text-sm rounded hover:bg-gray-700" onClick={() => setShowNewDialog(true)}>
           New
@@ -150,7 +150,7 @@ export default function App() {
             className={`px-3 py-1 text-sm rounded ${map ? 'hover:bg-gray-700' : 'opacity-40 cursor-default'}`}
             onClick={handleExport}
             disabled={!map}
-            title="Download as .azmap file"
+            title="Download as .wwmap file"
           >
             Export
           </button>
@@ -206,7 +206,7 @@ export default function App() {
 
       {/* ── Status bar ── */}
       <footer className="px-4 py-1 text-xs text-gray-500 bg-gray-900 border-t border-gray-800 shrink-0">
-        Azhora Map &nbsp;|&nbsp; Scroll to zoom · Middle-click or Pan tool to pan · Click to paint
+        Worldwright &nbsp;|&nbsp; Scroll to zoom · Middle-click or Pan tool to pan · Click to paint
       </footer>
 
       {showNewDialog     && <NewMapDialog     onClose={() => setShowNewDialog(false)} />}

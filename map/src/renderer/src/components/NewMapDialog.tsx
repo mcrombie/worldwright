@@ -22,7 +22,7 @@ function calcDims(hexSize: number, imgW: number, imgH: number) {
 }
 
 export function NewMapDialog({ onClose }: Props) {
-  const [name, setName]     = useState('Azhora')
+  const [name, setName]     = useState('My World')
   const [hexSize, setHexSize] = useState(16)
   const [width, setWidth]   = useState(200)
   const [height, setHeight] = useState(150)

@@ -6,7 +6,7 @@ function createWindow(): BrowserWindow {
   const win = new BrowserWindow({
     width: 1400,
     height: 900,
-    title: 'Azhora Map',
+    title: 'Worldwright',
     backgroundColor: '#1a1a2e',
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
@@ -48,8 +48,8 @@ ipcMain.handle('map:save', async (_, jsonData: string, filePath?: string) => {
   if (!targetPath) {
     const result = await dialog.showSaveDialog({
       title: 'Save Map',
-      defaultPath: 'azhora.azmap',
-      filters: [{ name: 'Azhora Map', extensions: ['azmap'] }],
+      defaultPath: 'my-world.wwmap',
+      filters: [{ name: 'Worldwright Map', extensions: ['wwmap'] }],
     })
     if (result.canceled || !result.filePath) return { canceled: true }
     targetPath = result.filePath
@@ -61,7 +61,7 @@ ipcMain.handle('map:save', async (_, jsonData: string, filePath?: string) => {
 ipcMain.handle('map:load', async () => {
   const result = await dialog.showOpenDialog({
     title: 'Open Map',
-    filters: [{ name: 'Azhora Map', extensions: ['azmap'] }],
+    filters: [{ name: 'Worldwright Map', extensions: ['wwmap', 'azmap'] }],
     properties: ['openFile'],
   })
   if (result.canceled || result.filePaths.length === 0) return { canceled: true }

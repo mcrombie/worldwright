@@ -32,12 +32,12 @@ const electronIO: FileIO = {
 
 const browserIO: FileIO = {
   async saveMap(json, filename) {
-    const name = filename?.replace(/[/\\]/g, '_') ?? 'azhora'
+    const name = filename?.replace(/[/\\]/g, '_') ?? 'my-world'
     const blob = new Blob([json], { type: 'application/json' })
     const url  = URL.createObjectURL(blob)
     const a    = Object.assign(document.createElement('a'), {
       href: url,
-      download: name.endsWith('.azmap') ? name : `${name}.azmap`,
+      download: name.endsWith('.wwmap') ? name : `${name}.wwmap`,
     })
     a.click()
     URL.revokeObjectURL(url)
@@ -47,7 +47,7 @@ const browserIO: FileIO = {
   loadMap() {
     return new Promise((resolve) => {
       const input = Object.assign(document.createElement('input'), {
-        type: 'file', accept: '.azmap,.json',
+        type: 'file', accept: '.wwmap,.azmap,.json',
       })
       input.onchange = async () => {
         const file = input.files?.[0]

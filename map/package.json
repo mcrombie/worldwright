@@ -1,7 +1,7 @@
 {
-  "name": "azhora-map",
+  "name": "worldwright",
   "version": "0.1.0",
-  "description": "Interactive hex map editor for Azhora world-building",
+  "description": "Interactive hex map editor for world-building",
   "main": "./out/main/index.js",
   "scripts": {
     "dev": "powershell -Command \"Remove-Item Env:ELECTRON_RUN_AS_NODE -ErrorAction SilentlyContinue; npx electron-vite dev\"",

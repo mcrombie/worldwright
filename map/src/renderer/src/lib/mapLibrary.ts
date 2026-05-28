@@ -8,9 +8,9 @@ export interface LibraryMeta {
   savedAt: string  // ISO string
 }
 
-const META_KEY   = 'azhora_lib_meta'
-const DATA_KEY   = (id: string) => `azhora_lib_data_${id}`
-const AUTO_KEY   = 'azhora_lib_autosave'
+const META_KEY   = 'worldwright_lib_meta'
+const DATA_KEY   = (id: string) => `worldwright_lib_data_${id}`
+const AUTO_KEY   = 'worldwright_lib_autosave'
 const MAX        = 10
 
 function readMeta(): LibraryMeta[] {

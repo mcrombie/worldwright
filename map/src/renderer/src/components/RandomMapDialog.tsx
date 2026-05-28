@@ -48,7 +48,7 @@ function Slider({
 export function RandomMapDialog({ onClose }: Props) {
   const newMap = useMapStore((s) => s.newMap)
 
-  const [name,          setName]          = useState('Azhora')
+  const [name,          setName]          = useState('My World')
   const [mapSize,       setMapSize]       = useState(3)
   const [seed,          setSeed]          = useState(() => Math.floor(Math.random() * 10000))
   const [seaLevel,      setSeaLevel]      = useState(0.45)

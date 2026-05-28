@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { HexData, MapData, RegionData, TerrainType, Tool, LayerVisibility } from '../types/map'
+import { HexData, MapData, RegionData, RiverSize, TerrainType, Tool, LayerVisibility } from '../types/map'
 import { hexKey, hexesInRadius } from '../lib/hex'
 
 const MAX_HISTORY = 50
@@ -12,10 +12,12 @@ export const REGION_PALETTE = [
 
 interface MapStore {
   map: MapData | null
+  mapVersion: number
   currentFilePath: string | null
   selectedHex: string | null
   activeTool: Tool
   activeTerrain: TerrainType
+  activeRiverSize: RiverSize
   activeRegion: string | null
   brushRadius: number
   layers: LayerVisibility
@@ -35,6 +37,7 @@ interface MapStore {
   updateHex: (key: string, data: Partial<HexData>) => void
   setTool: (tool: Tool) => void
   setTerrain: (terrain: TerrainType) => void
+  setRiverSize: (size: RiverSize) => void
   setActiveRegion: (id: string | null) => void
   setBrushRadius: (radius: number) => void
   toggleRiverEdge: (edgeKey: string) => void
@@ -48,10 +51,12 @@ interface MapStore {
 
 export const useMapStore = create<MapStore>((set, get) => ({
   map: null,
+  mapVersion: 0,
   currentFilePath: null,
   selectedHex: null,
   activeTool: 'paint',
   activeTerrain: 'plains',
+  activeRiverSize: 'medium',
   activeRegion: null,
   brushRadius: 0,
   layers: {
@@ -80,7 +85,8 @@ export const useMapStore = create<MapStore>((set, get) => ({
       }
     }
     set({
-      map: { name, width, height, hexSize, hexes, rivers: [], regions: {} },
+      map: { name, width, height, hexSize, hexes, rivers: {}, regions: {} },
+      mapVersion: get().mapVersion + 1,
       currentFilePath: null,
       isDirty: true,
       selectedHex: null,
@@ -89,15 +95,22 @@ export const useMapStore = create<MapStore>((set, get) => ({
     })
   },
 
-  loadMap: (data, filePath) =>
-    set({
-      map: { rivers: [], regions: {}, ...data },
+  loadMap: (data, filePath) => {
+    // Migrate old rivers format (string[] → Record<string, RiverSize>)
+    const rawRivers = (data as any).rivers
+    const rivers: Record<string, RiverSize> = Array.isArray(rawRivers)
+      ? Object.fromEntries(rawRivers.map((k: string) => [k, 'medium' as RiverSize]))
+      : (rawRivers ?? {})
+    set((state) => ({
+      map: { regions: {}, ...data, rivers },
+      mapVersion: state.mapVersion + 1,
       currentFilePath: filePath,
       isDirty: false,
       selectedHex: null,
       history: [],
       strokeBefore: null,
-    }),
+    }))
+  },
 
   setFilePath: (path) => set({ currentFilePath: path }),
 
@@ -179,21 +192,20 @@ export const useMapStore = create<MapStore>((set, get) => ({
 
   setTool: (tool) => set({ activeTool: tool }),
   setTerrain: (terrain) => set({ activeTerrain: terrain }),
+  setRiverSize: (size) => set({ activeRiverSize: size }),
   setActiveRegion: (id) => set({ activeRegion: id }),
   setBrushRadius: (radius) => set({ brushRadius: radius }),
 
   toggleRiverEdge: (edgeKey) =>
     set((state) => {
       if (!state.map) return {}
-      const rivers = state.map.rivers ?? []
-      const idx = rivers.indexOf(edgeKey)
-      return {
-        map: {
-          ...state.map,
-          rivers: idx >= 0 ? rivers.filter((_, i) => i !== idx) : [...rivers, edgeKey],
-        },
-        isDirty: true,
+      const rivers = { ...state.map.rivers }
+      if (edgeKey in rivers) {
+        delete rivers[edgeKey]
+      } else {
+        rivers[edgeKey] = state.activeRiverSize
       }
+      return { map: { ...state.map, rivers }, isDirty: true }
     }),
 
   setLayer: (layer, visible) =>

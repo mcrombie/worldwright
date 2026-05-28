@@ -5,7 +5,7 @@ import {
   riverEdgeKey, parseRiverEdge, NEIGHBOR_TO_EDGE_SLOT, HEX_NEIGHBORS,
 } from '../lib/hex'
 import { TERRAIN_COLORS } from '../lib/terrain'
-import { HexData } from '../types/map'
+import { HexData, RiverSize } from '../types/map'
 
 interface ViewState {
   offsetX: number
@@ -30,6 +30,8 @@ export function HexCanvas() {
   const needsRedraw      = useRef(true)
 
   const map             = useMapStore((s) => s.map)
+  const mapVersion      = useMapStore((s) => s.mapVersion)
+  const mapRef          = useRef(map)
   const layers          = useMapStore((s) => s.layers)
   const selectedHex     = useMapStore((s) => s.selectedHex)
   const activeTool      = useMapStore((s) => s.activeTool)
@@ -53,6 +55,7 @@ export function HexCanvas() {
   activeToolRef.current   = activeTool
   brushRadiusRef.current  = brushRadius
   activeRegionRef.current = activeRegion
+  mapRef.current          = map
 
   useEffect(() => {
     if (!map?.underlayPath) { underlayImg.current = null; needsRedraw.current = true; return }
@@ -205,12 +208,13 @@ export function HexCanvas() {
     }
 
     // ── Rivers ───────────────────────────────────────────────────────────────
-    if (layers.rivers && map.rivers?.length) {
+    const riverEntries = Object.entries(map.rivers ?? {})
+    if (layers.rivers && riverEntries.length) {
       ctx.strokeStyle = '#3b9eff'
-      ctx.lineWidth = Math.max(1.5, hexSize * 0.18) / zoom
       ctx.lineCap = 'round'
       ctx.lineJoin = 'round'
-      for (const ek of map.rivers) {
+      for (const [ek, riverSize] of riverEntries) {
+        ctx.lineWidth = riverLineWidth(riverSize, hexSize, zoom)
         const [a, b] = parseRiverEdge(ek)
         const d = HEX_NEIGHBORS.findIndex(n => n.q === b.q - a.q && n.r === b.r - a.r)
         if (d === -1) continue
@@ -232,7 +236,7 @@ export function HexCanvas() {
       const [a, b] = parseRiverEdge(hre)
       const d = HEX_NEIGHBORS.findIndex(n => n.q === b.q - a.q && n.r === b.r - a.r)
       if (d !== -1) {
-        const alreadyRiver = map.rivers?.includes(hre) ?? false
+        const alreadyRiver = hre in (map.rivers ?? {})
         const [cx, cy] = hexToPixel(a.q, a.r, hexSize)
         const corners = hexCorners(cx, cy, hexSize)
         const slot = NEIGHBOR_TO_EDGE_SLOT[d]
@@ -318,6 +322,38 @@ export function HexCanvas() {
 
   // ── Helpers ───────────────────────────────────────────────────────────────────
 
+  const fitView = useCallback(() => {
+    const canvas = canvasRef.current
+    const m = mapRef.current
+    if (!canvas || !m) return
+    const cw = canvas.width
+    const ch = canvas.height
+    if (cw === 0 || ch === 0) return
+    const { width, height, hexSize } = m
+    const hSpacing   = Math.sqrt(3) * hexSize
+    const worldLeft  = -hSpacing / 2
+    const worldTop   = -hexSize
+    const worldW     = width  * hSpacing + hSpacing / 2
+    const worldH     = (height - 1) * hexSize * 1.5 + hexSize * 2
+    const pad        = 0.05
+    const zoom       = Math.min(MAX_ZOOM, Math.max(MIN_ZOOM,
+      Math.min((cw * (1 - pad * 2)) / worldW, (ch * (1 - pad * 2)) / worldH)
+    ))
+    view.current = {
+      zoom,
+      offsetX: cw / 2 - (worldLeft + worldW / 2) * zoom,
+      offsetY: ch / 2 - (worldTop  + worldH / 2) * zoom,
+    }
+    needsRedraw.current = true
+  }, [])
+
+  useEffect(() => {
+    if (mapVersion === 0) return
+    // defer one frame so the canvas has its pixel dimensions
+    const id = requestAnimationFrame(fitView)
+    return () => cancelAnimationFrame(id)
+  }, [mapVersion, fitView])
+
   const screenToWorld = useCallback((sx: number, sy: number): [number, number] => {
     const { offsetX, offsetY, zoom } = view.current
     return [(sx - offsetX) / zoom, (sy - offsetY) / zoom]
@@ -356,7 +392,7 @@ export function HexCanvas() {
         const [wx, wy] = screenToWorld(e.clientX - rect.left, e.clientY - rect.top)
         const ek = nearestRiverEdge(wx, wy, map.hexes, map.hexSize)
         if (ek) {
-          riverDrawMode.current = (map.rivers?.includes(ek) ?? false) ? 'remove' : 'add'
+          riverDrawMode.current = (ek in (map.rivers ?? {})) ? 'remove' : 'add'
           lastRiverEdgeRef.current = ek
           isRiverDrawing.current = true
           toggleRiverEdge(ek)
@@ -402,7 +438,7 @@ export function HexCanvas() {
         if (ek !== hoverRiverEdge.current) { hoverRiverEdge.current = ek; needsRedraw.current = true }
         if (isRiverDrawing.current && ek && ek !== lastRiverEdgeRef.current) {
           lastRiverEdgeRef.current = ek
-          const hasRiver = map.rivers?.includes(ek) ?? false
+          const hasRiver = ek in (map.rivers ?? {})
           if (riverDrawMode.current === 'add' && !hasRiver) toggleRiverEdge(ek)
           if (riverDrawMode.current === 'remove' && hasRiver) toggleRiverEdge(ek)
         }
@@ -525,6 +561,12 @@ function drawSettlement(
 }
 
 // ── River helpers ──────────────────────────────────────────────────────────────
+
+function riverLineWidth(size: RiverSize, hexSize: number, zoom: number): number {
+  const factor = size === 'small' ? 0.10 : size === 'large' ? 0.28 : 0.18
+  const minPx  = size === 'small' ? 1.0  : size === 'large' ? 2.5  : 1.5
+  return Math.max(minPx, hexSize * factor) / zoom
+}
 
 function distToSegment(px: number, py: number, x1: number, y1: number, x2: number, y2: number): number {
   const dx = x2 - x1, dy = y2 - y1

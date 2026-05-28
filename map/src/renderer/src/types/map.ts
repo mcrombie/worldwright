@@ -1,15 +1,28 @@
+export type RiverSize = 'small' | 'medium' | 'large'
+
 export type TerrainType =
   | 'ocean'
   | 'coast'
-  | 'plains'
+  | 'grassland'
   | 'hills'
+  | 'tundra_hills'
+  | 'desert_hills'
   | 'forest'
   | 'deep_forest'
   | 'mountain'
+  | 'tundra_mountain'
+  | 'desert_mountain'
   | 'high_mountain'
+  | 'tundra_high_mountain'
+  | 'desert_high_mountain'
   | 'desert'
   | 'tundra'
   | 'wetland'
+  | 'lake'
+  | 'highland'
+  | 'riverland'
+  | 'plains'
+  | 'mediterranean'
 
 export type SettlementSize = 'village' | 'town' | 'city' | 'capital'
 export type Climate    = 'temperate' | 'oceanic' | 'cold' | 'arid' | 'steppe' | 'tropical'
@@ -41,7 +54,7 @@ export interface MapData {
   hexSize: number
   hexes: Record<string, HexData>
   underlayPath?: string
-  rivers: string[]                       // canonical edge keys: "q1,r1|q2,r2"
+  rivers: Record<string, RiverSize>      // edgeKey → size
   regions: Record<string, RegionData>    // regionId → RegionData
 }
 

@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useMapStore, REGION_PALETTE } from '../store/mapStore'
 import { ALL_TERRAINS, TERRAIN_COLORS, TERRAIN_LABELS } from '../lib/terrain'
 import { fileIO } from '../lib/fileIO'
-import { Tool, LayerVisibility } from '../types/map'
+import { Tool, LayerVisibility, RiverSize } from '../types/map'
 
 const TOOLS: { id: Tool; label: string; icon: string }[] = [
   { id: 'paint',  label: 'Paint',  icon: '🖌' },
@@ -30,14 +30,16 @@ const BRUSH_SIZES = [
 ]
 
 export function Toolbar() {
-  const activeTool    = useMapStore((s) => s.activeTool)
-  const activeTerrain = useMapStore((s) => s.activeTerrain)
-  const brushRadius   = useMapStore((s) => s.brushRadius)
+  const activeTool      = useMapStore((s) => s.activeTool)
+  const activeTerrain   = useMapStore((s) => s.activeTerrain)
+  const activeRiverSize = useMapStore((s) => s.activeRiverSize)
+  const brushRadius     = useMapStore((s) => s.brushRadius)
   const layers        = useMapStore((s) => s.layers)
   const activeRegion  = useMapStore((s) => s.activeRegion)
   const map           = useMapStore((s) => s.map)
   const setTool         = useMapStore((s) => s.setTool)
   const setTerrain      = useMapStore((s) => s.setTerrain)
+  const setRiverSize    = useMapStore((s) => s.setRiverSize)
   const setBrushRadius  = useMapStore((s) => s.setBrushRadius)
   const setLayer        = useMapStore((s) => s.setLayer)
   const setUnderlay     = useMapStore((s) => s.setUnderlay)
@@ -112,6 +114,33 @@ export function Toolbar() {
                 <span className="text-xs leading-none">{hexCount}</span>
               </button>
             ))}
+          </div>
+        </section>
+      )}
+
+      {/* River size */}
+      {activeTool === 'river' && (
+        <section>
+          <h3 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">River Size</h3>
+          <div className="flex flex-col gap-1">
+            {(['small', 'medium', 'large'] as RiverSize[]).map((size) => {
+              const barH = size === 'small' ? 2 : size === 'large' ? 6 : 4
+              return (
+                <button
+                  key={size}
+                  onClick={() => setRiverSize(size)}
+                  className={`flex items-center gap-3 px-2 py-1.5 rounded text-sm transition-colors
+                    ${activeRiverSize === size
+                      ? 'ring-2 ring-indigo-400 bg-gray-800'
+                      : 'hover:bg-gray-800'}`}
+                >
+                  <div className="w-8 flex items-center shrink-0">
+                    <div className="w-full rounded-full bg-blue-400" style={{ height: barH }} />
+                  </div>
+                  <span className="capitalize">{size}</span>
+                </button>
+              )
+            })}
           </div>
         </section>
       )}
