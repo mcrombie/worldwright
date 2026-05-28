@@ -1,0 +1,29 @@
+{
+  "name": "azhora-map",
+  "version": "0.1.0",
+  "description": "Interactive hex map editor for Azhora world-building",
+  "main": "./out/main/index.js",
+  "scripts": {
+    "dev": "cross-env ELECTRON_RUN_AS_NODE= electron-vite dev",
+    "build": "electron-vite build",
+    "start": "cross-env ELECTRON_RUN_AS_NODE= electron-vite preview"
+  },
+  "dependencies": {
+    "zustand": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "cross-env": "^10.1.0",
+    "electron": "^32.0.0",
+    "electron-vite": "^3.0.0",
+    "postcss": "^8.4.45",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.6"
+  }
+}

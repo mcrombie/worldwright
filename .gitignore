@@ -7,3 +7,9 @@ __pycache__/
 htmlcov/
 .venv/
 tests/.tmp/
+
+# Electron map editor
+map/node_modules/
+map/out/
+map/.env
+
