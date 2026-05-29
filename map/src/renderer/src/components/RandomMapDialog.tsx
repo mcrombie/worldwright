@@ -20,7 +20,7 @@ const MAP_SIZES = [
   { width: 375, height: 262, hexSize: 8,  label: 'World'     },
 ] as const
 
-const MINIMAP_MAX_W = 260
+const MINIMAP_MAX_W = 280
 
 function SectionLabel({ label }: { label: string }) {
   return (
@@ -57,35 +57,28 @@ function Slider({
 export function RandomMapDialog({ onClose }: Props) {
   const newMap = useMapStore((s) => s.newMap)
 
-  const [name,           setName]           = useState('My World')
-  const [mapSize,        setMapSize]        = useState(3)
-  const [seed,           setSeed]           = useState(() => Math.floor(Math.random() * 10000))
+  const [name,          setName]          = useState('My World')
+  const [mapSize,       setMapSize]       = useState(3)
+  const [seed,          setSeed]          = useState(() => Math.floor(Math.random() * 10000))
 
-  // Geography
-  const [seaLevel,       setSeaLevel]       = useState(0.45)
-  const [featureScale,   setFeatureScale]   = useState(1.0)
-  const [islandFalloff,  setIslandFalloff]  = useState(0.50)
-  const [erosion,        setErosion]        = useState(0.20)
+  const [seaLevel,      setSeaLevel]      = useState(0.45)
+  const [featureScale,  setFeatureScale]  = useState(1.0)
+  const [islandFalloff, setIslandFalloff] = useState(0.50)
+  const [erosion,       setErosion]       = useState(0.20)
 
-  // Terrain
-  const [mountainRate,   setMountainRate]   = useState(0.30)
-  const [highlandRate,   setHighlandRate]   = useState(0.20)
+  const [mountainRate,  setMountainRate]  = useState(0.30)
+  const [highlandRate,  setHighlandRate]  = useState(0.20)
 
-  // Climate
-  const [temperature,    setTemperature]    = useState(0.50)
-  const [moisture,       setMoisture]       = useState(0.50)
-  const [polarGradient,  setPolarGradient]  = useState(0.40)
+  const [temperature,   setTemperature]   = useState(0.50)
+  const [moisture,      setMoisture]      = useState(0.50)
+  const [polarGradient, setPolarGradient] = useState(0.40)
 
-  // Regions — default derived from estimated land area, updates when size/sea level changes
   const calcDefaultRegions = (size: number, sea: number) => {
     const { width, height } = MAP_SIZES[size - 1]
     return Math.max(5, Math.round(Math.sqrt(width * height * (1 - sea)) * 0.5))
   }
   const [numRegions, setNumRegions] = useState(() => calcDefaultRegions(3, 0.45))
-
-  useEffect(() => {
-    setNumRegions(calcDefaultRegions(mapSize, seaLevel))
-  }, [mapSize, seaLevel])
+  useEffect(() => { setNumRegions(calcDefaultRegions(mapSize, seaLevel)) }, [mapSize, seaLevel])
 
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const { width, height, hexSize } = MAP_SIZES[mapSize - 1]
@@ -131,112 +124,123 @@ export function RandomMapDialog({ onClose }: Props) {
 
   return (
     <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
-      <div className="bg-gray-900 rounded-lg p-6 flex gap-6 text-gray-100 max-h-[90vh] overflow-y-auto">
+      <div className="bg-gray-900 rounded-lg p-6 text-gray-100 max-h-[90vh] overflow-y-auto w-[780px] max-w-[95vw]">
 
-        {/* ── Left: controls ─────────────────────────────────────────────── */}
-        <div className="flex flex-col gap-3 w-64 shrink-0">
-          <h2 className="text-lg font-semibold">Random Map</h2>
+        <h2 className="text-lg font-semibold mb-4">Random Map</h2>
 
-          <label className="flex flex-col gap-1 text-sm">
-            Name
-            <input
-              className="bg-gray-800 rounded px-2 py-1 outline-none focus:ring-1 ring-indigo-500"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-          </label>
+        {/* ── Top row: basic settings + minimap ────────────────────────── */}
+        <div className="flex gap-6 mb-5">
+          <div className="flex flex-col gap-3 flex-1">
+            <label className="flex flex-col gap-1 text-sm">
+              Name
+              <input
+                className="bg-gray-800 rounded px-2 py-1 outline-none focus:ring-1 ring-indigo-500"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+            </label>
 
-          <label className="flex flex-col gap-1 text-sm">
-            <div className="flex justify-between items-baseline">
-              <span>Size</span>
-              <span className="text-indigo-300 font-semibold">
-                {mapSize} — {MAP_SIZES[mapSize - 1].label}
-              </span>
+            <label className="flex flex-col gap-1 text-sm">
+              <div className="flex justify-between items-baseline">
+                <span>Size</span>
+                <span className="text-indigo-300 font-semibold">
+                  {mapSize} — {MAP_SIZES[mapSize - 1].label}
+                </span>
+              </div>
+              <input
+                type="range" min={1} max={10} step={1}
+                className="w-full accent-indigo-500"
+                value={mapSize}
+                onChange={(e) => setMapSize(Number(e.target.value))}
+              />
+              <div className="flex justify-between text-xs text-gray-500">
+                <span>1 Hamlet</span><span>10 World</span>
+              </div>
+            </label>
+
+            <div className="flex flex-col gap-1 text-sm">
+              <div className="flex justify-between items-center">
+                <span>Seed</span>
+                <button
+                  className="text-xs px-2 py-0.5 rounded bg-gray-700 hover:bg-gray-600"
+                  onClick={randomize}
+                >
+                  ↺ Randomize
+                </button>
+              </div>
+              <input
+                type="number" min={0} max={99999}
+                className="bg-gray-800 rounded px-2 py-1 outline-none focus:ring-1 ring-indigo-500"
+                value={seed}
+                onChange={(e) => setSeed(Number(e.target.value))}
+              />
             </div>
-            <input
-              type="range" min={1} max={10} step={1}
-              className="w-full accent-indigo-500"
-              value={mapSize}
-              onChange={(e) => setMapSize(Number(e.target.value))}
-            />
-            <div className="flex justify-between text-xs text-gray-500">
-              <span>1 Hamlet</span><span>10 World</span>
-            </div>
-          </label>
-
-          <div className="flex flex-col gap-1 text-sm">
-            <div className="flex justify-between items-center">
-              <span>Seed</span>
-              <button
-                className="text-xs px-2 py-0.5 rounded bg-gray-700 hover:bg-gray-600"
-                onClick={randomize}
-              >
-                ↺ Randomize
-              </button>
-            </div>
-            <input
-              type="number" min={0} max={99999}
-              className="bg-gray-800 rounded px-2 py-1 outline-none focus:ring-1 ring-indigo-500"
-              value={seed}
-              onChange={(e) => setSeed(Number(e.target.value))}
-            />
           </div>
 
-          <SectionLabel label="Geography" />
-          <Slider label="Sea Level"      value={seaLevel}      min={0.2} max={0.7} step={0.01} onChange={setSeaLevel}
-            hint="↑ more ocean" />
-          <Slider label="Feature Scale"  value={featureScale}  min={0.5} max={3.0} step={0.1}  onChange={setFeatureScale}
-            hint="↑ larger landmasses" />
-          <Slider label="Island Falloff" value={islandFalloff} min={0}   max={1}   step={0.01} onChange={setIslandFalloff}
-            hint="0 = continent  →  1 = island" />
-          <Slider label="Erosion"        value={erosion}       min={0}   max={1}   step={0.01} onChange={setErosion}
-            hint="↑ smoother, broader valleys" />
-
-          <SectionLabel label="Terrain" />
-          <Slider label="Mountains"         value={mountainRate}  min={0} max={1} step={0.01} onChange={setMountainRate}
-            hint="↑ sharper ridges" />
-          <Slider label="Highland Plateaus" value={highlandRate}  min={0} max={1} step={0.01} onChange={setHighlandRate}
-            hint="↑ more flat elevated terrain" />
-
-          <SectionLabel label="Climate" />
-          <Slider label="Temperature"    value={temperature}   min={0} max={1} step={0.01} onChange={setTemperature}
-            hint="0 = cold  →  1 = hot" />
-          <Slider label="Moisture"       value={moisture}      min={0} max={1} step={0.01} onChange={setMoisture}
-            hint="0 = dry  →  1 = wet" />
-          <Slider label="Polar Gradient" value={polarGradient} min={0} max={1} step={0.01} onChange={setPolarGradient}
-            hint="↑ cold poles, warm equator" />
-
-          <SectionLabel label="Regions" />
-          <Slider label="Region Count" value={numRegions} min={0} max={200} step={1} onChange={setNumRegions}
-            hint={numRegions === 0 ? 'No regions generated' : `${numRegions} geographic regions`} />
-
-          <div className="flex gap-2 justify-end pt-2">
-            <button
-              className="px-4 py-2 text-sm rounded bg-gray-700 hover:bg-gray-600"
-              onClick={onClose}
-            >
-              Cancel
-            </button>
-            <button
-              className="px-4 py-2 text-sm rounded bg-indigo-600 hover:bg-indigo-500 font-semibold"
-              onClick={generate}
-            >
-              Generate
-            </button>
+          <div className="flex flex-col gap-2 shrink-0">
+            <span className="text-xs font-semibold uppercase tracking-wider text-gray-400">Preview</span>
+            <canvas
+              ref={canvasRef}
+              className="rounded border border-gray-700"
+              style={{ imageRendering: 'pixelated' }}
+            />
+            <p className="text-xs text-gray-500">
+              {width} × {height} = {(width * height).toLocaleString()} hexes
+            </p>
           </div>
         </div>
 
-        {/* ── Right: minimap preview ──────────────────────────────────────── */}
-        <div className="flex flex-col gap-2">
-          <span className="text-xs font-semibold uppercase tracking-wider text-gray-400">Preview</span>
-          <canvas
-            ref={canvasRef}
-            className="rounded border border-gray-700"
-            style={{ imageRendering: 'pixelated' }}
-          />
-          <p className="text-xs text-gray-500">
-            {width} × {height} = {(width * height).toLocaleString()} hexes
-          </p>
+        {/* ── Middle row: sliders in two columns ───────────────────────── */}
+        <div className="grid grid-cols-2 gap-x-8 gap-y-3">
+          <div className="flex flex-col gap-3">
+            <SectionLabel label="Geography" />
+            <Slider label="Sea Level"      value={seaLevel}      min={0.2} max={0.7} step={0.01} onChange={setSeaLevel}
+              hint="↑ more ocean" />
+            <Slider label="Feature Scale"  value={featureScale}  min={0.5} max={3.0} step={0.1}  onChange={setFeatureScale}
+              hint="↑ larger landmasses" />
+            <Slider label="Island Falloff" value={islandFalloff} min={0}   max={1}   step={0.01} onChange={setIslandFalloff}
+              hint="0 = continent  →  1 = island" />
+            <Slider label="Erosion"        value={erosion}       min={0}   max={1}   step={0.01} onChange={setErosion}
+              hint="↑ smoother, broader valleys" />
+          </div>
+
+          <div className="flex flex-col gap-3">
+            <SectionLabel label="Terrain" />
+            <Slider label="Mountains"         value={mountainRate} min={0} max={1} step={0.01} onChange={setMountainRate}
+              hint="↑ sharper ridges" />
+            <Slider label="Highland Plateaus" value={highlandRate} min={0} max={1} step={0.01} onChange={setHighlandRate}
+              hint="↑ more flat elevated terrain" />
+
+            <SectionLabel label="Climate" />
+            <Slider label="Temperature"    value={temperature}   min={0} max={1} step={0.01} onChange={setTemperature}
+              hint="0 = cold  →  1 = hot" />
+            <Slider label="Moisture"       value={moisture}      min={0} max={1} step={0.01} onChange={setMoisture}
+              hint="0 = dry  →  1 = wet" />
+            <Slider label="Polar Gradient" value={polarGradient} min={0} max={1} step={0.01} onChange={setPolarGradient}
+              hint="↑ cold poles, warm equator" />
+          </div>
+        </div>
+
+        {/* ── Bottom row: regions + buttons ────────────────────────────── */}
+        <div className="mt-5 flex flex-col gap-3">
+          <SectionLabel label="Regions" />
+          <Slider label="Region Count" value={numRegions} min={0} max={200} step={1} onChange={setNumRegions}
+            hint={numRegions === 0 ? 'No regions generated' : `${numRegions} geographic regions`} />
+        </div>
+
+        <div className="flex gap-2 justify-end mt-5">
+          <button
+            className="px-4 py-2 text-sm rounded bg-gray-700 hover:bg-gray-600"
+            onClick={onClose}
+          >
+            Cancel
+          </button>
+          <button
+            className="px-4 py-2 text-sm rounded bg-indigo-600 hover:bg-indigo-500 font-semibold"
+            onClick={generate}
+          >
+            Generate
+          </button>
         </div>
 
       </div>
