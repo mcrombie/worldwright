@@ -7,26 +7,34 @@ import { RandomMapDialog } from './components/RandomMapDialog'
 import { ResizeDialog } from './components/ResizeDialog'
 import { MapLibraryDialog } from './components/MapLibraryDialog'
 import { ExampleMapsDialog } from './components/ExampleMapsDialog'
+import { SimulationPanel } from './components/SimulationPanel'
+import { SimulateDialog } from './components/SimulateDialog'
 import { useMapStore } from './store/mapStore'
 import { fileIO, IS_BROWSER, type RecentFile } from './lib/fileIO'
 import { autoSave, loadAutoSave, saveToLibrary } from './lib/mapLibrary'
-import type { MapData } from './types/map'
+import type { MapData, SimWorldState } from './types/map'
 
 export default function App() {
-  const [showNewDialog,      setShowNewDialog]      = useState(false)
-  const [showRandomDialog,   setShowRandomDialog]   = useState(false)
-  const [showResizeDialog,   setShowResizeDialog]   = useState(false)
-  const [showLibraryDialog,  setShowLibraryDialog]  = useState(false)
-  const [showExamplesDialog, setShowExamplesDialog] = useState(false)
-  const [recentFiles,       setRecentFiles]       = useState<RecentFile[] | undefined>(undefined)
+  const [showNewDialog,       setShowNewDialog]       = useState(false)
+  const [showRandomDialog,    setShowRandomDialog]    = useState(false)
+  const [showResizeDialog,    setShowResizeDialog]    = useState(false)
+  const [showLibraryDialog,   setShowLibraryDialog]   = useState(false)
+  const [showExamplesDialog,  setShowExamplesDialog]  = useState(false)
+  const [showSimulateDialog,  setShowSimulateDialog]  = useState(false)
+  const [recentFiles,        setRecentFiles]        = useState<RecentFile[] | undefined>(undefined)
 
-  const map         = useMapStore((s) => s.map)
-  const isDirty     = useMapStore((s) => s.isDirty)
-  const currentPath = useMapStore((s) => s.currentFilePath)
-  const history     = useMapStore((s) => s.history)
-  const storeLoad   = useMapStore((s) => s.loadMap)
-  const markSaved   = useMapStore((s) => s.markSaved)
-  const undo        = useMapStore((s) => s.undo)
+  const map           = useMapStore((s) => s.map)
+  const isDirty       = useMapStore((s) => s.isDirty)
+  const currentPath   = useMapStore((s) => s.currentFilePath)
+  const history       = useMapStore((s) => s.history)
+  const storeLoad     = useMapStore((s) => s.loadMap)
+  const markSaved     = useMapStore((s) => s.markSaved)
+  const undo          = useMapStore((s) => s.undo)
+  const isSimulating     = useMapStore((s) => s.isSimulating)
+  const setSimulating    = useMapStore((s) => s.setSimulating)
+  const setSimWorld      = useMapStore((s) => s.setSimWorld)
+  const simFactionCount  = useMapStore((s) => s.simFactionCount)
+  const setSimFactionCount = useMapStore((s) => s.setSimFactionCount)
 
   // ── Restore autosave on mount (browser only) ──────────────────────────────
   const restoredRef = useRef(false)
@@ -119,6 +127,53 @@ export default function App() {
     }
   }
 
+  // ── Simulation ────────────────────────────────────────────────────────────
+  async function handleSimulate() {
+    if (!map || IS_BROWSER || !window.electronAPI?.sim) return
+    if (isSimulating) {
+      await window.electronAPI.sim.stop()
+      setSimulating(false)
+      setSimWorld(null)
+      return
+    }
+    if (!currentPath) {
+      alert('Load or save a map before starting a simulation.')
+      return
+    }
+    setShowSimulateDialog(true)
+  }
+
+  async function handleStartNew(factionCount: number) {
+    setShowSimulateDialog(false)
+    if (!currentPath || !window.electronAPI?.sim) return
+    setSimFactionCount(factionCount)
+    setSimulating(true)
+    const result = await window.electronAPI.sim.start(currentPath, factionCount)
+    if (!result.ok) {
+      alert('Simulation failed to start:\n' + (result.error ?? 'Unknown error'))
+      setSimulating(false)
+    } else if (result.world) {
+      setSimWorld(result.world as SimWorldState)
+    }
+  }
+
+  async function handleLoadSaved() {
+    setShowSimulateDialog(false)
+    if (!window.electronAPI?.sim) return
+    setSimulating(true)
+    const result = await window.electronAPI.sim.loadAndStart()
+    if (result.canceled) {
+      setSimulating(false)
+      return
+    }
+    if (!result.ok) {
+      alert('Failed to load simulation:\n' + (result.error ?? 'Unknown error'))
+      setSimulating(false)
+    } else if (result.world) {
+      setSimWorld(result.world as SimWorldState)
+    }
+  }
+
   // ── Status display ────────────────────────────────────────────────────────
   const saveStatus = IS_BROWSER
     ? (isDirty ? 'Unsaved changes' : currentPath ? 'Saved' : '')
@@ -176,6 +231,17 @@ export default function App() {
           Undo
         </button>
 
+        {!IS_BROWSER && (
+          <button
+            className={`px-3 py-1 text-sm rounded ${isSimulating ? 'bg-indigo-700 text-white hover:bg-indigo-600' : map && currentPath ? 'hover:bg-gray-700' : 'opacity-40 cursor-default'}`}
+            onClick={handleSimulate}
+            disabled={!map || !currentPath}
+            title={isSimulating ? 'Stop simulation' : !map ? 'Load a map first' : !currentPath ? 'Load or save a map first' : 'Run Clashvergence simulation'}
+          >
+            {isSimulating ? 'Simulating…' : 'Simulate'}
+          </button>
+        )}
+
         <span className="ml-auto text-xs text-gray-500 truncate max-w-xs">{saveStatus}</span>
         {map && <span className="text-xs text-gray-500">{map.width}×{map.height} hexes</span>}
       </header>
@@ -206,7 +272,7 @@ export default function App() {
             </div>
           )}
         </main>
-        <InfoPanel />
+        {isSimulating ? <SimulationPanel /> : <InfoPanel />}
       </div>
 
       {/* ── Status bar ── */}
@@ -218,6 +284,14 @@ export default function App() {
         <ExampleMapsDialog
           onClose={() => setShowExamplesDialog(false)}
           onLoad={(data, id) => { storeLoad(data, id); setShowExamplesDialog(false) }}
+        />
+      )}
+      {showSimulateDialog && (
+        <SimulateDialog
+          initialFactionCount={simFactionCount}
+          onStartNew={handleStartNew}
+          onLoadSaved={handleLoadSaved}
+          onClose={() => setShowSimulateDialog(false)}
         />
       )}
       {showNewDialog     && <NewMapDialog     onClose={() => setShowNewDialog(false)} />}

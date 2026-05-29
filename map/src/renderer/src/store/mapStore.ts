@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { HexData, MapData, RegionData, RiverSize, SelectMode, TerrainType, Tool, LayerVisibility } from '../types/map'
+import { HexData, MapData, RegionData, RiverSize, SelectMode, SimWorldState, TerrainType, Tool, LayerVisibility } from '../types/map'
 import { hexKey, hexesInRadius } from '../lib/hex'
 
 const MAX_HISTORY = 50
@@ -51,6 +51,13 @@ interface MapStore {
   resizeMap: (newWidth: number, newHeight: number) => void
   upsertRegion: (id: string, data: Partial<RegionData>) => void
   deleteRegion: (id: string) => void
+
+  simWorld: SimWorldState | null
+  isSimulating: boolean
+  simFactionCount: number
+  setSimWorld: (world: SimWorldState | null) => void
+  setSimulating: (v: boolean) => void
+  setSimFactionCount: (n: number) => void
 }
 
 export const useMapStore = create<MapStore>((set, get) => ({
@@ -76,6 +83,12 @@ export const useMapStore = create<MapStore>((set, get) => ({
   isDirty: false,
   history: [],
   strokeBefore: null,
+  simWorld: null,
+  isSimulating: false,
+  simFactionCount: 4,
+  setSimWorld: (world) => set({ simWorld: world }),
+  setSimulating: (v) => set({ isSimulating: v }),
+  setSimFactionCount: (n) => set({ simFactionCount: n }),
 
   newMap: (name, width, height, hexSize, precomputedHexes) => {
     let hexes: Record<string, HexData>

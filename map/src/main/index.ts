@@ -1,6 +1,8 @@
 import { app, shell, BrowserWindow, ipcMain, dialog } from 'electron'
 import { join } from 'path'
 import { readFileSync, writeFileSync, existsSync } from 'fs'
+import { spawn, spawnSync, ChildProcess } from 'child_process'
+import * as http from 'http'
 
 const EXAMPLES_DIR = app.isPackaged
   ? join(process.resourcesPath, 'examples')
@@ -149,4 +151,260 @@ ipcMain.handle('map:add-recent', (_, path: string, name: string) => {
   files.unshift({ path, name, savedAt: new Date().toISOString() })
   if (files.length > RECENT_MAX) files.length = RECENT_MAX
   writeRecent(files)
+})
+
+// ── Simulation subprocess ─────────────────────────────────────────────────────
+// app.getAppPath() = .../typescript/worldwright/map  (in dev)
+// Clashvergence:     .../python/Clashvergence  (3 dirs up, then python/)
+// Translator:        .../typescript/worldwright/wwmap_to_clashvergence.py (1 dir up)
+
+const PYTHON_CMD        = process.env.WW_PYTHON           ?? 'python'
+const CLASHVERGENCE_DIR = process.env.WW_CLASHVERGENCE_DIR
+  ?? join(app.getAppPath(), '..', '..', '..', 'python', 'Clashvergence')
+const TRANSLATOR_SCRIPT = process.env.WW_TRANSLATOR
+  ?? join(app.getAppPath(), '..', 'wwmap_to_clashvergence.py')
+const SIM_PORT = 18765
+
+let simProcess: ChildProcess | null = null
+let simPid: number | undefined
+let simMapPath: string | null = null
+let simNumFactions: number = 4
+
+function killSimProcess() {
+  if (!simProcess) return
+  if (process.platform === 'win32' && simPid != null) {
+    spawnSync('taskkill', ['/F', '/T', '/PID', String(simPid)], { encoding: 'utf-8' })
+  } else {
+    simProcess.kill()
+  }
+  simProcess = null
+  simPid = undefined
+}
+
+async function waitForPortFree(maxMs = 5000): Promise<boolean> {
+  const deadline = Date.now() + maxMs
+  while (Date.now() < deadline) {
+    try {
+      await simGet('/api/health')
+      await new Promise<void>((r) => setTimeout(r, 150))
+    } catch {
+      return true // connection refused = port is free
+    }
+  }
+  return false // timed out — port still occupied
+}
+
+async function _spawnServer(
+  resolvedMapPath: string,
+  numFactions: number,
+): Promise<{ ok: boolean; error?: string }> {
+  killSimProcess()
+
+  // Kill any process LISTENING on our port (e.g. an orphan from a crashed previous session).
+  // We pipe through `findstr "LISTENING"` so we only match the server socket, not Electron's
+  // own established connections to that port (which would yield Electron's own PID).
+  if (process.platform === 'win32') {
+    spawnSync('cmd', ['/c',
+      `for /f "tokens=5" %a in ('netstat -ano ^| findstr ":${SIM_PORT}" ^| findstr "LISTENING"') do taskkill /F /T /PID %a`,
+    ], { shell: true, encoding: 'utf-8' })
+  } else {
+    spawnSync('sh', ['-c', `lsof -ti:${SIM_PORT} | xargs -r kill -9`], { encoding: 'utf-8' })
+  }
+
+  // Confirm the port is actually free before spawning.
+  const portFree = await waitForPortFree()
+  if (!portFree) {
+    return { ok: false, error: `Port ${SIM_PORT} is still in use after kill attempt. Close any lingering Clashvergence processes and try again.` }
+  }
+
+  const cmapPath = resolvedMapPath.endsWith('.wwmap')
+    ? resolvedMapPath.replace(/\.wwmap$/, '.cmap.json')
+    : resolvedMapPath + '.cmap.json'
+
+  const xResult = spawnSync(PYTHON_CMD, [TRANSLATOR_SCRIPT, resolvedMapPath, cmapPath, String(numFactions)], { encoding: 'utf-8' })
+  if (xResult.status !== 0) {
+    return { ok: false, error: xResult.stderr?.trim() || xResult.error?.message || 'Translator failed.' }
+  }
+
+  const stderrChunks: Buffer[] = []
+  simProcess = spawn(
+    PYTHON_CMD,
+    [join(CLASHVERGENCE_DIR, 'main.py'), '--map-file', cmapPath, '--game-server', '--port', String(SIM_PORT)],
+    { cwd: CLASHVERGENCE_DIR },
+  )
+  simPid = simProcess.pid
+  simProcess.stderr?.on('data', (chunk: Buffer) => stderrChunks.push(chunk))
+
+  try {
+    await waitForServer()
+    return { ok: true }
+  } catch (e: any) {
+    const stderr = Buffer.concat(stderrChunks).toString('utf-8').trim()
+    killSimProcess()
+    return { ok: false, error: stderr || e.message }
+  }
+}
+
+function simGet(path: string): Promise<string> {
+  return new Promise((resolve, reject) => {
+    const req = http.get(`http://127.0.0.1:${SIM_PORT}${path}`, (res) => {
+      let data = ''
+      res.on('data', (chunk: Buffer) => { data += chunk })
+      res.on('end', () => resolve(data))
+    })
+    req.on('error', reject)
+  })
+}
+
+function simPost(path: string, body: object): Promise<string> {
+  return new Promise((resolve, reject) => {
+    const payload = JSON.stringify(body)
+    const req = http.request(
+      { hostname: '127.0.0.1', port: SIM_PORT, path, method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(payload) } },
+      (res) => {
+        let data = ''
+        res.on('data', (chunk: Buffer) => { data += chunk })
+        res.on('end', () => resolve(data))
+      },
+    )
+    req.on('error', reject)
+    req.write(payload)
+    req.end()
+  })
+}
+
+async function waitForServer(maxMs = 20_000): Promise<void> {
+  const deadline = Date.now() + maxMs
+  while (Date.now() < deadline) {
+    try { await simGet('/api/health'); return } catch { /* not ready yet */ }
+    await new Promise<void>((r) => setTimeout(r, 250))
+  }
+  throw new Error('Clashvergence server did not start within 20 s.')
+}
+
+// ── Simulation IPC ────────────────────────────────────────────────────────────
+
+function _resolveMapPath(mapFilePath: string): string | null {
+  if (mapFilePath.startsWith('__example__')) {
+    const exId = mapFilePath.slice('__example__'.length)
+    const ex = BUNDLED_EXAMPLES.find(e => e.id === exId)
+    return ex ? join(EXAMPLES_DIR, ex.filename) : null
+  }
+  return mapFilePath
+}
+
+ipcMain.handle('sim:start', async (_, mapFilePath: string, numFactions: number = 4) => {
+  const resolvedPath = _resolveMapPath(mapFilePath)
+  if (!resolvedPath) return { ok: false, error: `Unknown example: ${mapFilePath}` }
+
+  const spawn_result = await _spawnServer(resolvedPath, numFactions)
+  if (!spawn_result.ok) return spawn_result
+
+  simMapPath = mapFilePath
+  simNumFactions = numFactions
+
+  try {
+    const raw = await simGet('/api/world')
+    return { ok: true, world: JSON.parse(raw) }
+  } catch (e: any) {
+    killSimProcess()
+    return { ok: false, error: e.message }
+  }
+})
+
+ipcMain.handle('sim:save-state', async () => {
+  if (!simProcess) return { ok: false, error: 'No simulation running.' }
+  try {
+    const worldRaw = await simGet('/api/save')
+    const result = await dialog.showSaveDialog({
+      title: 'Save Simulation',
+      defaultPath: 'simulation.wwsim',
+      filters: [{ name: 'Worldwright Simulation', extensions: ['wwsim'] }],
+    })
+    if (result.canceled || !result.filePath) return { canceled: true }
+    const envelope = {
+      worldwright_save: true,
+      map_path: simMapPath,
+      num_factions: simNumFactions,
+      world_state: JSON.parse(worldRaw),
+    }
+    writeFileSync(result.filePath, JSON.stringify(envelope, null, 2), 'utf-8')
+    return { ok: true, filePath: result.filePath }
+  } catch (e: any) {
+    return { ok: false, error: e.message }
+  }
+})
+
+ipcMain.handle('sim:load-and-start', async () => {
+  const pickResult = await dialog.showOpenDialog({
+    title: 'Load Simulation',
+    filters: [{ name: 'Worldwright Simulation', extensions: ['wwsim'] }],
+    properties: ['openFile'],
+  })
+  if (pickResult.canceled || !pickResult.filePaths.length) return { canceled: true }
+
+  let envelope: any
+  try {
+    envelope = JSON.parse(readFileSync(pickResult.filePaths[0], 'utf-8'))
+  } catch {
+    return { ok: false, error: 'Could not read save file.' }
+  }
+  if (!envelope.worldwright_save) return { ok: false, error: 'Invalid save file format.' }
+
+  const mapPath = envelope.map_path as string
+  const numFactions = Number(envelope.num_factions ?? 4)
+  const worldState = envelope.world_state
+
+  const resolvedPath = _resolveMapPath(mapPath)
+  if (!resolvedPath) return { ok: false, error: `Save file references unknown map: ${mapPath}` }
+
+  const spawn_result = await _spawnServer(resolvedPath, numFactions)
+  if (!spawn_result.ok) return spawn_result
+
+  simMapPath = mapPath
+  simNumFactions = numFactions
+
+  try {
+    const loadRaw = await simPost('/api/load', worldState)
+    const loadResult = JSON.parse(loadRaw)
+    if (!loadResult.ok) {
+      killSimProcess()
+      return { ok: false, error: loadResult.error ?? 'Server rejected save state.' }
+    }
+    return { ok: true, world: loadResult }
+  } catch (e: any) {
+    killSimProcess()
+    return { ok: false, error: e.message }
+  }
+})
+
+ipcMain.handle('sim:stop', () => {
+  killSimProcess()
+  return { ok: true }
+})
+
+ipcMain.handle('sim:world', async () => {
+  try {
+    return JSON.parse(await simGet('/api/world'))
+  } catch (e: any) {
+    return { ok: false, error: e.message }
+  }
+})
+
+ipcMain.handle('sim:advance', async () => {
+  try {
+    const stateRaw = await simGet('/api/state')
+    const state = JSON.parse(stateRaw)
+    const actions: Array<{ action_id: string }> = state.state?.available_actions ?? []
+    const actionId = actions[0]?.action_id ?? 'hold'
+    await simPost('/api/action', { action_id: actionId })
+    return JSON.parse(await simGet('/api/world'))
+  } catch (e: any) {
+    return { ok: false, error: e.message }
+  }
+})
+
+app.on('before-quit', () => {
+  killSimProcess()
 })

@@ -5,8 +5,9 @@ import {
   riverEdgeKey, parseRiverEdge, NEIGHBOR_TO_EDGE_SLOT, HEX_NEIGHBORS,
 } from '../lib/hex'
 import { TERRAIN_COLORS } from '../lib/terrain'
-import { HexData, RiverSize } from '../types/map'
+import { HexData, RiverSize, SimWorldState } from '../types/map'
 import { SelectMode } from '../types/map'
+import { buildFactionColorMap } from './SimulationPanel'
 
 interface ViewState {
   offsetX: number
@@ -47,6 +48,12 @@ export function HexCanvas() {
   const selectHex       = useMapStore((s) => s.selectHex)
   const selectRegion    = useMapStore((s) => s.selectRegion)
   const toggleRiverEdge = useMapStore((s) => s.toggleRiverEdge)
+  const simWorld        = useMapStore((s) => s.simWorld)
+  const isSimulating    = useMapStore((s) => s.isSimulating)
+  const simWorldRef     = useRef<SimWorldState | null>(simWorld)
+  const isSimRef        = useRef(isSimulating)
+  simWorldRef.current   = simWorld
+  isSimRef.current      = isSimulating
 
   const hoverCoord        = useRef<AxialCoord | null>(null)
   const hoverRiverEdge    = useRef<string | null>(null)
@@ -70,7 +77,7 @@ export function HexCanvas() {
     img.src = map.underlayPath
   }, [map?.underlayPath])
 
-  useEffect(() => { needsRedraw.current = true }, [map, layers, selectedHex, selectedRegion, brushRadius, activeTool, activeRegion])
+  useEffect(() => { needsRedraw.current = true }, [map, layers, selectedHex, selectedRegion, brushRadius, activeTool, activeRegion, simWorld, isSimulating])
 
   // ── Render ────────────────────────────────────────────────────────────────────
 
@@ -116,6 +123,60 @@ export function HexCanvas() {
         drawHexFill(ctx, cx, cy, hexSize, TERRAIN_COLORS[hex.terrain])
       }
       ctx.globalAlpha = 1
+    }
+
+    // ── Simulation faction overlay + territory labels ─────────────────────────
+    if (isSimRef.current && simWorldRef.current) {
+      const factionColors = buildFactionColorMap(simWorldRef.current.factions)
+      const factionLabels: Record<string, string> = {}
+      for (const f of simWorldRef.current.factions) {
+        factionLabels[f.name] = f.display_name.split(' ')[0]
+      }
+      const regionOwnerMap: Record<string, string | null> = {}
+      for (const r of simWorldRef.current.regions) {
+        regionOwnerMap[r.name] = r.owner
+      }
+
+      // Colour fill + centroid accumulation
+      const centroids: Record<string, { x: number; y: number; n: number }> = {}
+      ctx.globalAlpha = 0.6
+      for (const hex of Object.values(hexes)) {
+        if (!hex.region) continue
+        if (!(hex.region in regionOwnerMap)) continue
+        const [cx, cy] = hexToPixel(hex.q, hex.r, hexSize)
+        if (cx + cullPad < viewL || cx - cullPad > viewR) continue
+        if (cy + cullPad < viewT || cy - cullPad > viewB) continue
+        const owner = regionOwnerMap[hex.region]
+        drawHexFill(ctx, cx, cy, hexSize, owner ? (factionColors[owner] ?? '#888888') : '#5a5a6e')
+        if (owner) {
+          const c = centroids[owner] ?? (centroids[owner] = { x: 0, y: 0, n: 0 })
+          c.x += cx; c.y += cy; c.n++
+        }
+      }
+      ctx.globalAlpha = 1
+
+      // Territory name labels — drawn in screen space so size is always readable
+      ctx.save()
+      ctx.setTransform(1, 0, 0, 1, 0, 0)   // identity: switch to screen pixels
+      ctx.textAlign = 'center'
+      ctx.textBaseline = 'middle'
+      ctx.font = 'bold 13px system-ui, sans-serif'
+      ctx.lineJoin = 'round'
+      ctx.lineWidth = 3.5
+      for (const [owner, c] of Object.entries(centroids)) {
+        if (c.n < 3) continue
+        // world → screen
+        const sx = (c.x / c.n) * zoom + offsetX
+        const sy = (c.y / c.n) * zoom + offsetY
+        if (sx < -60 || sx > canvas.width + 60) continue
+        if (sy < -20 || sy > canvas.height + 20) continue
+        const label = factionLabels[owner] ?? owner
+        ctx.strokeStyle = 'rgba(0,0,0,0.9)'
+        ctx.strokeText(label, sx, sy)
+        ctx.fillStyle = '#ffffff'
+        ctx.fillText(label, sx, sy)
+      }
+      ctx.restore()
     }
 
     // ── Region fill + borders ─────────────────────────────────────────────────
