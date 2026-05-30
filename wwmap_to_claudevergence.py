@@ -86,6 +86,46 @@ def _terrain_tags(terrain_counts) -> list[str]:
     return seen or ["plains"]
 
 
+_MIN_CONNECTIVITY = 3   # min total connections (land+sea+river) for a viable start
+
+
+def _region_connectivity(region) -> int:
+    return len(region.land_neighbors) + len(region.sea_neighbors) + len(region.river_neighbors)
+
+
+def _pick_connected_starts(graph, num_traditions: int) -> list[str]:
+    """
+    Geometric spread start selection that filters out isolated peninsulas.
+    A region with only 1-2 total connections is a dead-end — its tradition
+    can never meaningfully expand.
+    """
+    from wwmap_core import pick_start_regions
+
+    well_connected = {
+        rid: (region.centroid_q, region.centroid_r)
+        for rid, region in graph.regions.items()
+        if _region_connectivity(region) >= _MIN_CONNECTIVITY
+    }
+    if len(well_connected) < num_traditions:
+        well_connected = {
+            rid: (region.centroid_q, region.centroid_r)
+            for rid, region in graph.regions.items()
+        }
+
+    sea_links: set[tuple[str, str]] = set()
+    for rid, region in graph.regions.items():
+        for nb in region.sea_neighbors:
+            sea_links.add(tuple(sorted([rid, nb])))  # type: ignore[arg-type]
+
+    region_neighbors = {rid: region.land_neighbors for rid, region in graph.regions.items()}
+
+    return pick_start_regions(
+        well_connected, num_traditions,
+        region_neighbors=region_neighbors,
+        sea_links=sea_links,
+    )
+
+
 def translate(wwmap_path: str | Path, num_traditions: int = 4) -> dict:
     """
     Reads a .wwmap file and returns a Claudevergence map definition dict.
@@ -103,7 +143,8 @@ def translate(wwmap_path: str | Path, num_traditions: int = 4) -> dict:
             region_starting_tradition[rid] = faction_to_id.get(faction) if faction else None
         num_traditions_out = len(faction_names)
     else:
-        auto_starts = {r: f"Tradition{i + 1}" for i, r in enumerate(graph.auto_start_regions)}
+        connected_starts = _pick_connected_starts(graph, num_traditions)
+        auto_starts = {r: f"Tradition{i + 1}" for i, r in enumerate(connected_starts)}
         for rid in graph.regions:
             region_starting_tradition[rid] = auto_starts.get(rid)
         num_traditions_out = num_traditions

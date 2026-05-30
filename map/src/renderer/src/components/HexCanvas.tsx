@@ -130,8 +130,7 @@ export function HexCanvas() {
       const factionColors = buildFactionColorMap(simWorldRef.current.factions)
       const factionLabels: Record<string, string> = {}
       for (const f of simWorldRef.current.factions) {
-        const stripped = f.display_name.startsWith('The ') ? f.display_name.slice(4) : f.display_name
-        factionLabels[f.name] = stripped.split(' ')[0]
+        factionLabels[f.name] = f.display_name.startsWith('The ') ? f.display_name.slice(4) : f.display_name
       }
       const regionOwnerMap: Record<string, string | null> = {}
       for (const r of simWorldRef.current.regions) {

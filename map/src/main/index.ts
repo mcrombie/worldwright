@@ -30,7 +30,7 @@ function createWindow(): BrowserWindow {
     },
   })
 
-  win.on('ready-to-show', () => win.show())
+  win.on('ready-to-show', () => { win.show(); win.maximize() })
 
   win.webContents.setWindowOpenHandler((details) => {
     shell.openExternal(details.url)
@@ -215,21 +215,23 @@ async function _spawnServer(
 ): Promise<{ ok: boolean; error?: string }> {
   killSimProcess()
 
-  // Kill any process LISTENING on our port (e.g. an orphan from a crashed previous session).
-  // We pipe through `findstr "LISTENING"` so we only match the server socket, not Electron's
-  // own established connections to that port (which would yield Electron's own PID).
+  // Kill any process LISTENING on our port (orphan from a crashed previous session).
+  // PowerShell is more reliable than cmd/netstat/taskkill for this on Windows 10.
   if (process.platform === 'win32') {
-    spawnSync('cmd', ['/c',
-      `for /f "tokens=5" %a in ('netstat -ano ^| findstr ":${SIM_PORT}" ^| findstr "LISTENING"') do taskkill /F /T /PID %a`,
+    spawnSync('powershell', [
+      '-NonInteractive', '-Command',
+      `Get-NetTCPConnection -LocalPort ${SIM_PORT} -State Listen -ErrorAction SilentlyContinue` +
+      ` | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force -ErrorAction SilentlyContinue }`,
     ], { encoding: 'utf-8' })
   } else {
     spawnSync('sh', ['-c', `lsof -ti:${SIM_PORT} | xargs -r kill -9`], { encoding: 'utf-8' })
   }
 
-  // Confirm the port is actually free before spawning.
-  const portFree = await waitForPortFree()
+  // Give the OS a moment to release the socket, then confirm the port is free.
+  await new Promise<void>((r) => setTimeout(r, 400))
+  const portFree = await waitForPortFree(10_000)
   if (!portFree) {
-    return { ok: false, error: `Port ${SIM_PORT} is still in use after kill attempt. Close any lingering simulation processes and try again.` }
+    return { ok: false, error: `Port ${SIM_PORT} is still in use. Open Task Manager and end any python.exe processes, then try again.` }
   }
 
   const isClaudevergence = requestedSimType === 'claudevergence'
